@@ -9,7 +9,8 @@ message Connect {
     PUBLISHER = 2;
     BROKER = 3;
   }
-  optional SrcType type = 1;
+  SrcType type = 1;
+  uint32 id = 2;
 }
 
 message Condition {
@@ -27,10 +28,12 @@ message Condition {
 }
 
 message Subscription {
-  repeated Condition condition = 1;
+  uint32 subscriber_id = 1;
+  repeated Condition condition = 2;
 }
 
 message Publication {
+  uint32 source_id = 1;
   optional string company = 1;
   optional double value = 2;
   optional double drop = 3;
@@ -39,5 +42,5 @@ message Publication {
 }
 
 message Unsubscribe {
-  optional uint32 subscription_id = 1;
+  optional string subscription_id = 1;
 }
