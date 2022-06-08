@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+package ebs_msg;
+
+message Connect {
+  enum SrcType {
+    UNKNOWN = 0;
+    SUBSCRIBER = 1;
+    PUBLISHER = 2;
+    BROKER = 3;
+  }
+  optional SrcType type = 1;
+}
+
+message Condition {
+  enum Operator {
+    EQ = 0; // ==
+    NE = 1; // !=
+    GT = 2; // >
+    GE = 3; // >=
+    LT = 4; // <
+    LE = 5; // <=
+  }
+  optional string field = 1;
+  optional Operator Op = 2;
+  optional string value = 3;
+}
+
+message Subscription {
+  repeated Condition condition = 1;
+}
+
+message Publication {
+  optional string company = 1;
+  optional double value = 2;
+  optional double drop = 3;
+  optional double variation = 4;
+  optional string date = 5;
+}
+
+message Unsubscribe {
+  optional uint32 subscription_id = 1;
+}

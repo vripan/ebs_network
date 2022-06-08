@@ -1,0 +1,1 @@
+start bin/protoc -I=src --python_out=src src/ebs_msg.proto
