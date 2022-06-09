@@ -148,19 +148,21 @@ class Broker:
         return matching_nodes
 
     async def _handle_subscription(self, sub: ebs_msg_pb2.Subscription):
-        logger.info('Received subscription from id: {}'.format(sub.id))
-        self._SubscriptionTable.add(sub, sub.id)
-        fw_sub = ebs_msg_pb2.Subscription().CopyFrom(sub)
-        fw_sub.source_id = self._ID
+        logger.info('Received subscription from id: {}'.format(sub.subscriber_id))
+        self._SubscriptionTable.add(sub, sub.subscriber_id)
+        fw_sub = ebs_msg_pb2.Subscription()
+        fw_sub.CopyFrom(sub)
+        fw_sub.subscriber_id = self._ID
         # tmp: send to all NB
         for broker_conn in self._NBConnectionTable.values():
             await broker_conn.send(fw_sub)
 
     async def _handle_publication(self, pub: ebs_msg_pb2.Publication):
-        logger.info('Received publication from id: {}'.format(pub.id))
+        logger.info('Received publication from id: {}'.format(pub.source_id))
         # handle pub
         matching_nodes = self._match_pub(pub)
-        fw_pub = ebs_msg_pb2.Publication().CopyFrom(pub)
+        fw_pub = ebs_msg_pb2.Publication()
+        fw_pub.CopyFrom(pub)
         fw_pub.source_id = self._ID
 
         try:
