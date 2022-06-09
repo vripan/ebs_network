@@ -138,7 +138,7 @@ class Broker:
     def _match_single_sub(sub: ebs_msg_pb2.Subscription, pub: ebs_msg_pb2.Publication):
         rez = True
         for cond in sub.condition:
-            rez |= Broker._match_single_cond(cond, pub)
+            rez &= Broker._match_single_cond(cond, pub)
             if not rez:
                 break
         return rez
@@ -195,15 +195,18 @@ class Broker:
             assert False
 
     async def handle_client(self, ebs_connection: EBSConnection):
-        data = await ebs_connection.read()
-        if isinstance(data, ebs_msg_pb2.Connect):
-            await self.handle_connect(ebs_connection, data)
-        while True:
+        try:
             data = await ebs_connection.read()
-            async with self._lock:
-                # process data
-                await self._handle_message(data)
-
+            if isinstance(data, ebs_msg_pb2.Connect):
+                await self.handle_connect(ebs_connection, data)
+            while True:
+                data = await ebs_connection.read()
+                async with self._lock:
+                    # process data
+                    await self._handle_message(data)
+        except:
+            logger.info('Connection disconnected!')
+            raise
     @staticmethod
     async def handle_client_ext(reader, writer):
         ebs_connection = EBSConnection(reader=reader, writer=writer)

@@ -6,6 +6,7 @@ import ebs_msg_pb2
 from globals import MANAGER_ENDPOINT
 from generator_subscription import SubscriptionGenerator, SubscriptionConfig
 from tqdm import tqdm
+import utils
 
 logging.basicConfig()
 
@@ -31,14 +32,13 @@ class Subscriber:
         pass
 
     async def _handle_pub(self, pub: ebs_msg_pb2.Publication):
-        logger.info('Publication received: {}'.format(
-            {
-                'company': pub.company,
-                'value': pub.value,
-                'drop': pub.drop,
-                'variation': pub.variation,
-                'date': pub.date
-            }
+        logger.info('Publication received: [company={company:}, value={value:}, drop={drop:}, variation={variation:}, '
+                    'date={date:}]'.format(
+                company=pub.company,
+                value=pub.value,
+                drop=pub.drop,
+                variation=pub.variation,
+                date=pub.date
         ))
 
     async def _connect_to_manager(self):
@@ -118,6 +118,7 @@ class Subscriber:
                 sub = sub_generator.get()
                 sub.subscriber_id = self._ID
                 await self._brokerConnection.write(sub)
+                logger.info('Sent Subscription: [{}]'.format(utils.get_str_subscription(sub)))
         except:
             logger.error('Failed sending subscriptions!')
             raise

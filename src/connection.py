@@ -46,7 +46,7 @@ class EBSConnection:
             await self._writer.drain()  # Wait until it is appropriate to resume writing to the stream
         except:
             # raise EBSConnectionError
-            raise
+            raise EBSConnectionError('Write failed!')
 
     async def read(self):
         try:
@@ -67,7 +67,7 @@ class EBSConnection:
             return msg_object
         # except asyncio.IncompleteReadError:
         except:
-            raise EBSConnectionError
+            raise EBSConnectionError('Read failed!')
 
 
 class NetworkEndpoint:
