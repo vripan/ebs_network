@@ -34,7 +34,7 @@ def get_str_subscription(sub: ebs_msg_pb2.Subscription) -> str:
 
 
 def get_str_publication(pub: ebs_msg_pb2.Publication) -> str:
-    return 'company={company:}, value={value:}, drop={drop:}, variation={variation:}, date={date:}]'.format(
+    return 'company={company:}, value={value:}, drop={drop:}, variation={variation:}, date={date:}'.format(
                 company=pub.company,
                 value=pub.value,
                 drop=pub.drop,
