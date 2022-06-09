@@ -1,5 +1,6 @@
 import logging
 from logger import setup_logger
+from tqdm import tqdm
 
 from generator_publication import PublicationGenerator
 from generator_subscription import SubscriptionGenerator, SubscriptionConfig
@@ -13,10 +14,10 @@ def main():
 
     logging.info("publication generated:\n%s" % publication)
 
-    logging.info("-" * 20)
+    logging.info("-" * 120)
 
     generator_config = SubscriptionConfig(
-        count=10,
+        count=1000000,
         company_probability=1,
         company_equal_frequency=1,
         value_probability=1,
@@ -25,9 +26,8 @@ def main():
         date_probability=0.1
     )
     subscription_generator = SubscriptionGenerator(generator_config)
-
-    for _ in range(generator_config.count):
-        logging.info("subscription generated: \n%s" % subscription_generator.get())
+    for idx in tqdm(range(generator_config.count)):
+        data = subscription_generator.get()
 
 if __name__ == "__main__":
     main()

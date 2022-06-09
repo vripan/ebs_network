@@ -21,7 +21,7 @@ def setup_logger(run_dir, level):
     timestamp = int(datetime.datetime.now().timestamp())
     run_path = get_auxiliary_dir(run_dir)
 
-    log_path = os.path.join(run_path, "%08x.%u.log" % (os.getpid(),timestamp))
+    log_path = os.path.join(run_path, "%u.%08x.log" % (timestamp, os.getpid()))
 
     if not os.path.exists(run_path):
         os.mkdir(run_path)
