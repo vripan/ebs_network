@@ -9,7 +9,30 @@ message Connect {
     PUBLISHER = 2;
     BROKER = 3;
   }
-  optional SrcType type = 1;
+  SrcType type = 1;
+  uint32 id = 2;
+}
+
+message BrokerRegister {
+  uint32 id = 1;
+  string host = 2;
+  uint32 port = 3;
+}
+
+message RequestBroker {
+  uint32 id = 1;
+}
+
+message ReceiveBroker {
+  enum Status {
+    SUCCESS = 0;
+    FAILED = 1;
+    FAILED_NO_BROKER_AVAILABLE = 2;
+  }
+  Status status = 1;
+  optional uint32 id = 2;
+  optional string host = 3;
+  optional uint32 port = 4;
 }
 
 message Condition {
@@ -28,6 +51,7 @@ message Condition {
 
 message Subscription {
   repeated Condition condition = 1;
+  uint32 subscriber_id = 2;
 }
 
 message Publication {
@@ -36,8 +60,9 @@ message Publication {
   optional double drop = 3;
   optional double variation = 4;
   optional string date = 5;
+  uint32 source_id = 6;
 }
 
 message Unsubscribe {
-  optional uint32 subscription_id = 1;
+  optional string subscription_id = 1;
 }
