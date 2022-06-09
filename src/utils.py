@@ -18,5 +18,15 @@ def get_str_condition(cond: ebs_msg_pb2.Condition) -> str:
     return '{field:} {op:} {value:}'.format(field=cond.field, op=get_str_condition_op(cond.op), value=cond.value)
 
 
-def get_str_subscription(sub: ebs_msg_pb2.Subscription) ->str:
+def get_str_subscription(sub: ebs_msg_pb2.Subscription) -> str:
     return ', '.join(get_str_condition(cond) for cond in sub.condition).strip()
+
+
+def get_str_publication(pub: ebs_msg_pb2.Publication) -> str:
+    return 'company={company:}, value={value:}, drop={drop:}, variation={variation:}, date={date:}]'.format(
+                company=pub.company,
+                value=pub.value,
+                drop=pub.drop,
+                variation=pub.variation,
+                date=pub.date
+    )

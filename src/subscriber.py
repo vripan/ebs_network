@@ -32,14 +32,7 @@ class Subscriber:
         pass
 
     async def _handle_pub(self, pub: ebs_msg_pb2.Publication):
-        logger.info('Publication received: [company={company:}, value={value:}, drop={drop:}, variation={variation:}, '
-                    'date={date:}]'.format(
-                company=pub.company,
-                value=pub.value,
-                drop=pub.drop,
-                variation=pub.variation,
-                date=pub.date
-        ))
+        logger.info('Publication received: [{}]'.format(utils.get_str_publication(pub)))
 
     async def _connect_to_manager(self):
         try:

@@ -4,6 +4,7 @@ from connection import EBSConnection, EBSConnectionError, NetworkEndpoint
 import asyncio
 import ebs_msg_pb2
 from globals import MANAGER_ENDPOINT
+import utils
 
 logging.basicConfig()
 
@@ -159,6 +160,7 @@ class Broker:
         fw_sub.subscriber_id = self._ID
         # tmp: send to all NB
         for broker_id in (self._NB - {sub.subscriber_id}):
+            logger.info('Forwarding subscription from id: {} to NB with id: {}'.format(sub.subscriber_id, broker_id))
             await self._NBConnectionTable[broker_id].send(self._ID, fw_sub)
 
     async def _handle_publication(self, pub: ebs_msg_pb2.Publication):
@@ -170,9 +172,13 @@ class Broker:
         fw_pub.source_id = self._ID
 
         try:
+            # send to NB
             for node in ((matching_nodes - {self._ID}) & self._NB):
+                logger.info('Sending publication [{}] to broker id: {}'.format(utils.get_str_publication(pub), node))
                 await self._NBConnectionTable[node].send(self._ID, fw_pub)
+            # send to LB
             for node in matching_nodes & self._LB:
+                logger.info('Sending publication [{}] to subscriber id: {}'.format(utils.get_str_publication(pub), node))
                 if self._LBConnectionTable[node]['connection'] is not None:
                     await self._LBConnectionTable[node]['connection'].write(fw_pub)
                 else:
@@ -206,7 +212,7 @@ class Broker:
                     await self._handle_message(data)
         except:
             logger.info('Client disconnected!')
-            
+
     @staticmethod
     async def handle_client_ext(reader, writer):
         ebs_connection = EBSConnection(reader=reader, writer=writer)
