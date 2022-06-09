@@ -1,14 +1,14 @@
 import argparse
 import logging
-from connection import EBSConnection, NetworkEndpoint
+from connection import EBSConnection, EBSConnectionError, NetworkEndpoint
 import asyncio
 import ebs_msg_pb2
 from globals import MANAGER_ENDPOINT
 
-logger = logging.getLogger("BrokerLog")
-logger.setLevel(logging.ERROR)
+logging.basicConfig()
 
-debug = True
+logger = logging.getLogger("BrokerLog")
+logger.setLevel(logging.DEBUG)
 
 node_config = {
     'id': 1,
@@ -23,27 +23,25 @@ class SubWrapper:
        pass
 
 
-class BrokerConnection:
-    def __init__(self):
-        self.incoming = None
-        self.outgoing = None
-
-    def set(self, incoming: EBSConnection = None, outgoing: EBSConnection = None):
-        if incoming is not None:
-            self.incoming = incoming
-        if outgoing is not None:
-            self.outgoing = outgoing
-
-
-class NBData:
-    def __init__(self, host, ip, incoming: EBSConnection = None, outgoing: EBSConnection = None):
-        self._host = host
-        self._ip = ip
+class BrokerConnData(NetworkEndpoint):
+    def __init__(self, node_id: int, host: str, port: int, incoming: EBSConnection = None, outgoing: EBSConnection = None):
+        super().__init__(node_id, host, port)
         self._incoming = incoming
         self._outgoing = outgoing
 
-    def setIncoming(self, incoming: EBSConnection):
-        self._incoming = incoming
+    def set(self, incoming: EBSConnection = None, outgoing: EBSConnection = None):
+        if incoming is not None:
+            self._incoming = incoming
+        if outgoing is not None:
+            self._outgoing = outgoing
+
+    async def send(self, msg):
+        try:
+            if self._outgoing is None:
+                self._outgoing = await EBSConnection.connect(self._host, self._port)
+            await self._outgoing.write(msg)
+        except EBSConnectionError as e:
+            logger.error('Connection to broker with id = {} failed!'.format(self._id))
 
 
 class Broker:
@@ -62,11 +60,11 @@ class Broker:
         # init stuff
         for _id, _host, _port in neighbours:
             self._NB.add(_id)
-            self._NBConnectionTable[_id] = {
-                'host': _host,
-                'port': _port,
-                'connections': BrokerConnection()
-            }
+            self._NBConnectionTable[_id] = BrokerConnData(
+                node_id=_id,
+                host=_host,
+                port=_port
+            )
 
     async def init(self):
         async with self._lock:
@@ -76,8 +74,9 @@ class Broker:
             )
             message_connect = ebs_msg_pb2.Connect()
             message_connect.type = ebs_msg_pb2.Connect.SrcType.BROKER
+            message_connect.id = self._ID
             await self._managerConnection.write(message_connect)
-            # TODO: init with manager
+        logger.info('Connected to broker.')
 
     async def handle_connect(self, connection: EBSConnection, msg_connect: ebs_msg_pb2.Connect):
         if msg_connect.type == ebs_msg_pb2.Connect.SrcType.BROKER:
@@ -94,6 +93,7 @@ class Broker:
             }
         else:
             assert False
+        logger.info('Client connected with id: {}'.format(msg_connect.id))
 
     @staticmethod
     def _match_single_cond(cond: ebs_msg_pb2.Condition, pub: ebs_msg_pb2.Publication):
@@ -136,21 +136,29 @@ class Broker:
         return matching_nodes
 
     async def _handle_subscription(self, sub: ebs_msg_pb2.Subscription):
-        # TODO: add sub to current table
         self._SubscriptionTable.add(sub, sub.id)
-        # TODO: administer / distribute
+        fw_sub = ebs_msg_pb2.Subscription().CopyFrom(sub)
+        fw_sub.source_id = self._ID
+        # tmp: send to all NB
+        for broker_conn in self._NBConnectionTable.values():
+            await broker_conn.send(fw_sub)
 
     async def _handle_publication(self, pub: ebs_msg_pb2.Publication):
         # handle pub
         matching_nodes = self._match_pub(pub)
         fw_pub = ebs_msg_pb2.Publication().CopyFrom(pub)
         fw_pub.source_id = self._ID
-        for node in ((matching_nodes - {self._ID}) & self._NB):
-            # TODO: forward pub to NB
-            pass
-        for node in matching_nodes & self._LB:
-            # TODO: send notification to LB
-            pass
+
+        try:
+            for node in ((matching_nodes - {self._ID}) & self._NB):
+                await self._NBConnectionTable[node].send(fw_pub)
+            for node in matching_nodes & self._LB:
+                if self._LBConnectionTable[node]['connection'] is not None:
+                    self._LBConnectionTable[node]['connection'].write(fw_pub)
+                else:
+                    logger.error('No connection from subscriber with id = {}!'.format(node))
+        except:
+            logger.error('Failed forwarding publication!')
 
     async def _handle_unsubscribe(self, unsub: ebs_msg_pb2.Unsubscribe):
         # TODO
@@ -198,22 +206,32 @@ async def app_broker():
     async with app_server:
         await app_server.serve_forever()
 
+
+def neighbours_type(s):
+    try:
+        _id, _host, _port = map(str, s.split(','))
+        return int(_id), str(_host), int(_port)
+    except:
+        raise argparse.ArgumentTypeError("Neighbours must be _id,_host,_port")
+
+
 if __name__ == '__main__':
-    # global node_config
-    # arg_parser = argparse.ArgumentParser(description='Broker node.')
-    # arg_parser.add_argument('--id', type=int, required=True)
-    # arg_parser.add_argument('--host', type=str, default='localhost')
-    # arg_parser.add_argument('--port', type=int, required=True)
-    # arg_parser.add_argument('--neighbours', type=tuple, required=True)
-    # args = arg_parser.parse_args()
-    #
-    # node_config['id'] = args.id
-    # node_config['host'] = args.host
-    # node_config['port'] = args.port
+
+    arg_parser = argparse.ArgumentParser(description='Broker node.')
+    arg_parser.add_argument('--id', type=int, required=True)
+    arg_parser.add_argument('--host', type=str, default='localhost')
+    arg_parser.add_argument('--port', type=int, required=True)
+    arg_parser.add_argument('--neighbours', type=neighbours_type, nargs='+', required=True)
+    args = arg_parser.parse_args()
+
+    node_config['id'] = args.id
+    node_config['host'] = args.host
+    node_config['port'] = args.port
+    node_config['neighbours'] = set(args.neighbours)
 
     try:
         asyncio.run(app_broker(), debug=False)
     except Exception as e:
-        print(e)
+        logger.error(e)
         print("Exiting...")
 

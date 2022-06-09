@@ -2,6 +2,12 @@ from connection import EBSConnection
 from globals import MANAGER_ENDPOINT
 import asyncio
 import ebs_msg_pb2
+import logging
+
+logging.basicConfig()
+
+logger = logging.getLogger("ManagerLog")
+logger.setLevel(logging.INFO)
 
 
 class Manager:
@@ -16,17 +22,23 @@ class Manager:
         pass
 
     async def handle_client(self, ebs_connection: EBSConnection):
-        data = await ebs_connection.read()
-        async with self._lock:
-            if isinstance(data, ebs_msg_pb2.Connect):
-                if data.type == ebs_msg_pb2.Connect.SrcType.BROKER:
-                    self._brokers.add(data.id)
-
-        while True:
+        logger.info('Client connecting...')
+        try:
             data = await ebs_connection.read()
             async with self._lock:
-                # process data
-                pass
+                if isinstance(data, ebs_msg_pb2.Connect):
+                    logger.info('Client connected with id: {}'.format(data.id))
+                    if data.type == ebs_msg_pb2.Connect.SrcType.BROKER:
+                        self._brokers.add(data.id)
+
+            while True:
+                data = await ebs_connection.read()
+                async with self._lock:
+                    # process data
+                    pass
+        except Exception as e:
+            logging.info('Client disconnected.')
+
 
     @staticmethod
     async def handle_client_ext(reader, writer):

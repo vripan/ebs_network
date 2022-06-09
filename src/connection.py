@@ -39,10 +39,11 @@ class EBSConnection:
             message.Pack(data)
             message = message.SerializeToString()
             message_size = struct.pack('<I', len(message))
-            await self._writer.write(message_size + message)
+            self._writer.write(message_size + message)
             await self._writer.drain()  # Wait until it is appropriate to resume writing to the stream
         except:
-            raise EBSConnectionError
+            # raise EBSConnectionError
+            raise
 
     async def read(self):
         try:
@@ -57,7 +58,8 @@ class EBSConnection:
             for cls_desc, cls_type in self._known_classes:
                 if message.Is(descriptor=cls_desc):
                     msg_object = cls_type()
-                    msg_object.FromString(message.value)
+                    msg_object.ParseFromString(message.value)
+                    break
 
             return msg_object
         # except asyncio.IncompleteReadError:
@@ -66,6 +68,7 @@ class EBSConnection:
 
 
 class NetworkEndpoint:
-    def __init__(self, node_id: int, connection: EBSConnection):
-        self.id = node_id
-        self.conn = connection
+    def __init__(self, node_id: int, host: str = None, port: int = None):
+        self._id = node_id
+        self._host = host
+        self._port = port

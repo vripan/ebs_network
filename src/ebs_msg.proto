@@ -28,17 +28,17 @@ message Condition {
 }
 
 message Subscription {
-  uint32 subscriber_id = 1;
-  repeated Condition condition = 2;
+  repeated Condition condition = 1;
+  uint32 subscriber_id = 2;
 }
 
 message Publication {
-  uint32 source_id = 1;
   optional string company = 1;
   optional double value = 2;
   optional double drop = 3;
   optional double variation = 4;
   optional string date = 5;
+  uint32 source_id = 6;
 }
 
 message Unsubscribe {
