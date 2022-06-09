@@ -1,8 +1,9 @@
-from connection import EBSConnection
+from connection import EBSConnection, EBSConnectionError
 from globals import MANAGER_ENDPOINT
 import asyncio
 import ebs_msg_pb2
 import logging
+import utils
 
 logging.basicConfig()
 
@@ -61,33 +62,42 @@ class Manager:
         elif isinstance(msg, ebs_msg_pb2.RequestBroker):
             await self._handle_request_broker(ebs_connection, msg)
         else:
-            logger.error('Received invalid message!')
+            raise Exception('Received invalid message!')
             # assert False, 'Received invalid message!'
 
     async def _handle_connect(self, ebs_connection: EBSConnection, conn_msg: ebs_msg_pb2.Connect):
-        logger.info('Client connected with id: {}'.format(conn_msg.id))
+        logger.info('{} connected with id: {}'.format(utils.get_str_connect_str_type(conn_msg.type), conn_msg.id))
         if conn_msg.type == ebs_msg_pb2.Connect.SrcType.BROKER:
             self._brokers.add(conn_msg.id)
-        if conn_msg.type == ebs_msg_pb2.Connect.SrcType.SUBSCRIBER:
+        elif conn_msg.type == ebs_msg_pb2.Connect.SrcType.SUBSCRIBER:
             self._subscribers.add(conn_msg.id)
-        if conn_msg.type == ebs_msg_pb2.Connect.SrcType.PUBLISHER:
+        elif conn_msg.type == ebs_msg_pb2.Connect.SrcType.PUBLISHER:
             self._publishers.add(conn_msg.id)
+        else:
+            raise Exception('Invalid source type!')
 
     async def handle_client(self, ebs_connection: EBSConnection):
+        cl_id, cl_type = None, None
         try:
             data = await ebs_connection.read()
             async with self._lock:
                 if isinstance(data, ebs_msg_pb2.Connect):
                     await self._handle_connect(ebs_connection, data)
+                    cl_id, cl_type = data.id, data.type
                 else:
-                    logger.error('Invalid first message!')
-                    return
+                    raise Exception('Invalid first message!')
             while True:
                 data = await ebs_connection.read()
                 async with self._lock:
                     await self._handle_message(ebs_connection, data)
+        except EBSConnectionError:
+            if cl_id is not None and cl_type is not None:
+                logger.info('{} with id={} disconnected!'.format(utils.get_str_connect_str_type(cl_type), cl_id))
+            else:
+                logger.info('Client disconnected!')
         except Exception as e:
-            logger.info('Client disconnected.')
+            logger.error('Error! ' + str(e))
+            logger.error('Disconecting...')
 
     @staticmethod
     async def handle_client_ext(reader, writer):

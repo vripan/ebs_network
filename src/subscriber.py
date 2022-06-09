@@ -72,7 +72,7 @@ class Subscriber:
             logger.info('Received broker [id={}, host={}, port={}]'.format(self._brokerData['id'], self._brokerData['host'], self._brokerData['port']))
         except:
             logger.error('Connection to manager failed!')
-            raise
+            raise Exception('Connection to manager failed!')
 
     async def _connect_to_broker(self):
         logger.info('Connecting to broker...')
@@ -153,5 +153,5 @@ if __name__ == '__main__':
 
     try:
         asyncio.run(app_subscriber())
-    except:
+    except Exception as e:
         logger.info('Exiting...')

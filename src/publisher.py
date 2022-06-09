@@ -43,6 +43,7 @@ class Publisher:
             logger.info('Connected to manager.')
 
             message_reqister = ebs_msg_pb2.RequestBroker()
+            message_reqister.id = self._ID
             await self._managerConnection.write(message_reqister)
 
             receive_brk = await self._managerConnection.read()

@@ -74,28 +74,33 @@ class Broker:
             )
 
     async def init(self):
-        async with self._lock:
-            self._managerConnection = await EBSConnection.connect(
-                MANAGER_ENDPOINT['host'],
-                MANAGER_ENDPOINT['port'],
-            )
-            message_connect = ebs_msg_pb2.Connect()
-            message_connect.type = ebs_msg_pb2.Connect.SrcType.BROKER
-            message_connect.id = self._ID
-            await self._managerConnection.write(message_connect)
+        try:
+            async with self._lock:
+                self._managerConnection = await EBSConnection.connect(
+                    MANAGER_ENDPOINT['host'],
+                    MANAGER_ENDPOINT['port'],
+                )
 
-            logger.info('Connected to manager.')
+                message_connect = ebs_msg_pb2.Connect()
+                message_connect.type = ebs_msg_pb2.Connect.SrcType.BROKER
+                message_connect.id = self._ID
+                await self._managerConnection.write(message_connect)
 
-            message_reqister = ebs_msg_pb2.BrokerRegister()
-            message_reqister.id = self._ID
-            message_reqister.host = self._HOST
-            message_reqister.port = self._PORT
-            await self._managerConnection.write(message_reqister)
+                logger.info('Connected to manager.')
 
-            logger.info('Registered to manager.')
+                message_reqister = ebs_msg_pb2.BrokerRegister()
+                message_reqister.id = self._ID
+                message_reqister.host = self._HOST
+                message_reqister.port = self._PORT
+                await self._managerConnection.write(message_reqister)
+
+                logger.info('Registered to manager.')
+        except:
+            logger.error('Connection to manager failed!')
+            raise Exception('Connection to manager failed!')
 
     async def handle_connect(self, connection: EBSConnection, msg_connect: ebs_msg_pb2.Connect):
-        logger.info('Client connected with id: {}'.format(msg_connect.id))
+        logger.info('{} connected with id: {}'.format(utils.get_str_connect_str_type(msg_connect.type), msg_connect.id))
 
         if msg_connect.type == ebs_msg_pb2.Connect.SrcType.BROKER:
             self._NBConnectionTable[msg_connect.id].set(incoming=connection)
@@ -110,7 +115,7 @@ class Broker:
                 'connection': connection
             }
         else:
-            assert False
+            raise Exception("Invalid source type!")
 
     @staticmethod
     def _match_single_cond(cond: ebs_msg_pb2.Condition, pub: ebs_msg_pb2.Publication):
@@ -198,20 +203,30 @@ class Broker:
         elif isinstance(message, ebs_msg_pb2.Unsubscribe):
             await self._handle_unsubscribe(message)
         else:
-            assert False
+            raise Exception('Invalid message!')
 
     async def handle_client(self, ebs_connection: EBSConnection):
+        cl_id, cl_type = None, None
         try:
             data = await ebs_connection.read()
             if isinstance(data, ebs_msg_pb2.Connect):
                 await self.handle_connect(ebs_connection, data)
+                cl_id, cl_type = data.id, data.type
+            else:
+                raise Exception('Invalid first message!')
             while True:
                 data = await ebs_connection.read()
                 async with self._lock:
                     # process data
                     await self._handle_message(data)
-        except:
-            logger.info('Client disconnected!')
+        except EBSConnectionError:
+            if cl_id is not None and cl_type is not None:
+                logger.info('{} with id={} disconnected!'.format(utils.get_str_connect_str_type(cl_type), cl_id))
+            else:
+                logger.info('Client disconnected!')
+        except Exception as e:
+            logger.error('Error! ' + str(e))
+            logger.error('Disconecting...')
 
     @staticmethod
     async def handle_client_ext(reader, writer):
@@ -261,6 +276,5 @@ if __name__ == '__main__':
     try:
         asyncio.run(app_broker(), debug=False)
     except Exception as e:
-        logger.error(e)
         logger.info("Exiting...")
 

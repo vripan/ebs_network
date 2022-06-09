@@ -9,6 +9,17 @@ CONDITION_OP_STR = {
     ebs_msg_pb2.Condition.Operator.LE: "<=",
 }
 
+CONNECT_SRC_TYPE_STR = {
+    # ebs_msg_pb2.Connect.SrcType.UNKNOWN: "Unknown",
+    ebs_msg_pb2.Connect.SrcType.SUBSCRIBER: "Subscriber",
+    ebs_msg_pb2.Connect.SrcType.PUBLISHER: "Publisher",
+    ebs_msg_pb2.Connect.SrcType.BROKER: "Broker"
+}
+
+
+def get_str_connect_str_type(type: ebs_msg_pb2.Connect.SrcType) -> str:
+    return CONNECT_SRC_TYPE_STR.get(type, 'Client')
+
 
 def get_str_condition_op(op: ebs_msg_pb2.Condition.Operator) -> str:
     return CONDITION_OP_STR.get(op, " ")
