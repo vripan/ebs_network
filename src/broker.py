@@ -205,8 +205,8 @@ class Broker:
                     # process data
                     await self._handle_message(data)
         except:
-            logger.info('Connection disconnected!')
-            raise
+            logger.info('Client disconnected!')
+            
     @staticmethod
     async def handle_client_ext(reader, writer):
         ebs_connection = EBSConnection(reader=reader, writer=writer)
