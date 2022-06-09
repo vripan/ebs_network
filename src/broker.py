@@ -113,23 +113,23 @@ class Broker:
 
     @staticmethod
     def _match_single_cond(cond: ebs_msg_pb2.Condition, pub: ebs_msg_pb2.Publication):
-        cond_field_str = cond.field
-        pub_field = getattr(pub, cond.field)
-        pub_field_type = type(pub_field)
-        cond_field = pub_field_type(cond_field_str)
+        cond_value_str = cond.value
+        pub_value = getattr(pub, cond.field)
+        pub_value_type = type(pub_value)
+        cond_value = pub_value_type(cond_value_str)
         try:
             if cond.op == ebs_msg_pb2.Condition.Operator.EQ:
-                return cond_field == pub_field
+                return cond_value == pub_value
             if cond.op == ebs_msg_pb2.Condition.Operator.NE:
-                return cond_field != pub_field
+                return cond_value != pub_value
             if cond.op == ebs_msg_pb2.Condition.Operator.GT:
-                return cond_field > pub_field
+                return cond_value > pub_value
             if cond.op == ebs_msg_pb2.Condition.Operator.GE:
-                return cond_field >= pub_field
+                return cond_value >= pub_value
             if cond.op == ebs_msg_pb2.Condition.Operator.LT:
-                return cond_field < pub_field
+                return cond_value < pub_value
             if cond.op == ebs_msg_pb2.Condition.Operator.LE:
-                return cond_field < pub_field
+                return cond_value < pub_value
         except Exception as e:
             logger.error('Failed comparing single cond!')
             raise e
@@ -137,7 +137,7 @@ class Broker:
     @staticmethod
     def _match_single_sub(sub: ebs_msg_pb2.Subscription, pub: ebs_msg_pb2.Publication):
         rez = True
-        for cond in sub.conditions:
+        for cond in sub.condition:
             rez |= Broker._match_single_cond(cond, pub)
             if not rez:
                 break
@@ -148,7 +148,7 @@ class Broker:
         for sub, sub_id in self._SubscriptionTable:
             rez = Broker._match_single_sub(sub, pub)
             if rez:
-                matching_nodes |= {sub}
+                matching_nodes |= {sub.subscriber_id}
         return matching_nodes
 
     async def _handle_subscription(self, sub: ebs_msg_pb2.Subscription):
@@ -174,7 +174,7 @@ class Broker:
                 await self._NBConnectionTable[node].send(self._ID, fw_pub)
             for node in matching_nodes & self._LB:
                 if self._LBConnectionTable[node]['connection'] is not None:
-                    self._LBConnectionTable[node]['connection'].write(fw_pub)
+                    await self._LBConnectionTable[node]['connection'].write(fw_pub)
                 else:
                     logger.error('No connection from subscriber with id = {}!'.format(node))
         except:

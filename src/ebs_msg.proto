@@ -45,7 +45,7 @@ message Condition {
     LE = 5; // <=
   }
   optional string field = 1;
-  optional Operator Op = 2;
+  optional Operator op = 2;
   optional string value = 3;
 }
 

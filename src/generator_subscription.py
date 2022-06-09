@@ -69,7 +69,7 @@ class SubscriptionGenerator:
         object = ebs_msg_pb2.Condition()
 
         object.field = "company"
-        object.Op = self.__string_operator()
+        object.op = self.__string_operator()
         object.value =  DataGenerator.company()
 
         return object
@@ -78,7 +78,7 @@ class SubscriptionGenerator:
         object = ebs_msg_pb2.Condition()
 
         object.field = "value"
-        object.Op = self.__number_operator()
+        object.op = self.__number_operator()
         object.value =  str(DataGenerator.stock_value())
 
         return object
@@ -87,7 +87,7 @@ class SubscriptionGenerator:
         object = ebs_msg_pb2.Condition()
 
         object.field = "drop"
-        object.Op = self.__number_operator()
+        object.op = self.__number_operator()
         object.value =  str(DataGenerator.drop_value())
 
         return object
@@ -96,7 +96,7 @@ class SubscriptionGenerator:
         object = ebs_msg_pb2.Condition()
 
         object.field = "variation"
-        object.Op = self.__number_operator()
+        object.op = self.__number_operator()
         object.value =  str(DataGenerator.variation_value())
 
         return object
@@ -105,7 +105,7 @@ class SubscriptionGenerator:
         object = ebs_msg_pb2.Condition()
 
         object.field = "date"
-        object.Op = self.__number_operator()
+        object.op = self.__number_operator()
         object.value =  DataGenerator.date()
 
         return object

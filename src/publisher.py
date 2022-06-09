@@ -70,11 +70,11 @@ class Publisher:
             publication = self._gen.get()
             publication.source_id = self._ID
             if debug:
-                print(f'Sending publication with company = {publication.company}, ' +
-                      f'value = {publication.value}, ' +
-                      f'drop = {publication.drop}, ' +
-                      f'variation = {publication.variation}, ' +
-                      f'date = {publication.date}, ')
+                logger.info(f'Sending publication with company = {publication.company}, ' +
+                            f'value = {publication.value}, ' +
+                            f'drop = {publication.drop}, ' +
+                            f'variation = {publication.variation}, ' +
+                            f'date = {publication.date}, ')
             await self._brokerConnection.write(publication)
             await asyncio.sleep(0.5)
 
