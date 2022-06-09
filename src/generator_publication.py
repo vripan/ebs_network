@@ -2,6 +2,7 @@ import ebs_msg_pb2
 
 from generator_data import DataGenerator
 
+
 class PublicationGenerator:
     def __init__(self):
         self.idx = 0
