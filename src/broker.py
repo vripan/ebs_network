@@ -37,10 +37,14 @@ class BrokerConnData(NetworkEndpoint):
         if outgoing is not None:
             self._outgoing = outgoing
 
-    async def send(self, msg):
+    async def send(self, self_id, msg):
         try:
             if self._outgoing is None:
                 self._outgoing = await EBSConnection.connect(self._host, self._port)
+                connect_msg = ebs_msg_pb2.Connect()
+                connect_msg.type = ebs_msg_pb2.Connect.SrcType.BROKER
+                connect_msg.id = self_id
+                await self._outgoing.write(connect_msg)
             await self._outgoing.write(msg)
         except EBSConnectionError as e:
             logger.error('Connection to broker with id = {} failed!'.format(self._id))
@@ -56,7 +60,7 @@ class Broker:
         self._LB = set()
         self._NBConnectionTable = {}
         self._LBConnectionTable = {}
-        self._SubscriptionTable = set()
+        self._SubscriptionTable = []
         self._lock = asyncio.Lock()
 
         # init stuff
@@ -93,7 +97,7 @@ class Broker:
         logger.info('Client connected with id: {}'.format(msg_connect.id))
 
         if msg_connect.type == ebs_msg_pb2.Connect.SrcType.BROKER:
-            self._NBConnectionTable[msg_connect.id]['connections'].set(incoming=connection)
+            self._NBConnectionTable[msg_connect.id].set(incoming=connection)
         elif msg_connect.type == ebs_msg_pb2.Connect.SrcType.SUBSCRIBER:
             self._LB.add(msg_connect.id)
             self._LBConnectionTable[msg_connect.id] = {
@@ -149,13 +153,13 @@ class Broker:
 
     async def _handle_subscription(self, sub: ebs_msg_pb2.Subscription):
         logger.info('Received subscription from id: {}'.format(sub.subscriber_id))
-        self._SubscriptionTable.add(sub, sub.subscriber_id)
+        self._SubscriptionTable.append((sub, sub.subscriber_id))
         fw_sub = ebs_msg_pb2.Subscription()
         fw_sub.CopyFrom(sub)
         fw_sub.subscriber_id = self._ID
         # tmp: send to all NB
-        for broker_conn in self._NBConnectionTable.values():
-            await broker_conn.send(fw_sub)
+        for broker_id in (self._NB - {sub.subscriber_id}):
+            await self._NBConnectionTable[broker_id].send(self._ID, fw_sub)
 
     async def _handle_publication(self, pub: ebs_msg_pb2.Publication):
         logger.info('Received publication from id: {}'.format(pub.source_id))
@@ -167,7 +171,7 @@ class Broker:
 
         try:
             for node in ((matching_nodes - {self._ID}) & self._NB):
-                await self._NBConnectionTable[node].send(fw_pub)
+                await self._NBConnectionTable[node].send(self._ID, fw_pub)
             for node in matching_nodes & self._LB:
                 if self._LBConnectionTable[node]['connection'] is not None:
                     self._LBConnectionTable[node]['connection'].write(fw_pub)
