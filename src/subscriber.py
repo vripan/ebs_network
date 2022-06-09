@@ -110,8 +110,9 @@ class Subscriber:
             for idx in tqdm(range(sub_generator_config.count)):
                 sub = sub_generator.get()
                 sub.subscriber_id = self._ID
+                sub.subscription_id = (idx + 1) * 10 + self._ID
                 await self._brokerConnection.write(sub)
-                logger.info('Sent Subscription: [{}]'.format(utils.get_str_subscription(sub)))
+                logger.info('Sent Subscription: [{}] [subscription_id: {}]'.format(utils.get_str_subscription(sub), sub.subscription_id))
         except:
             logger.error('Failed sending subscriptions!')
             raise

@@ -158,14 +158,16 @@ class Broker:
         return matching_nodes
 
     async def _handle_subscription(self, sub: ebs_msg_pb2.Subscription):
-        logger.info('Received subscription from id: {}'.format(sub.subscriber_id))
+        logger.info('Received subscription from id: {} [subscription_id: {}]'.format(sub.subscriber_id, sub.subscription_id))
         self._SubscriptionTable.append((sub, sub.subscriber_id))
         fw_sub = ebs_msg_pb2.Subscription()
         fw_sub.CopyFrom(sub)
         fw_sub.subscriber_id = self._ID
+        # TODO: maybe remove modification of sub_id from broker?
+        fw_sub.subscription_id = sub.subscription_id  # * 10 + self._ID
         # tmp: send to all NB
         for broker_id in (self._NB - {sub.subscriber_id}):
-            logger.info('Forwarding subscription from id: {} to NB with id: {}'.format(sub.subscriber_id, broker_id))
+            logger.info('Forwarding subscription from id: {} to NB with id: {} [subscription_id: {}]'.format(sub.subscriber_id, broker_id, fw_sub.subscription_id))
             await self._NBConnectionTable[broker_id].send(self._ID, fw_sub)
 
     async def _handle_publication(self, pub: ebs_msg_pb2.Publication):
@@ -192,8 +194,24 @@ class Broker:
             logger.error('Failed forwarding publication!')
 
     async def _handle_unsubscribe(self, unsub: ebs_msg_pb2.Unsubscribe):
-        # TODO
-        pass
+        logger.info('Received unsubscribe from id: {} for subscription_id: {}'.format(unsub.subscriber_id, unsub.subscription_id))
+        # update sub table
+        self._SubscriptionTable = [
+            (sub, subscriber_id) for (sub, subscriber_id) in self._SubscriptionTable
+            if sub.subscription_id != unsub.subscription_id and subscriber_id != unsub.subscriber_id
+            ]
+        # forward
+        fw_unsub = ebs_msg_pb2.Unsubscribe()
+        fw_unsub.CopyFrom(unsub)
+        fw_unsub.subscriber_id = self._ID
+        # TODO: maybe remove modification of sub_id from broker?
+        fw_unsub.subscription_id = unsub.subscription_id  # * 10 + self._ID
+        try:
+            for broker_id in (self._NB - {unsub.subscriber_id}):
+                logger.info('Forwarding unsubscribe from id: {} to NB with id: {}'.format(unsub.subscriber_id, broker_id))
+                await self._NBConnectionTable[broker_id].send(self._ID, fw_unsub)
+        except:
+            logger.error('Failed forwarding unsubscribe!')
 
     async def _handle_message(self, message):
         if isinstance(message, ebs_msg_pb2.Subscription):
