@@ -14,6 +14,9 @@ class EBSConnectionError(Exception):
 class EBSConnection:
     _known_classes = (
         (ebs_msg_pb2.Connect.DESCRIPTOR, ebs_msg_pb2.Connect),
+        (ebs_msg_pb2.BrokerRegister.DESCRIPTOR, ebs_msg_pb2.BrokerRegister),
+        (ebs_msg_pb2.RequestBroker.DESCRIPTOR, ebs_msg_pb2.RequestBroker),
+        (ebs_msg_pb2.ReceiveBroker.DESCRIPTOR, ebs_msg_pb2.ReceiveBroker),
         (ebs_msg_pb2.Subscription.DESCRIPTOR, ebs_msg_pb2.Subscription),
         (ebs_msg_pb2.Publication.DESCRIPTOR, ebs_msg_pb2.Publication),
         (ebs_msg_pb2.Unsubscribe.DESCRIPTOR, ebs_msg_pb2.Unsubscribe)

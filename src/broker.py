@@ -14,7 +14,7 @@ node_config = {
     'id': 1,
     'host': 'localhost',
     'port': 8081,
-    'neighbours': ((1, 'localhost', 8082), (2, 'localhost', 8083))
+    'neighbours': ((2, 'localhost', 8082), (3, 'localhost', 8083))
 }
 
 
@@ -76,9 +76,20 @@ class Broker:
             message_connect.type = ebs_msg_pb2.Connect.SrcType.BROKER
             message_connect.id = self._ID
             await self._managerConnection.write(message_connect)
-        logger.info('Connected to broker.')
+
+            logger.info('Connected to manager.')
+
+            message_reqister = ebs_msg_pb2.BrokerRegister()
+            message_reqister.id = self._ID
+            message_reqister.host = self._HOST
+            message_reqister.port = self._PORT
+            await self._managerConnection.write(message_reqister)
+
+            logger.info('Registered to manager.')
 
     async def handle_connect(self, connection: EBSConnection, msg_connect: ebs_msg_pb2.Connect):
+        logger.info('Client connected with id: {}'.format(msg_connect.id))
+
         if msg_connect.type == ebs_msg_pb2.Connect.SrcType.BROKER:
             self._NBConnectionTable[msg_connect.id]['connections'].set(incoming=connection)
         elif msg_connect.type == ebs_msg_pb2.Connect.SrcType.SUBSCRIBER:
@@ -93,7 +104,6 @@ class Broker:
             }
         else:
             assert False
-        logger.info('Client connected with id: {}'.format(msg_connect.id))
 
     @staticmethod
     def _match_single_cond(cond: ebs_msg_pb2.Condition, pub: ebs_msg_pb2.Publication):
