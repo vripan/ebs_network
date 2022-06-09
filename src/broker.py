@@ -17,6 +17,8 @@ node_config = {
     'neighbours': ((2, 'localhost', 8082), (3, 'localhost', 8083))
 }
 
+broker = None
+
 
 class SubWrapper:
     def __init__(self, sub: ebs_msg_pb2.Subscription):
@@ -146,6 +148,7 @@ class Broker:
         return matching_nodes
 
     async def _handle_subscription(self, sub: ebs_msg_pb2.Subscription):
+        logger.info('Received subscription from id: {}'.format(sub.id))
         self._SubscriptionTable.add(sub, sub.id)
         fw_sub = ebs_msg_pb2.Subscription().CopyFrom(sub)
         fw_sub.source_id = self._ID
@@ -154,6 +157,7 @@ class Broker:
             await broker_conn.send(fw_sub)
 
     async def _handle_publication(self, pub: ebs_msg_pb2.Publication):
+        logger.info('Received publication from id: {}'.format(pub.id))
         # handle pub
         matching_nodes = self._match_pub(pub)
         fw_pub = ebs_msg_pb2.Publication().CopyFrom(pub)
@@ -243,5 +247,5 @@ if __name__ == '__main__':
         asyncio.run(app_broker(), debug=False)
     except Exception as e:
         logger.error(e)
-        print("Exiting...")
+        logger.info("Exiting...")
 
