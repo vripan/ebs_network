@@ -14,8 +14,8 @@ class Manager:
 
     def __init__(self):
         self._brokers = set()
-        self._subscribers = []
-        self._publishers = []
+        self._subscribers = set()
+        self._publishers = set()
         self._connections = []
 
         self._brokersRegister = dict()
@@ -45,6 +45,7 @@ class Manager:
             self._servedBrokerIndex = (self._servedBrokerIndex + 1) % len(self._brokers)
             brokerId = list(self._brokers)[self._servedBrokerIndex]
 
+            # this should never happen
             assert brokerId in self._brokersRegister.keys(), "Broker not registered!"
 
             fw_msg.status = ebs_msg_pb2.ReceiveBroker.Status.SUCCESS
@@ -58,7 +59,7 @@ class Manager:
         if isinstance(msg, ebs_msg_pb2.BrokerRegister):
             await self._handle_register_broker(ebs_connection, msg)
         elif isinstance(msg, ebs_msg_pb2.RequestBroker):
-            await self.__handle_request_broker(ebs_connection, msg)
+            await self._handle_request_broker(ebs_connection, msg)
         else:
             logger.error('Received invalid message!')
             # assert False, 'Received invalid message!'
@@ -78,14 +79,15 @@ class Manager:
             async with self._lock:
                 if isinstance(data, ebs_msg_pb2.Connect):
                     await self._handle_connect(ebs_connection, data)
-
+                else:
+                    logger.error('Invalid first message!')
+                    return
             while True:
                 data = await ebs_connection.read()
                 async with self._lock:
                     await self._handle_message(ebs_connection, data)
         except Exception as e:
-            logging.info('Client disconnected.')
-
+            logger.info('Client disconnected.')
 
     @staticmethod
     async def handle_client_ext(reader, writer):
