@@ -1,14 +1,14 @@
 import argparse
 import asyncio
+import datetime
+
 import ebs_msg_pb2
 import logging
-from connection import EBSConnection, EBSConnectionError
+from connection import EBSConnection
 from globals import MANAGER_ENDPOINT
 from generator_publication import PublicationGenerator
 
-debug = True
-
-logging.basicConfig()
+logging.basicConfig(filename='publisher.log')
 
 logger = logging.getLogger("PublisherLog")
 logger.setLevel(logging.DEBUG)
@@ -70,14 +70,15 @@ class Publisher:
 
             publication = self._gen.get()
             publication.source_id = self._ID
-            if debug:
-                logger.info(f'Sending publication with company = {publication.company}, ' +
-                            f'value = {publication.value}, ' +
-                            f'drop = {publication.drop}, ' +
-                            f'variation = {publication.variation}, ' +
-                            f'date = {publication.date}, ')
+            publication.publication_id = (self._gen.idx + 1) * 10 + self._ID
+            logger.info(f'Sending publication with company = {publication.company}, ' +
+                        f'value = {publication.value}, ' +
+                        f'drop = {publication.drop}, ' +
+                        f'variation = {publication.variation}, ' +
+                        f'date = {publication.date}, ')
             await self._brokerConnection.write(publication)
-            await asyncio.sleep(0.5)
+            logger.info(f'log_send_publication:{publication.publication_id};{datetime.datetime.now().timestamp()};')
+            await asyncio.sleep(0.1)
 
 
 async def app_publisher():

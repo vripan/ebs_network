@@ -7,8 +7,9 @@ from globals import MANAGER_ENDPOINT
 from generator_subscription import SubscriptionGenerator, SubscriptionConfig
 from tqdm import tqdm
 import utils
+import datetime
 
-logging.basicConfig()
+logging.basicConfig(filename='subscriber.log')
 
 logger = logging.getLogger("SubscriberLog")
 logger.setLevel(logging.DEBUG)
@@ -33,6 +34,7 @@ class Subscriber:
 
     async def _handle_pub(self, pub: ebs_msg_pb2.Publication):
         logger.info('Publication received: [{}]'.format(utils.get_str_publication(pub)))
+        logger.info(f'log_recv_publication:{pub.publication_id};{datetime.datetime.now().timestamp()};')
 
     async def _connect_to_manager(self):
         try:
