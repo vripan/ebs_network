@@ -21,16 +21,15 @@
 
 ## Scenario #1 : Continous publications flow
 
-### Publications sent: `852`
-### Runtime: `3` minutes
-### Publication generation rate per seconds: `~5`
-### Publications received by the subscriber: `852`
-### Subscriber logs: `run_logs\1654843039.00002908.log`
-### Publisher logs: `run_logs\1654843055.00005358.log`
-### Average latency: `2.10337 ms`
-### Latency per event: `run_logs\latency.log`
-
-### Subscription generator config
+* Publications sent: `852`
+* Runtime: `3` minutes
+* Publication generation rate per seconds: `~5`
+* Publications received by the subscriber: `852`
+* Subscriber logs: `run_logs\1654843039.00002908.log`
+* Publisher logs: `run_logs\1654843055.00005358.log`
+* Average latency: `2.10337 ms`
+* Latency per event: `run_logs\latency.log`
+* Subscription generator config
 ```
     company_probability=1
     company_equal_frequency=1
@@ -42,9 +41,10 @@
 
 ## Scenario #2 : Fixed number of publications
 
-### Publications sent: `10000`
-### Subscribtions: 10
-### Runtime: `n/a`
+* Publications sent: `10000`
+* Subscribtions: 10
+* Runtime: `n/a`
+* Match rate increase: `x5.36`
 
 ### Equal frequency for the `company` field: 100%
 * received publications: `1171`
@@ -71,4 +71,3 @@ drop_probability=1,
 variation_probability=0.1,
 date_probability=0.1
 ```
-### Match rate increase: `x5.36`
