@@ -7,6 +7,7 @@ from globals import MANAGER_ENDPOINT
 import utils
 from logger import setup_logger
 import json
+import loop
 
 node_config = {
     'id': 1,

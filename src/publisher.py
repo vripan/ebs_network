@@ -8,6 +8,7 @@ from connection import EBSConnection
 from globals import MANAGER_ENDPOINT
 from generator_publication import PublicationGenerator
 from logger import setup_logger
+import loop
 
 node_config = {
     'id': 1,
@@ -75,6 +76,8 @@ class Publisher:
             await self._brokerConnection.write(publication)
             logging.info(f'log_send_publication:{publication.publication_id};{datetime.datetime.now().timestamp()};')
             await asyncio.sleep(0.1)
+        logging.info("All publications sent")
+        logging.info("Exiting")
 
 
 async def app_publisher():

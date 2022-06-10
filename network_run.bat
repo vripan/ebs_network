@@ -21,3 +21,8 @@ timeout /t 1
 @REM timeout /t 1
 
 start "Publisher#7" cmd /k py -3 src\publisher.py --id 7 --pubs 100
+@REM start "Publisher#8" cmd /k py -3 src\publisher.py --id 8 --pubs 100
+@REM start "Publisher#9" cmd /k py -3 src\publisher.py --id 9 --pubs 100
+@REM start "Publisher#10" cmd /k py -3 src\publisher.py --id 10 --pubs 100
+@REM start "Publisher#11" cmd /k py -3 src\publisher.py --id 11 --pubs 100
+@REM start "Publisher#12" cmd /k py -3 src\publisher.py --id 12 --pubs 100
