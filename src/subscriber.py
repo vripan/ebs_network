@@ -95,8 +95,8 @@ class Subscriber:
     async def _send_subscriptions(self):
         sub_generator_config = SubscriptionConfig(
             count=node_config['subs_count'],
-            company_probability=1,
-            company_equal_frequency=1,
+            company_probability=1.0,
+            company_equal_frequency=0.25,
             value_probability=1,
             drop_probability=1,
             variation_probability=0.1,
