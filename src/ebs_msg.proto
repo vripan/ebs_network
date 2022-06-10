@@ -52,6 +52,7 @@ message Condition {
 message Subscription {
   repeated Condition condition = 1;
   uint32 subscriber_id = 2;
+  uint32 subscription_id = 3;
 }
 
 message Publication {
@@ -61,8 +62,10 @@ message Publication {
   optional double variation = 4;
   optional string date = 5;
   uint32 source_id = 6;
+  uint32 publication_id = 7;
 }
 
 message Unsubscribe {
-  optional string subscription_id = 1;
+  uint32 subscriber_id = 1;
+  uint32 subscription_id = 2;
 }

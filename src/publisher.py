@@ -1,8 +1,10 @@
 import argparse
 import asyncio
+import datetime
+
 import ebs_msg_pb2
 import logging
-from connection import EBSConnection, EBSConnectionError
+from connection import EBSConnection
 from globals import MANAGER_ENDPOINT
 from generator_publication import PublicationGenerator
 from logger import setup_logger
@@ -37,6 +39,7 @@ class Publisher:
             logging.info('Connected to manager.')
 
             message_reqister = ebs_msg_pb2.RequestBroker()
+            message_reqister.id = self._ID
             await self._managerConnection.write(message_reqister)
 
             receive_brk = await self._managerConnection.read()
@@ -63,13 +66,15 @@ class Publisher:
 
             publication = self._gen.get()
             publication.source_id = self._ID
+            publication.publication_id = (self._gen.idx + 1) * 10 + self._ID
             logging.info(f'Sending publication with company = {publication.company}, ' +
                         f'value = {publication.value}, ' +
                         f'drop = {publication.drop}, ' +
                         f'variation = {publication.variation}, ' +
                         f'date = {publication.date}, ')
             await self._brokerConnection.write(publication)
-            await asyncio.sleep(0.5)
+            logging.info(f'log_send_publication:{publication.publication_id};{datetime.datetime.now().timestamp()};')
+            await asyncio.sleep(0.1)
 
 
 async def app_publisher():

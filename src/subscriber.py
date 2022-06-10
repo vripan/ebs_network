@@ -6,6 +6,7 @@ import ebs_msg_pb2
 from globals import MANAGER_ENDPOINT
 from generator_subscription import SubscriptionGenerator, SubscriptionConfig
 import utils
+import datetime
 from logger import setup_logger
 
 node_config = {
@@ -27,7 +28,9 @@ class Subscriber:
         pass
 
     async def _handle_pub(self, pub: ebs_msg_pb2.Publication):
+
         logging.info('Publication received: [{}]'.format(utils.get_str_publication(pub)))
+        logging.info(f'log_recv_publication:{pub.publication_id};{datetime.datetime.now().timestamp()};')
 
     async def _connect_to_manager(self):
         try:
@@ -67,7 +70,7 @@ class Subscriber:
             logging.info('Received broker [id={}, host={}, port={}]'.format(self._brokerData['id'], self._brokerData['host'], self._brokerData['port']))
         except:
             logging.error('Connection to manager failed!')
-            raise
+            raise Exception('Connection to manager failed!')
 
     async def _connect_to_broker(self):
         logging.info('Connecting to broker...')
@@ -105,8 +108,9 @@ class Subscriber:
             for idx in range(sub_generator_config.count):
                 sub = sub_generator.get()
                 sub.subscriber_id = self._ID
+                sub.subscription_id = (idx + 1) * 10 + self._ID
                 await self._brokerConnection.write(sub)
-                logging.info('Sent Subscription: [{}]'.format(utils.get_str_subscription(sub)))
+                logging.info('Sent Subscription: [{}] [subscription_id: {}]'.format(utils.get_str_subscription(sub), sub.subscription_id))
         except:
             logging.error('Failed sending subscriptions!')
             raise

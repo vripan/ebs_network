@@ -33,8 +33,7 @@ class EBSConnection:
             connection = EBSConnection(reader=reader, writer=writer)
             return connection
         except Exception as e:
-            print(e)
-            raise EBSConnectionError
+            raise EBSConnectionError('Connection failed!')
 
     async def write(self, data):
         try:
