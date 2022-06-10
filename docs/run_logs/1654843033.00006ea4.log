@@ -1,0 +1,19 @@
+09:37:13.831 - INFO - Logging to C:\Users\vripan\code\ebs_network\src\.run\1654843033.00006ea4.log
+09:37:13.832 - DEBUG - Using proactor: IocpProactor
+09:37:13.864 - INFO - Manager node started at localhost:8080
+09:37:13.867 - INFO - Broker connected with id: 1
+09:37:13.867 - INFO - Broker registered! [id:1, host:localhost, port:8081]
+09:37:15.390 - INFO - Broker connected with id: 2
+09:37:15.390 - INFO - Broker registered! [id:2, host:localhost, port:8082]
+09:37:17.358 - INFO - Broker connected with id: 3
+09:37:17.359 - INFO - Broker registered! [id:3, host:localhost, port:8083]
+09:37:19.340 - INFO - Subscriber connected with id: 4
+09:37:19.341 - INFO - Received request broker message from id: 4
+09:37:35.687 - INFO - Publisher connected with id: 7
+09:37:35.687 - INFO - Received request broker message from id: 7
+09:40:35.763 - INFO - Publisher with id=7 disconnected!
+10:02:15.074 - INFO - Subscriber with id=4 disconnected!
+10:02:19.120 - INFO - Broker with id=3 disconnected!
+10:02:22.425 - INFO - Broker with id=2 disconnected!
+10:02:24.604 - INFO - Broker with id=1 disconnected!
+10:02:31.469 - INFO - Exit signal triggered by user...

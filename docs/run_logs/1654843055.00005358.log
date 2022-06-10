@@ -1,0 +1,1712 @@
+09:37:35.676 - INFO - Logging to C:\Users\vripan\code\ebs_network\src\.run\1654843055.00005358.log
+09:37:35.677 - DEBUG - Using proactor: IocpProactor
+09:37:35.687 - INFO - Connected to manager.
+09:37:35.688 - INFO - Got broker.
+09:37:35.688 - INFO - Connected to broker.
+09:37:35.689 - INFO - Sending publication with company = Apple, value = 11314.77, drop = 186593.76, variation = 0.41, date = 01.02.2020, 
+09:37:35.689 - INFO - log_send_publication:27;1654843055.689899;
+09:37:35.902 - INFO - Sending publication with company = Chevron, value = 174261.68, drop = 468600.34, variation = 0.61, date = 12.10.2018, 
+09:37:35.903 - INFO - log_send_publication:37;1654843055.903647;
+09:37:36.116 - INFO - Sending publication with company = Netflix, value = 431551.82, drop = 193963.32, variation = 0.75, date = 13.10.2019, 
+09:37:36.116 - INFO - log_send_publication:47;1654843056.116614;
+09:37:36.318 - INFO - Sending publication with company = Walmart, value = 485512.94, drop = 462820.58, variation = 0.56, date = 21.08.2019, 
+09:37:36.318 - INFO - log_send_publication:57;1654843056.318553;
+09:37:36.523 - INFO - Sending publication with company = Netflix, value = 68392.86, drop = 255681.29, variation = 0.32, date = 09.02.2022, 
+09:37:36.523 - INFO - log_send_publication:67;1654843056.523801;
+09:37:36.737 - INFO - Sending publication with company = Aplhabet, value = 291032.5, drop = 237517.7, variation = 0.44, date = 01.12.2017, 
+09:37:36.737 - INFO - log_send_publication:77;1654843056.737027;
+09:37:36.951 - INFO - Sending publication with company = McKesson, value = 62028.84, drop = 78015.9, variation = 0.1, date = 05.12.2021, 
+09:37:36.951 - INFO - log_send_publication:87;1654843056.95169;
+09:37:37.166 - INFO - Sending publication with company = ExxonMobil, value = 323350.21, drop = 189893.66, variation = 0.66, date = 20.11.2018, 
+09:37:37.166 - INFO - log_send_publication:97;1654843057.166552;
+09:37:37.380 - INFO - Sending publication with company = Apple, value = 495463.18, drop = 489538.93, variation = 0.52, date = 30.07.2019, 
+09:37:37.380 - INFO - log_send_publication:107;1654843057.380673;
+09:37:37.595 - INFO - Sending publication with company = Bitdefender, value = 183347.32, drop = 202939.05, variation = 0.47, date = 03.12.2021, 
+09:37:37.595 - INFO - log_send_publication:117;1654843057.595521;
+09:37:37.810 - INFO - Sending publication with company = Microsoft, value = 112529.67, drop = 296909.23, variation = 0.44, date = 12.08.2018, 
+09:37:37.810 - INFO - log_send_publication:127;1654843057.810631;
+09:37:38.011 - INFO - Sending publication with company = ExxonMobil, value = 393335.53, drop = 91778.83, variation = 0.3, date = 23.01.2018, 
+09:37:38.011 - INFO - log_send_publication:137;1654843058.011658;
+09:37:38.226 - INFO - Sending publication with company = Bitdefender, value = 88840.16, drop = 489031.18, variation = 0.97, date = 24.06.2018, 
+09:37:38.226 - INFO - log_send_publication:147;1654843058.226534;
+09:37:38.429 - INFO - Sending publication with company = Aplhabet, value = 97554.86, drop = 103536.08, variation = 0.28, date = 19.04.2022, 
+09:37:38.429 - INFO - log_send_publication:157;1654843058.429418;
+09:37:38.632 - INFO - Sending publication with company = Aplhabet, value = 441542.95, drop = 359652.23, variation = 0.85, date = 01.07.2019, 
+09:37:38.633 - INFO - log_send_publication:167;1654843058.633005;
+09:37:38.836 - INFO - Sending publication with company = McKesson, value = 243257.42, drop = 250654.3, variation = 0.24, date = 17.04.2018, 
+09:37:38.836 - INFO - log_send_publication:177;1654843058.836771;
+09:37:39.040 - INFO - Sending publication with company = Walmart, value = 49763.06, drop = 329128.28, variation = 0.02, date = 06.11.2018, 
+09:37:39.040 - INFO - log_send_publication:187;1654843059.040625;
+09:37:39.251 - INFO - Sending publication with company = Netflix, value = 213941.26, drop = 448764.45, variation = 0.48, date = 10.06.2019, 
+09:37:39.252 - INFO - log_send_publication:197;1654843059.25231;
+09:37:39.465 - INFO - Sending publication with company = McKesson, value = 137910.56, drop = 289689.15, variation = 0.58, date = 18.08.2018, 
+09:37:39.465 - INFO - log_send_publication:207;1654843059.465224;
+09:37:39.680 - INFO - Sending publication with company = Walmart, value = 197452.78, drop = 486200.93, variation = 0.55, date = 16.02.2022, 
+09:37:39.680 - INFO - log_send_publication:217;1654843059.680347;
+09:37:39.880 - INFO - Sending publication with company = Microsoft, value = 122269.78, drop = 275527.74, variation = 0.05, date = 10.06.2021, 
+09:37:39.880 - INFO - log_send_publication:227;1654843059.880659;
+09:37:40.093 - INFO - Sending publication with company = Walmart, value = 254635.88, drop = 377990.05, variation = 0.5, date = 25.10.2019, 
+09:37:40.093 - INFO - log_send_publication:237;1654843060.093306;
+09:37:40.309 - INFO - Sending publication with company = Amazon, value = 170322.27, drop = 218059.34, variation = 0.71, date = 24.05.2021, 
+09:37:40.309 - INFO - log_send_publication:247;1654843060.309452;
+09:37:40.523 - INFO - Sending publication with company = Microsoft, value = 499385.72, drop = 438212.77, variation = 0.96, date = 06.10.2019, 
+09:37:40.523 - INFO - log_send_publication:257;1654843060.523586;
+09:37:40.738 - INFO - Sending publication with company = McKesson, value = 222377.68, drop = 209255.77, variation = 0.78, date = 02.03.2022, 
+09:37:40.738 - INFO - log_send_publication:267;1654843060.738505;
+09:37:40.939 - INFO - Sending publication with company = Netflix, value = 283883.98, drop = 455461.5, variation = 0.63, date = 21.09.2017, 
+09:37:40.939 - INFO - log_send_publication:277;1654843060.939185;
+09:37:41.154 - INFO - Sending publication with company = Chevron, value = 140966.36, drop = 130703.45, variation = 0.0, date = 03.02.2020, 
+09:37:41.154 - INFO - log_send_publication:287;1654843061.154121;
+09:37:41.355 - INFO - Sending publication with company = McKesson, value = 341052.54, drop = 284787.9, variation = 0.79, date = 02.10.2020, 
+09:37:41.355 - INFO - log_send_publication:297;1654843061.355206;
+09:37:41.569 - INFO - Sending publication with company = McKesson, value = 337583.24, drop = 213235.45, variation = 0.18, date = 30.03.2019, 
+09:37:41.569 - INFO - log_send_publication:307;1654843061.56929;
+09:37:41.782 - INFO - Sending publication with company = Walmart, value = 208590.14, drop = 272880.52, variation = 0.85, date = 04.11.2018, 
+09:37:41.782 - INFO - log_send_publication:317;1654843061.782707;
+09:37:41.984 - INFO - Sending publication with company = Netflix, value = 156145.57, drop = 51530.28, variation = 0.49, date = 27.07.2021, 
+09:37:41.984 - INFO - log_send_publication:327;1654843061.98441;
+09:37:42.186 - INFO - Sending publication with company = Amazon, value = 228883.62, drop = 157319.97, variation = 0.1, date = 29.11.2019, 
+09:37:42.186 - INFO - log_send_publication:337;1654843062.186523;
+09:37:42.400 - INFO - Sending publication with company = Netflix, value = 305303.61, drop = 363466.1, variation = 0.23, date = 02.01.2021, 
+09:37:42.400 - INFO - log_send_publication:347;1654843062.400237;
+09:37:42.601 - INFO - Sending publication with company = Microsoft, value = 493198.14, drop = 80933.96, variation = 0.47, date = 31.10.2019, 
+09:37:42.601 - INFO - log_send_publication:357;1654843062.601318;
+09:37:42.803 - INFO - Sending publication with company = Bitdefender, value = 424654.34, drop = 85992.72, variation = 0.27, date = 25.06.2019, 
+09:37:42.803 - INFO - log_send_publication:367;1654843062.803671;
+09:37:43.006 - INFO - Sending publication with company = Apple, value = 214166.47, drop = 129962.93, variation = 0.8, date = 09.05.2018, 
+09:37:43.006 - INFO - log_send_publication:377;1654843063.006557;
+09:37:43.220 - INFO - Sending publication with company = ExxonMobil, value = 151700.49, drop = 403353.99, variation = 0.24, date = 28.07.2017, 
+09:37:43.220 - INFO - log_send_publication:387;1654843063.220633;
+09:37:43.434 - INFO - Sending publication with company = McKesson, value = 435680.15, drop = 481472.76, variation = 0.61, date = 03.04.2021, 
+09:37:43.435 - INFO - log_send_publication:397;1654843063.435632;
+09:37:43.649 - INFO - Sending publication with company = Apple, value = 484071.34, drop = 274778.52, variation = 0.32, date = 21.02.2018, 
+09:37:43.650 - INFO - log_send_publication:407;1654843063.65019;
+09:37:43.864 - INFO - Sending publication with company = Netflix, value = 221858.52, drop = 432836.64, variation = 0.56, date = 11.12.2018, 
+09:37:43.864 - INFO - log_send_publication:417;1654843063.864986;
+09:37:44.080 - INFO - Sending publication with company = Apple, value = 337122.99, drop = 190841.12, variation = 0.55, date = 22.03.2021, 
+09:37:44.081 - INFO - log_send_publication:427;1654843064.081464;
+09:37:44.295 - INFO - Sending publication with company = Microsoft, value = 452707.01, drop = 299652.57, variation = 0.75, date = 15.10.2019, 
+09:37:44.295 - INFO - log_send_publication:437;1654843064.295536;
+09:37:44.508 - INFO - Sending publication with company = Walmart, value = 156770.31, drop = 295936.07, variation = 0.87, date = 05.02.2018, 
+09:37:44.508 - INFO - log_send_publication:447;1654843064.508516;
+09:37:44.721 - INFO - Sending publication with company = Apple, value = 131470.47, drop = 184266.32, variation = 0.74, date = 02.02.2021, 
+09:37:44.721 - INFO - log_send_publication:457;1654843064.721551;
+09:37:44.923 - INFO - Sending publication with company = McKesson, value = 56280.85, drop = 114675.56, variation = 0.43, date = 16.12.2017, 
+09:37:44.923 - INFO - log_send_publication:467;1654843064.923241;
+09:37:45.135 - INFO - Sending publication with company = Microsoft, value = 271969.7, drop = 438151.22, variation = 0.81, date = 07.05.2022, 
+09:37:45.135 - INFO - log_send_publication:477;1654843065.135338;
+09:37:45.349 - INFO - Sending publication with company = Aplhabet, value = 447252.83, drop = 480242.69, variation = 0.18, date = 22.05.2021, 
+09:37:45.349 - INFO - log_send_publication:487;1654843065.34954;
+09:37:45.564 - INFO - Sending publication with company = Apple, value = 107178.78, drop = 209918.11, variation = 0.68, date = 30.12.2021, 
+09:37:45.564 - INFO - log_send_publication:497;1654843065.564669;
+09:37:45.765 - INFO - Sending publication with company = Chevron, value = 200365.77, drop = 103944.11, variation = 0.2, date = 09.07.2019, 
+09:37:45.765 - INFO - log_send_publication:507;1654843065.765564;
+09:37:45.978 - INFO - Sending publication with company = Chevron, value = 295808.21, drop = 218637.48, variation = 0.88, date = 29.11.2019, 
+09:37:45.978 - INFO - log_send_publication:517;1654843065.978999;
+09:37:46.192 - INFO - Sending publication with company = Apple, value = 110389.62, drop = 42502.17, variation = 0.33, date = 10.03.2019, 
+09:37:46.192 - INFO - log_send_publication:527;1654843066.192392;
+09:37:46.399 - INFO - Sending publication with company = McKesson, value = 90250.39, drop = 89015.98, variation = 0.86, date = 18.03.2021, 
+09:37:46.399 - INFO - log_send_publication:537;1654843066.399594;
+09:37:46.599 - INFO - Sending publication with company = Bitdefender, value = 435478.09, drop = 119643.29, variation = 0.24, date = 29.04.2022, 
+09:37:46.599 - INFO - log_send_publication:547;1654843066.599787;
+09:37:46.815 - INFO - Sending publication with company = Microsoft, value = 48382.77, drop = 218277.84, variation = 0.95, date = 22.08.2017, 
+09:37:46.815 - INFO - log_send_publication:557;1654843066.815832;
+09:37:47.016 - INFO - Sending publication with company = Apple, value = 389008.68, drop = 245169.95, variation = 0.32, date = 30.05.2019, 
+09:37:47.016 - INFO - log_send_publication:567;1654843067.016801;
+09:37:47.230 - INFO - Sending publication with company = Walmart, value = 311218.19, drop = 441210.81, variation = 0.92, date = 01.11.2019, 
+09:37:47.230 - INFO - log_send_publication:577;1654843067.230325;
+09:37:47.446 - INFO - Sending publication with company = Amazon, value = 228698.82, drop = 335902.26, variation = 0.17, date = 05.01.2021, 
+09:37:47.446 - INFO - log_send_publication:587;1654843067.446142;
+09:37:47.646 - INFO - Sending publication with company = Microsoft, value = 440658.89, drop = 316715.93, variation = 0.98, date = 14.01.2022, 
+09:37:47.646 - INFO - log_send_publication:597;1654843067.64629;
+09:37:47.862 - INFO - Sending publication with company = Bitdefender, value = 471481.94, drop = 156163.16, variation = 0.76, date = 19.08.2017, 
+09:37:47.862 - INFO - log_send_publication:607;1654843067.862365;
+09:37:48.076 - INFO - Sending publication with company = ExxonMobil, value = 121920.95, drop = 340543.03, variation = 0.47, date = 17.04.2018, 
+09:37:48.076 - INFO - log_send_publication:617;1654843068.076055;
+09:37:48.281 - INFO - Sending publication with company = Walmart, value = 149508.01, drop = 349629.41, variation = 0.18, date = 14.08.2018, 
+09:37:48.281 - INFO - log_send_publication:627;1654843068.281472;
+09:37:48.482 - INFO - Sending publication with company = Chevron, value = 254123.93, drop = 173558.96, variation = 0.3, date = 19.03.2022, 
+09:37:48.482 - INFO - log_send_publication:637;1654843068.482975;
+09:37:48.687 - INFO - Sending publication with company = Chevron, value = 446198.82, drop = 295063.5, variation = 0.34, date = 07.04.2019, 
+09:37:48.687 - INFO - log_send_publication:647;1654843068.687669;
+09:37:48.888 - INFO - Sending publication with company = Amazon, value = 263693.05, drop = 269386.12, variation = 0.66, date = 30.11.2020, 
+09:37:48.888 - INFO - log_send_publication:657;1654843068.888458;
+09:37:49.103 - INFO - Sending publication with company = McKesson, value = 87436.34, drop = 156689.14, variation = 0.81, date = 11.05.2020, 
+09:37:49.103 - INFO - log_send_publication:667;1654843069.103337;
+09:37:49.317 - INFO - Sending publication with company = Microsoft, value = 377751.26, drop = 470809.2, variation = 0.2, date = 10.02.2018, 
+09:37:49.317 - INFO - log_send_publication:677;1654843069.317122;
+09:37:49.530 - INFO - Sending publication with company = Netflix, value = 370852.85, drop = 190762.82, variation = 0.66, date = 13.12.2021, 
+09:37:49.530 - INFO - log_send_publication:687;1654843069.530623;
+09:37:49.731 - INFO - Sending publication with company = Microsoft, value = 348246.76, drop = 132890.82, variation = 0.95, date = 09.05.2019, 
+09:37:49.731 - INFO - log_send_publication:697;1654843069.731965;
+09:37:49.945 - INFO - Sending publication with company = Chevron, value = 173348.05, drop = 92219.22, variation = 0.3, date = 24.12.2021, 
+09:37:49.946 - INFO - log_send_publication:707;1654843069.946762;
+09:37:50.159 - INFO - Sending publication with company = Walmart, value = 13490.6, drop = 395384.83, variation = 0.41, date = 05.01.2020, 
+09:37:50.159 - INFO - log_send_publication:717;1654843070.159802;
+09:37:50.373 - INFO - Sending publication with company = Aplhabet, value = 273969.73, drop = 252205.95, variation = 0.36, date = 03.05.2021, 
+09:37:50.373 - INFO - log_send_publication:727;1654843070.373743;
+09:37:50.587 - INFO - Sending publication with company = Amazon, value = 378741.84, drop = 305254.84, variation = 0.94, date = 03.04.2020, 
+09:37:50.587 - INFO - log_send_publication:737;1654843070.587887;
+09:37:50.803 - INFO - Sending publication with company = McKesson, value = 414345.49, drop = 225151.32, variation = 0.73, date = 04.10.2019, 
+09:37:50.803 - INFO - log_send_publication:747;1654843070.803264;
+09:37:51.018 - INFO - Sending publication with company = Amazon, value = 43199.08, drop = 406460.24, variation = 0.65, date = 15.07.2020, 
+09:37:51.018 - INFO - log_send_publication:757;1654843071.018291;
+09:37:51.231 - INFO - Sending publication with company = Apple, value = 48979.69, drop = 266426.79, variation = 0.95, date = 01.01.2018, 
+09:37:51.231 - INFO - log_send_publication:767;1654843071.231711;
+09:37:51.446 - INFO - Sending publication with company = McKesson, value = 83884.68, drop = 493343.22, variation = 0.02, date = 25.09.2019, 
+09:37:51.446 - INFO - log_send_publication:777;1654843071.446321;
+09:37:51.660 - INFO - Sending publication with company = Walmart, value = 338777.22, drop = 242912.27, variation = 0.18, date = 17.02.2022, 
+09:37:51.660 - INFO - log_send_publication:787;1654843071.660759;
+09:37:51.874 - INFO - Sending publication with company = Microsoft, value = 365671.07, drop = 486806.88, variation = 0.31, date = 01.09.2017, 
+09:37:51.875 - INFO - log_send_publication:797;1654843071.87527;
+09:37:52.075 - INFO - Sending publication with company = Aplhabet, value = 306120.4, drop = 176110.1, variation = 0.11, date = 11.03.2021, 
+09:37:52.075 - INFO - log_send_publication:807;1654843072.075348;
+09:37:52.290 - INFO - Sending publication with company = McKesson, value = 120508.83, drop = 11206.38, variation = 0.63, date = 20.07.2018, 
+09:37:52.290 - INFO - log_send_publication:817;1654843072.290303;
+09:37:52.505 - INFO - Sending publication with company = Bitdefender, value = 346879.25, drop = 294696.79, variation = 0.87, date = 15.08.2018, 
+09:37:52.505 - INFO - log_send_publication:827;1654843072.505106;
+09:37:52.718 - INFO - Sending publication with company = ExxonMobil, value = 8788.78, drop = 121518.9, variation = 0.86, date = 26.03.2020, 
+09:37:52.718 - INFO - log_send_publication:837;1654843072.718692;
+09:37:52.932 - INFO - Sending publication with company = Apple, value = 84736.67, drop = 390753.72, variation = 0.2, date = 30.10.2017, 
+09:37:52.932 - INFO - log_send_publication:847;1654843072.932554;
+09:37:53.147 - INFO - Sending publication with company = Netflix, value = 174161.93, drop = 360889.31, variation = 0.98, date = 21.03.2019, 
+09:37:53.147 - INFO - log_send_publication:857;1654843073.147488;
+09:37:53.361 - INFO - Sending publication with company = Microsoft, value = 292869.95, drop = 13638.23, variation = 0.18, date = 22.06.2018, 
+09:37:53.361 - INFO - log_send_publication:867;1654843073.361436;
+09:37:53.575 - INFO - Sending publication with company = Bitdefender, value = 277550.29, drop = 151834.75, variation = 0.38, date = 11.07.2018, 
+09:37:53.575 - INFO - log_send_publication:877;1654843073.575245;
+09:37:53.781 - INFO - Sending publication with company = Netflix, value = 271444.99, drop = 375380.45, variation = 0.03, date = 17.05.2018, 
+09:37:53.782 - INFO - log_send_publication:887;1654843073.782684;
+09:37:53.995 - INFO - Sending publication with company = Walmart, value = 153289.17, drop = 3179.93, variation = 0.92, date = 22.02.2018, 
+09:37:53.995 - INFO - log_send_publication:897;1654843073.995988;
+09:37:54.211 - INFO - Sending publication with company = Apple, value = 79159.95, drop = 74049.06, variation = 0.75, date = 27.09.2018, 
+09:37:54.211 - INFO - log_send_publication:907;1654843074.211438;
+09:37:54.412 - INFO - Sending publication with company = Chevron, value = 348813.57, drop = 380743.37, variation = 0.99, date = 15.05.2018, 
+09:37:54.412 - INFO - log_send_publication:917;1654843074.412818;
+09:37:54.627 - INFO - Sending publication with company = Apple, value = 264850.16, drop = 402327.79, variation = 0.79, date = 07.12.2017, 
+09:37:54.627 - INFO - log_send_publication:927;1654843074.627698;
+09:37:54.841 - INFO - Sending publication with company = Apple, value = 388712.15, drop = 46038.88, variation = 0.02, date = 08.07.2020, 
+09:37:54.841 - INFO - log_send_publication:937;1654843074.8414;
+09:37:55.054 - INFO - Sending publication with company = Aplhabet, value = 275383.69, drop = 471385.47, variation = 0.22, date = 26.03.2022, 
+09:37:55.054 - INFO - log_send_publication:947;1654843075.054804;
+09:37:55.268 - INFO - Sending publication with company = Aplhabet, value = 291417.17, drop = 367391.34, variation = 0.22, date = 25.12.2017, 
+09:37:55.268 - INFO - log_send_publication:957;1654843075.26854;
+09:37:55.482 - INFO - Sending publication with company = ExxonMobil, value = 357967.7, drop = 35487.56, variation = 0.43, date = 23.06.2021, 
+09:37:55.482 - INFO - log_send_publication:967;1654843075.482899;
+09:37:55.697 - INFO - Sending publication with company = Microsoft, value = 381016.27, drop = 444823.0, variation = 0.24, date = 23.02.2020, 
+09:37:55.697 - INFO - log_send_publication:977;1654843075.697512;
+09:37:55.912 - INFO - Sending publication with company = Microsoft, value = 106678.19, drop = 186017.0, variation = 0.99, date = 28.06.2020, 
+09:37:55.912 - INFO - log_send_publication:987;1654843075.912876;
+09:37:56.115 - INFO - Sending publication with company = Aplhabet, value = 366784.7, drop = 67197.77, variation = 0.66, date = 27.11.2020, 
+09:37:56.116 - INFO - log_send_publication:997;1654843076.116445;
+09:37:56.315 - INFO - Sending publication with company = Walmart, value = 364935.44, drop = 348766.79, variation = 0.43, date = 08.01.2022, 
+09:37:56.315 - INFO - log_send_publication:1007;1654843076.315291;
+09:37:56.516 - INFO - Sending publication with company = Amazon, value = 458534.11, drop = 291499.56, variation = 0.11, date = 14.09.2020, 
+09:37:56.516 - INFO - log_send_publication:1017;1654843076.516586;
+09:37:56.732 - INFO - Sending publication with company = Aplhabet, value = 433022.27, drop = 429596.94, variation = 0.58, date = 09.08.2017, 
+09:37:56.732 - INFO - log_send_publication:1027;1654843076.73224;
+09:37:56.946 - INFO - Sending publication with company = ExxonMobil, value = 27827.81, drop = 385902.42, variation = 0.28, date = 06.07.2018, 
+09:37:56.946 - INFO - log_send_publication:1037;1654843076.946349;
+09:37:57.159 - INFO - Sending publication with company = McKesson, value = 495167.29, drop = 421730.5, variation = 0.79, date = 13.03.2019, 
+09:37:57.159 - INFO - log_send_publication:1047;1654843077.159316;
+09:37:57.373 - INFO - Sending publication with company = Aplhabet, value = 473807.31, drop = 235570.13, variation = 0.35, date = 11.12.2021, 
+09:37:57.373 - INFO - log_send_publication:1057;1654843077.373069;
+09:37:57.573 - INFO - Sending publication with company = ExxonMobil, value = 90564.23, drop = 234968.96, variation = 0.09, date = 19.04.2020, 
+09:37:57.573 - INFO - log_send_publication:1067;1654843077.573224;
+09:37:57.775 - INFO - Sending publication with company = McKesson, value = 292567.5, drop = 29529.59, variation = 0.67, date = 19.08.2020, 
+09:37:57.776 - INFO - log_send_publication:1077;1654843077.776655;
+09:37:57.989 - INFO - Sending publication with company = Amazon, value = 13091.19, drop = 247008.3, variation = 0.15, date = 26.08.2018, 
+09:37:57.989 - INFO - log_send_publication:1087;1654843077.98975;
+09:37:58.202 - INFO - Sending publication with company = Bitdefender, value = 34223.69, drop = 217862.28, variation = 0.86, date = 30.03.2022, 
+09:37:58.202 - INFO - log_send_publication:1097;1654843078.202975;
+09:37:58.415 - INFO - Sending publication with company = Bitdefender, value = 352148.75, drop = 189770.77, variation = 0.25, date = 23.06.2019, 
+09:37:58.415 - INFO - log_send_publication:1107;1654843078.415871;
+09:37:58.619 - INFO - Sending publication with company = Apple, value = 209123.29, drop = 107040.45, variation = 0.54, date = 29.11.2017, 
+09:37:58.619 - INFO - log_send_publication:1117;1654843078.619527;
+09:37:58.833 - INFO - Sending publication with company = Walmart, value = 103872.44, drop = 236465.12, variation = 0.69, date = 24.06.2017, 
+09:37:58.833 - INFO - log_send_publication:1127;1654843078.83353;
+09:37:59.049 - INFO - Sending publication with company = Aplhabet, value = 243922.95, drop = 362767.16, variation = 0.39, date = 20.01.2019, 
+09:37:59.049 - INFO - log_send_publication:1137;1654843079.049411;
+09:37:59.264 - INFO - Sending publication with company = Bitdefender, value = 447037.47, drop = 35888.2, variation = 0.3, date = 01.12.2021, 
+09:37:59.264 - INFO - log_send_publication:1147;1654843079.264126;
+09:37:59.477 - INFO - Sending publication with company = Chevron, value = 67946.68, drop = 281218.65, variation = 0.18, date = 16.10.2021, 
+09:37:59.478 - INFO - log_send_publication:1157;1654843079.478215;
+09:37:59.692 - INFO - Sending publication with company = Walmart, value = 154389.23, drop = 91449.73, variation = 0.15, date = 13.04.2021, 
+09:37:59.692 - INFO - log_send_publication:1167;1654843079.692205;
+09:37:59.892 - INFO - Sending publication with company = Bitdefender, value = 356673.79, drop = 67683.06, variation = 0.26, date = 02.10.2019, 
+09:37:59.892 - INFO - log_send_publication:1177;1654843079.892386;
+09:38:00.105 - INFO - Sending publication with company = ExxonMobil, value = 159508.38, drop = 211210.14, variation = 0.62, date = 14.04.2018, 
+09:38:00.105 - INFO - log_send_publication:1187;1654843080.105749;
+09:38:00.306 - INFO - Sending publication with company = Amazon, value = 384798.09, drop = 118888.9, variation = 0.71, date = 10.06.2017, 
+09:38:00.306 - INFO - log_send_publication:1197;1654843080.30691;
+09:38:00.521 - INFO - Sending publication with company = Aplhabet, value = 14472.94, drop = 288849.43, variation = 0.49, date = 19.03.2021, 
+09:38:00.521 - INFO - log_send_publication:1207;1654843080.521909;
+09:38:00.723 - INFO - Sending publication with company = McKesson, value = 276926.88, drop = 412409.15, variation = 0.28, date = 30.06.2017, 
+09:38:00.723 - INFO - log_send_publication:1217;1654843080.723009;
+09:38:00.936 - INFO - Sending publication with company = Amazon, value = 346183.72, drop = 151991.64, variation = 0.43, date = 27.09.2017, 
+09:38:00.936 - INFO - log_send_publication:1227;1654843080.936714;
+09:38:01.151 - INFO - Sending publication with company = Chevron, value = 125994.68, drop = 371583.23, variation = 0.53, date = 10.06.2019, 
+09:38:01.151 - INFO - log_send_publication:1237;1654843081.151557;
+09:38:01.365 - INFO - Sending publication with company = ExxonMobil, value = 364934.55, drop = 346469.14, variation = 0.89, date = 26.07.2020, 
+09:38:01.365 - INFO - log_send_publication:1247;1654843081.365695;
+09:38:01.579 - INFO - Sending publication with company = Chevron, value = 423852.61, drop = 163578.63, variation = 0.71, date = 17.08.2017, 
+09:38:01.579 - INFO - log_send_publication:1257;1654843081.579601;
+09:38:01.794 - INFO - Sending publication with company = ExxonMobil, value = 303505.85, drop = 240294.95, variation = 0.6, date = 13.10.2019, 
+09:38:01.794 - INFO - log_send_publication:1267;1654843081.794726;
+09:38:02.008 - INFO - Sending publication with company = Netflix, value = 155304.31, drop = 194744.78, variation = 0.88, date = 01.04.2018, 
+09:38:02.008 - INFO - log_send_publication:1277;1654843082.008445;
+09:38:02.209 - INFO - Sending publication with company = Bitdefender, value = 470642.84, drop = 470422.91, variation = 0.7, date = 22.03.2020, 
+09:38:02.209 - INFO - log_send_publication:1287;1654843082.209256;
+09:38:02.422 - INFO - Sending publication with company = Apple, value = 175155.11, drop = 166516.87, variation = 0.22, date = 20.12.2018, 
+09:38:02.422 - INFO - log_send_publication:1297;1654843082.422866;
+09:38:02.625 - INFO - Sending publication with company = Bitdefender, value = 214654.92, drop = 352347.95, variation = 0.7, date = 13.08.2020, 
+09:38:02.625 - INFO - log_send_publication:1307;1654843082.62522;
+09:38:02.838 - INFO - Sending publication with company = Amazon, value = 1626.31, drop = 438721.16, variation = 0.56, date = 18.12.2019, 
+09:38:02.838 - INFO - log_send_publication:1317;1654843082.8382;
+09:38:03.053 - INFO - Sending publication with company = Walmart, value = 116013.09, drop = 14729.18, variation = 0.92, date = 01.05.2018, 
+09:38:03.053 - INFO - log_send_publication:1327;1654843083.053476;
+09:38:03.267 - INFO - Sending publication with company = Walmart, value = 348202.67, drop = 319920.88, variation = 0.98, date = 10.12.2017, 
+09:38:03.267 - INFO - log_send_publication:1337;1654843083.267999;
+09:38:03.481 - INFO - Sending publication with company = ExxonMobil, value = 118733.69, drop = 63772.78, variation = 0.76, date = 19.07.2021, 
+09:38:03.481 - INFO - log_send_publication:1347;1654843083.481386;
+09:38:03.696 - INFO - Sending publication with company = Chevron, value = 74708.34, drop = 292979.47, variation = 0.83, date = 29.02.2020, 
+09:38:03.696 - INFO - log_send_publication:1357;1654843083.69655;
+09:38:03.910 - INFO - Sending publication with company = Amazon, value = 14412.29, drop = 374981.59, variation = 0.53, date = 27.06.2021, 
+09:38:03.910 - INFO - log_send_publication:1367;1654843083.910838;
+09:38:04.125 - INFO - Sending publication with company = Aplhabet, value = 34975.92, drop = 217703.06, variation = 0.91, date = 21.09.2019, 
+09:38:04.126 - INFO - log_send_publication:1377;1654843084.126198;
+09:38:04.325 - INFO - Sending publication with company = Aplhabet, value = 360714.37, drop = 162607.66, variation = 0.99, date = 20.04.2018, 
+09:38:04.325 - INFO - log_send_publication:1387;1654843084.325478;
+09:38:04.540 - INFO - Sending publication with company = Microsoft, value = 364499.98, drop = 41398.39, variation = 0.1, date = 27.07.2021, 
+09:38:04.540 - INFO - log_send_publication:1397;1654843084.540177;
+09:38:04.755 - INFO - Sending publication with company = McKesson, value = 124566.55, drop = 20929.05, variation = 0.01, date = 06.07.2020, 
+09:38:04.755 - INFO - log_send_publication:1407;1654843084.755097;
+09:38:04.964 - INFO - Sending publication with company = McKesson, value = 182089.16, drop = 112823.06, variation = 0.58, date = 20.06.2017, 
+09:38:04.964 - INFO - log_send_publication:1417;1654843084.964579;
+09:38:05.179 - INFO - Sending publication with company = Microsoft, value = 284885.28, drop = 158342.34, variation = 0.16, date = 22.02.2019, 
+09:38:06.245 - INFO - log_send_publication:1427;1654843086.24523;
+09:38:06.275 - INFO - Sending publication with company = Netflix, value = 202581.93, drop = 116654.38, variation = 0.83, date = 17.10.2019, 
+09:38:06.287 - INFO - log_send_publication:1437;1654843086.28786;
+09:38:06.490 - INFO - Sending publication with company = Netflix, value = 31571.3, drop = 167721.38, variation = 0.37, date = 24.12.2021, 
+09:38:06.491 - INFO - log_send_publication:1447;1654843086.491382;
+09:38:06.692 - INFO - Sending publication with company = Apple, value = 346442.94, drop = 100185.56, variation = 0.01, date = 16.07.2021, 
+09:38:06.693 - INFO - log_send_publication:1457;1654843086.692677;
+09:38:06.894 - INFO - Sending publication with company = Walmart, value = 381866.31, drop = 237023.68, variation = 0.93, date = 29.01.2020, 
+09:38:06.894 - INFO - log_send_publication:1467;1654843086.894698;
+09:38:07.096 - INFO - Sending publication with company = Microsoft, value = 106153.86, drop = 416090.09, variation = 0.72, date = 27.08.2017, 
+09:38:07.096 - INFO - log_send_publication:1477;1654843087.096597;
+09:38:07.300 - INFO - Sending publication with company = Amazon, value = 276504.61, drop = 63353.33, variation = 0.28, date = 11.02.2020, 
+09:38:07.300 - INFO - log_send_publication:1487;1654843087.300092;
+09:38:07.505 - INFO - Sending publication with company = Bitdefender, value = 82187.63, drop = 114623.55, variation = 0.57, date = 25.01.2022, 
+09:38:07.505 - INFO - log_send_publication:1497;1654843087.505093;
+09:38:07.720 - INFO - Sending publication with company = Bitdefender, value = 141043.15, drop = 232831.42, variation = 0.18, date = 23.06.2018, 
+09:38:07.720 - INFO - log_send_publication:1507;1654843087.720452;
+09:38:07.936 - INFO - Sending publication with company = Walmart, value = 130999.93, drop = 219429.25, variation = 0.91, date = 17.06.2019, 
+09:38:07.937 - INFO - log_send_publication:1517;1654843087.936446;
+09:38:08.150 - INFO - Sending publication with company = Amazon, value = 286499.85, drop = 456205.82, variation = 0.36, date = 20.03.2021, 
+09:38:08.150 - INFO - log_send_publication:1527;1654843088.150329;
+09:38:08.364 - INFO - Sending publication with company = Aplhabet, value = 304030.51, drop = 68390.25, variation = 0.25, date = 03.06.2022, 
+09:38:08.364 - INFO - log_send_publication:1537;1654843088.364969;
+09:38:08.566 - INFO - Sending publication with company = Chevron, value = 424214.66, drop = 443797.85, variation = 0.1, date = 02.09.2019, 
+09:38:08.566 - INFO - log_send_publication:1547;1654843088.566452;
+09:38:08.769 - INFO - Sending publication with company = ExxonMobil, value = 239567.97, drop = 185889.43, variation = 0.45, date = 27.01.2018, 
+09:38:08.770 - INFO - log_send_publication:1557;1654843088.770277;
+09:38:08.984 - INFO - Sending publication with company = Microsoft, value = 134427.5, drop = 94611.31, variation = 0.53, date = 05.07.2020, 
+09:38:08.984 - INFO - log_send_publication:1567;1654843088.984019;
+09:38:09.199 - INFO - Sending publication with company = McKesson, value = 23329.27, drop = 483829.54, variation = 0.01, date = 16.12.2017, 
+09:38:09.199 - INFO - log_send_publication:1577;1654843089.199105;
+09:38:09.409 - INFO - Sending publication with company = Chevron, value = 253901.05, drop = 238948.33, variation = 0.48, date = 08.04.2022, 
+09:38:09.409 - INFO - log_send_publication:1587;1654843089.409176;
+09:38:09.609 - INFO - Sending publication with company = Aplhabet, value = 250294.95, drop = 297473.29, variation = 0.86, date = 01.07.2017, 
+09:38:09.609 - INFO - log_send_publication:1597;1654843089.609479;
+09:38:09.814 - INFO - Sending publication with company = Apple, value = 295727.27, drop = 97995.27, variation = 0.35, date = 24.01.2022, 
+09:38:09.814 - INFO - log_send_publication:1607;1654843089.814851;
+09:38:10.016 - INFO - Sending publication with company = McKesson, value = 108386.69, drop = 271065.12, variation = 0.92, date = 31.12.2018, 
+09:38:10.016 - INFO - log_send_publication:1617;1654843090.016597;
+09:38:10.230 - INFO - Sending publication with company = Amazon, value = 394671.45, drop = 367403.04, variation = 0.03, date = 22.04.2020, 
+09:38:10.230 - INFO - log_send_publication:1627;1654843090.230552;
+09:38:10.445 - INFO - Sending publication with company = Netflix, value = 368415.59, drop = 331526.95, variation = 0.05, date = 14.07.2021, 
+09:38:10.445 - INFO - log_send_publication:1637;1654843090.445509;
+09:38:10.658 - INFO - Sending publication with company = Chevron, value = 72529.37, drop = 312759.47, variation = 0.74, date = 02.09.2020, 
+09:38:10.658 - INFO - log_send_publication:1647;1654843090.658279;
+09:38:10.872 - INFO - Sending publication with company = Bitdefender, value = 280797.41, drop = 499726.32, variation = 0.78, date = 10.08.2017, 
+09:38:10.872 - INFO - log_send_publication:1657;1654843090.872146;
+09:38:11.073 - INFO - Sending publication with company = Walmart, value = 47511.46, drop = 274032.14, variation = 0.6, date = 05.10.2018, 
+09:38:11.073 - INFO - log_send_publication:1667;1654843091.073465;
+09:38:11.289 - INFO - Sending publication with company = Aplhabet, value = 181862.11, drop = 339290.42, variation = 0.2, date = 22.12.2019, 
+09:38:11.518 - INFO - log_send_publication:1677;1654843091.518729;
+09:38:11.520 - INFO - Sending publication with company = Amazon, value = 304932.48, drop = 438446.58, variation = 0.12, date = 20.01.2022, 
+09:38:11.521 - INFO - log_send_publication:1687;1654843091.521081;
+09:38:11.728 - INFO - Sending publication with company = Walmart, value = 256719.41, drop = 481178.96, variation = 0.87, date = 07.10.2021, 
+09:38:11.728 - INFO - log_send_publication:1697;1654843091.728382;
+09:38:11.933 - INFO - Sending publication with company = Bitdefender, value = 16619.32, drop = 348389.11, variation = 0.75, date = 20.12.2018, 
+09:38:11.933 - INFO - log_send_publication:1707;1654843091.933108;
+09:38:12.137 - INFO - Sending publication with company = Bitdefender, value = 389437.72, drop = 491524.81, variation = 0.87, date = 27.10.2020, 
+09:38:12.137 - INFO - log_send_publication:1717;1654843092.137177;
+09:38:12.339 - INFO - Sending publication with company = Netflix, value = 254297.94, drop = 126519.55, variation = 0.32, date = 19.11.2021, 
+09:38:12.570 - INFO - log_send_publication:1727;1654843092.570889;
+09:38:12.571 - INFO - Sending publication with company = Chevron, value = 480451.76, drop = 5802.86, variation = 0.19, date = 28.08.2019, 
+09:38:12.572 - INFO - log_send_publication:1737;1654843092.572872;
+09:38:12.774 - INFO - Sending publication with company = Walmart, value = 16762.02, drop = 125955.39, variation = 0.51, date = 11.03.2020, 
+09:38:12.774 - INFO - log_send_publication:1747;1654843092.77431;
+09:38:12.988 - INFO - Sending publication with company = Apple, value = 100408.33, drop = 291682.81, variation = 0.0, date = 22.03.2020, 
+09:38:12.988 - INFO - log_send_publication:1757;1654843092.988397;
+09:38:13.203 - INFO - Sending publication with company = McKesson, value = 46410.73, drop = 251774.91, variation = 0.5, date = 09.12.2021, 
+09:38:13.204 - INFO - log_send_publication:1767;1654843093.204243;
+09:38:13.416 - INFO - Sending publication with company = Apple, value = 188853.99, drop = 251237.55, variation = 0.78, date = 30.06.2017, 
+09:38:13.618 - INFO - log_send_publication:1777;1654843093.61816;
+09:38:13.618 - INFO - Sending publication with company = ExxonMobil, value = 99686.93, drop = 252792.92, variation = 0.94, date = 08.01.2021, 
+09:38:13.618 - INFO - log_send_publication:1787;1654843093.61816;
+09:38:13.819 - INFO - Sending publication with company = Apple, value = 304237.79, drop = 89646.17, variation = 0.11, date = 02.03.2022, 
+09:38:13.819 - INFO - log_send_publication:1797;1654843093.819541;
+09:38:14.032 - INFO - Sending publication with company = McKesson, value = 128630.47, drop = 24727.64, variation = 0.31, date = 13.01.2019, 
+09:38:14.032 - INFO - log_send_publication:1807;1654843094.03272;
+09:38:14.245 - INFO - Sending publication with company = Apple, value = 97520.11, drop = 160888.15, variation = 0.37, date = 09.05.2018, 
+09:38:14.245 - INFO - log_send_publication:1817;1654843094.245394;
+09:38:14.460 - INFO - Sending publication with company = Apple, value = 88816.76, drop = 379402.87, variation = 0.79, date = 26.10.2017, 
+09:38:14.656 - INFO - log_send_publication:1827;1654843094.65692;
+09:38:14.657 - INFO - Sending publication with company = Aplhabet, value = 380960.96, drop = 136315.34, variation = 0.96, date = 28.03.2021, 
+09:38:14.657 - INFO - log_send_publication:1837;1654843094.657926;
+09:38:14.864 - INFO - Sending publication with company = Amazon, value = 220946.5, drop = 173452.68, variation = 0.74, date = 29.05.2018, 
+09:38:14.864 - INFO - log_send_publication:1847;1654843094.864682;
+09:38:15.068 - INFO - Sending publication with company = Chevron, value = 110795.14, drop = 107039.49, variation = 0.71, date = 24.04.2018, 
+09:38:15.068 - INFO - log_send_publication:1857;1654843095.068072;
+09:38:15.270 - INFO - Sending publication with company = Chevron, value = 122938.61, drop = 488593.8, variation = 0.31, date = 09.12.2018, 
+09:38:15.271 - INFO - log_send_publication:1867;1654843095.271554;
+09:38:15.474 - INFO - Sending publication with company = Walmart, value = 265800.57, drop = 140985.27, variation = 0.44, date = 21.01.2021, 
+09:38:15.693 - INFO - log_send_publication:1877;1654843095.693805;
+09:38:15.693 - INFO - Sending publication with company = Aplhabet, value = 382783.21, drop = 451750.12, variation = 0.35, date = 03.01.2021, 
+09:38:15.694 - INFO - log_send_publication:1887;1654843095.694805;
+09:38:15.900 - INFO - Sending publication with company = Netflix, value = 343852.21, drop = 463641.7, variation = 0.85, date = 16.11.2017, 
+09:38:15.900 - INFO - log_send_publication:1897;1654843095.900525;
+09:38:16.102 - INFO - Sending publication with company = Microsoft, value = 148840.73, drop = 40345.01, variation = 0.76, date = 25.11.2020, 
+09:38:16.102 - INFO - log_send_publication:1907;1654843096.102151;
+09:38:16.304 - INFO - Sending publication with company = McKesson, value = 431625.29, drop = 192101.79, variation = 0.54, date = 29.06.2020, 
+09:38:16.304 - INFO - log_send_publication:1917;1654843096.304666;
+09:38:16.506 - INFO - Sending publication with company = Apple, value = 355201.06, drop = 28445.79, variation = 0.31, date = 21.03.2019, 
+09:38:16.507 - INFO - log_send_publication:1927;1654843096.507514;
+09:38:16.708 - INFO - Sending publication with company = Netflix, value = 491290.71, drop = 125545.41, variation = 0.06, date = 17.01.2021, 
+09:38:16.708 - INFO - log_send_publication:1937;1654843096.708544;
+09:38:16.910 - INFO - Sending publication with company = Chevron, value = 271350.94, drop = 52850.45, variation = 0.71, date = 25.02.2019, 
+09:38:16.911 - INFO - log_send_publication:1947;1654843096.911365;
+09:38:17.126 - INFO - Sending publication with company = McKesson, value = 490002.93, drop = 346938.53, variation = 0.19, date = 13.12.2019, 
+09:38:17.126 - INFO - log_send_publication:1957;1654843097.126132;
+09:38:17.327 - INFO - Sending publication with company = McKesson, value = 273838.16, drop = 58370.75, variation = 0.14, date = 04.09.2019, 
+09:38:17.327 - INFO - log_send_publication:1967;1654843097.327593;
+09:38:17.531 - INFO - Sending publication with company = McKesson, value = 19814.41, drop = 381225.17, variation = 0.88, date = 02.05.2018, 
+09:38:17.531 - INFO - log_send_publication:1977;1654843097.531132;
+09:38:17.735 - INFO - Sending publication with company = Chevron, value = 420570.36, drop = 332713.2, variation = 0.86, date = 25.07.2018, 
+09:38:17.735 - INFO - log_send_publication:1987;1654843097.735935;
+09:38:17.937 - INFO - Sending publication with company = Microsoft, value = 436484.16, drop = 443789.82, variation = 0.5, date = 20.02.2022, 
+09:38:17.937 - INFO - log_send_publication:1997;1654843097.937552;
+09:38:18.141 - INFO - Sending publication with company = McKesson, value = 315452.87, drop = 247259.88, variation = 0.63, date = 09.04.2020, 
+09:38:18.141 - INFO - log_send_publication:2007;1654843098.141449;
+09:38:18.346 - INFO - Sending publication with company = McKesson, value = 384085.42, drop = 404145.89, variation = 0.25, date = 04.11.2019, 
+09:38:18.346 - INFO - log_send_publication:2017;1654843098.346697;
+09:38:18.549 - INFO - Sending publication with company = Netflix, value = 344859.96, drop = 298283.84, variation = 0.96, date = 05.09.2020, 
+09:38:18.549 - INFO - log_send_publication:2027;1654843098.54943;
+09:38:18.765 - INFO - Sending publication with company = Bitdefender, value = 262940.0, drop = 404117.57, variation = 0.58, date = 04.12.2021, 
+09:38:18.765 - INFO - log_send_publication:2037;1654843098.765301;
+09:38:18.967 - INFO - Sending publication with company = Netflix, value = 394832.7, drop = 331120.05, variation = 0.95, date = 01.06.2021, 
+09:38:18.967 - INFO - log_send_publication:2047;1654843098.967223;
+09:38:19.170 - INFO - Sending publication with company = Walmart, value = 106011.97, drop = 53650.78, variation = 0.99, date = 04.01.2018, 
+09:38:19.170 - INFO - log_send_publication:2057;1654843099.170409;
+09:38:19.374 - INFO - Sending publication with company = Netflix, value = 273255.69, drop = 366089.61, variation = 0.39, date = 24.12.2017, 
+09:38:19.374 - INFO - log_send_publication:2067;1654843099.374787;
+09:38:19.579 - INFO - Sending publication with company = Walmart, value = 406559.79, drop = 464084.87, variation = 0.02, date = 15.04.2018, 
+09:38:19.579 - INFO - log_send_publication:2077;1654843099.579431;
+09:38:19.784 - INFO - Sending publication with company = Bitdefender, value = 337252.43, drop = 339828.17, variation = 0.81, date = 20.12.2020, 
+09:38:19.784 - INFO - log_send_publication:2087;1654843099.784734;
+09:38:20.000 - INFO - Sending publication with company = Aplhabet, value = 192842.85, drop = 54417.14, variation = 0.88, date = 09.07.2021, 
+09:38:20.000 - INFO - log_send_publication:2097;1654843100.000701;
+09:38:20.214 - INFO - Sending publication with company = Aplhabet, value = 280345.39, drop = 118568.5, variation = 0.55, date = 25.12.2017, 
+09:38:20.215 - INFO - log_send_publication:2107;1654843100.215119;
+09:38:20.428 - INFO - Sending publication with company = Aplhabet, value = 308128.35, drop = 275748.62, variation = 0.23, date = 06.02.2021, 
+09:38:20.428 - INFO - log_send_publication:2117;1654843100.428095;
+09:38:20.642 - INFO - Sending publication with company = Microsoft, value = 203264.91, drop = 483962.56, variation = 0.04, date = 20.07.2018, 
+09:38:20.642 - INFO - log_send_publication:2127;1654843100.642958;
+09:38:20.855 - INFO - Sending publication with company = Bitdefender, value = 467581.43, drop = 275645.43, variation = 0.56, date = 30.11.2018, 
+09:38:20.855 - INFO - log_send_publication:2137;1654843100.855732;
+09:38:21.069 - INFO - Sending publication with company = ExxonMobil, value = 454009.4, drop = 443083.18, variation = 0.29, date = 17.11.2020, 
+09:38:21.069 - INFO - log_send_publication:2147;1654843101.069685;
+09:38:21.284 - INFO - Sending publication with company = Amazon, value = 158022.63, drop = 90801.11, variation = 0.3, date = 11.02.2020, 
+09:38:21.284 - INFO - log_send_publication:2157;1654843101.284844;
+09:38:21.497 - INFO - Sending publication with company = Microsoft, value = 235944.97, drop = 281450.93, variation = 0.24, date = 03.11.2019, 
+09:38:21.497 - INFO - log_send_publication:2167;1654843101.497769;
+09:38:21.711 - INFO - Sending publication with company = Apple, value = 480114.06, drop = 143833.55, variation = 0.01, date = 24.05.2018, 
+09:38:21.913 - INFO - log_send_publication:2177;1654843101.913648;
+09:38:21.914 - INFO - Sending publication with company = Bitdefender, value = 53134.0, drop = 360047.72, variation = 0.15, date = 25.12.2019, 
+09:38:21.915 - INFO - log_send_publication:2187;1654843101.915651;
+09:38:22.118 - INFO - Sending publication with company = Aplhabet, value = 63433.52, drop = 148926.11, variation = 0.22, date = 28.04.2018, 
+09:38:22.118 - INFO - log_send_publication:2197;1654843102.118486;
+09:38:22.320 - INFO - Sending publication with company = McKesson, value = 364623.13, drop = 382833.54, variation = 0.76, date = 31.03.2022, 
+09:38:22.320 - INFO - log_send_publication:2207;1654843102.320837;
+09:38:22.524 - INFO - Sending publication with company = ExxonMobil, value = 440778.35, drop = 98077.38, variation = 0.75, date = 20.02.2021, 
+09:38:22.524 - INFO - log_send_publication:2217;1654843102.524594;
+09:38:22.726 - INFO - Sending publication with company = Bitdefender, value = 69115.99, drop = 241761.17, variation = 0.09, date = 07.12.2019, 
+09:38:22.726 - INFO - log_send_publication:2227;1654843102.726358;
+09:38:22.937 - INFO - Sending publication with company = Microsoft, value = 272928.0, drop = 471721.82, variation = 0.83, date = 10.11.2021, 
+09:38:22.937 - INFO - log_send_publication:2237;1654843102.937062;
+09:38:23.140 - INFO - Sending publication with company = Amazon, value = 199669.16, drop = 187304.85, variation = 0.74, date = 04.10.2020, 
+09:38:23.140 - INFO - log_send_publication:2247;1654843103.140911;
+09:38:23.345 - INFO - Sending publication with company = Apple, value = 40268.72, drop = 246990.77, variation = 0.3, date = 24.01.2018, 
+09:38:23.345 - INFO - log_send_publication:2257;1654843103.345209;
+09:38:23.548 - INFO - Sending publication with company = Chevron, value = 440937.39, drop = 462300.14, variation = 0.53, date = 17.03.2018, 
+09:38:23.549 - INFO - log_send_publication:2267;1654843103.549153;
+09:38:23.762 - INFO - Sending publication with company = McKesson, value = 228026.45, drop = 138969.57, variation = 0.12, date = 09.05.2020, 
+09:38:23.762 - INFO - log_send_publication:2277;1654843103.762856;
+09:38:23.968 - INFO - Sending publication with company = Walmart, value = 42478.02, drop = 11892.45, variation = 0.01, date = 10.07.2021, 
+09:38:23.968 - INFO - log_send_publication:2287;1654843103.968427;
+09:38:24.181 - INFO - Sending publication with company = Walmart, value = 143955.53, drop = 281671.19, variation = 0.88, date = 20.07.2020, 
+09:38:24.181 - INFO - log_send_publication:2297;1654843104.181266;
+09:38:24.395 - INFO - Sending publication with company = ExxonMobil, value = 356599.31, drop = 111823.91, variation = 0.82, date = 10.12.2020, 
+09:38:24.395 - INFO - log_send_publication:2307;1654843104.395332;
+09:38:24.608 - INFO - Sending publication with company = Aplhabet, value = 473656.58, drop = 212631.25, variation = 0.39, date = 10.11.2021, 
+09:38:24.608 - INFO - log_send_publication:2317;1654843104.60825;
+09:38:24.824 - INFO - Sending publication with company = Microsoft, value = 225915.64, drop = 261252.81, variation = 0.72, date = 23.09.2020, 
+09:38:24.824 - INFO - log_send_publication:2327;1654843104.824453;
+09:38:25.037 - INFO - Sending publication with company = Netflix, value = 419318.68, drop = 429511.76, variation = 0.77, date = 11.03.2022, 
+09:38:25.037 - INFO - log_send_publication:2337;1654843105.037749;
+09:38:25.253 - INFO - Sending publication with company = Netflix, value = 486818.02, drop = 287453.51, variation = 0.67, date = 20.08.2017, 
+09:38:25.253 - INFO - log_send_publication:2347;1654843105.253086;
+09:38:25.466 - INFO - Sending publication with company = Bitdefender, value = 10859.95, drop = 132892.79, variation = 0.95, date = 30.03.2020, 
+09:38:25.466 - INFO - log_send_publication:2357;1654843105.46686;
+09:38:25.680 - INFO - Sending publication with company = Apple, value = 49474.16, drop = 391243.52, variation = 0.9, date = 17.03.2018, 
+09:38:25.680 - INFO - log_send_publication:2367;1654843105.680823;
+09:38:25.895 - INFO - Sending publication with company = Bitdefender, value = 478716.41, drop = 403121.8, variation = 0.06, date = 03.09.2017, 
+09:38:25.895 - INFO - log_send_publication:2377;1654843105.895426;
+09:38:26.109 - INFO - Sending publication with company = McKesson, value = 265998.28, drop = 488735.62, variation = 0.3, date = 25.02.2021, 
+09:38:26.109 - INFO - log_send_publication:2387;1654843106.109193;
+09:38:26.323 - INFO - Sending publication with company = Microsoft, value = 385297.38, drop = 377777.91, variation = 0.81, date = 26.08.2017, 
+09:38:26.584 - INFO - log_send_publication:2397;1654843106.584055;
+09:38:26.586 - INFO - Sending publication with company = ExxonMobil, value = 281246.87, drop = 466111.36, variation = 0.25, date = 08.12.2017, 
+09:38:26.586 - INFO - log_send_publication:2407;1654843106.586011;
+09:38:26.787 - INFO - Sending publication with company = Aplhabet, value = 150515.6, drop = 257448.22, variation = 0.48, date = 21.04.2022, 
+09:38:26.787 - INFO - log_send_publication:2417;1654843106.787749;
+09:38:27.000 - INFO - Sending publication with company = Aplhabet, value = 72960.07, drop = 468416.94, variation = 0.45, date = 06.06.2021, 
+09:38:27.000 - INFO - log_send_publication:2427;1654843107.000997;
+09:38:27.214 - INFO - Sending publication with company = Chevron, value = 254020.11, drop = 472107.64, variation = 0.48, date = 13.07.2019, 
+09:38:27.214 - INFO - log_send_publication:2437;1654843107.214392;
+09:38:27.430 - INFO - Sending publication with company = Microsoft, value = 228108.81, drop = 157359.88, variation = 0.4, date = 04.02.2019, 
+09:38:27.631 - INFO - log_send_publication:2447;1654843107.631407;
+09:38:27.632 - INFO - Sending publication with company = Walmart, value = 319704.57, drop = 356648.1, variation = 0.9, date = 09.07.2020, 
+09:38:27.633 - INFO - log_send_publication:2457;1654843107.633406;
+09:38:27.847 - INFO - Sending publication with company = Amazon, value = 481806.08, drop = 228149.1, variation = 0.15, date = 21.05.2019, 
+09:38:27.847 - INFO - log_send_publication:2467;1654843107.847217;
+09:38:28.061 - INFO - Sending publication with company = Chevron, value = 452509.59, drop = 334492.4, variation = 0.71, date = 13.01.2021, 
+09:38:28.061 - INFO - log_send_publication:2477;1654843108.061049;
+09:38:28.275 - INFO - Sending publication with company = McKesson, value = 178465.16, drop = 215858.67, variation = 0.7, date = 03.11.2020, 
+09:38:28.275 - INFO - log_send_publication:2487;1654843108.275592;
+09:38:28.490 - INFO - Sending publication with company = Walmart, value = 108995.22, drop = 198579.24, variation = 0.91, date = 11.06.2018, 
+09:38:28.688 - INFO - log_send_publication:2497;1654843108.688214;
+09:38:28.688 - INFO - Sending publication with company = Netflix, value = 59447.69, drop = 284812.16, variation = 0.46, date = 13.12.2017, 
+09:38:28.689 - INFO - log_send_publication:2507;1654843108.689212;
+09:38:28.897 - INFO - Sending publication with company = Aplhabet, value = 94423.2, drop = 33620.76, variation = 0.97, date = 06.09.2018, 
+09:38:28.897 - INFO - log_send_publication:2517;1654843108.897667;
+09:38:29.098 - INFO - Sending publication with company = Microsoft, value = 166040.2, drop = 75921.88, variation = 0.31, date = 03.10.2017, 
+09:38:29.098 - INFO - log_send_publication:2527;1654843109.098704;
+09:38:29.303 - INFO - Sending publication with company = Chevron, value = 115525.91, drop = 104819.76, variation = 0.13, date = 26.10.2017, 
+09:38:29.303 - INFO - log_send_publication:2537;1654843109.303933;
+09:38:29.505 - INFO - Sending publication with company = Bitdefender, value = 4440.18, drop = 169888.9, variation = 0.23, date = 10.06.2017, 
+09:38:29.720 - INFO - log_send_publication:2547;1654843109.720581;
+09:38:29.720 - INFO - Sending publication with company = Chevron, value = 311148.01, drop = 337715.06, variation = 0.8, date = 18.05.2018, 
+09:38:29.720 - INFO - log_send_publication:2557;1654843109.720714;
+09:38:29.930 - INFO - Sending publication with company = Bitdefender, value = 6072.1, drop = 475710.85, variation = 0.06, date = 22.07.2017, 
+09:38:29.930 - INFO - log_send_publication:2567;1654843109.930253;
+09:38:30.134 - INFO - Sending publication with company = Microsoft, value = 354797.17, drop = 97866.78, variation = 0.09, date = 19.03.2020, 
+09:38:30.134 - INFO - log_send_publication:2577;1654843110.134409;
+09:38:30.336 - INFO - Sending publication with company = Amazon, value = 217016.96, drop = 211802.22, variation = 0.88, date = 01.06.2020, 
+09:38:30.336 - INFO - log_send_publication:2587;1654843110.336513;
+09:38:30.552 - INFO - Sending publication with company = Apple, value = 8663.42, drop = 237308.49, variation = 0.81, date = 24.11.2019, 
+09:38:30.766 - INFO - log_send_publication:2597;1654843110.76671;
+09:38:30.766 - INFO - Sending publication with company = Bitdefender, value = 398695.61, drop = 138009.96, variation = 0.37, date = 20.01.2018, 
+09:38:30.766 - INFO - log_send_publication:2607;1654843110.76671;
+09:38:30.968 - INFO - Sending publication with company = Walmart, value = 189388.04, drop = 275384.26, variation = 0.64, date = 29.03.2019, 
+09:38:30.968 - INFO - log_send_publication:2617;1654843110.968334;
+09:38:31.182 - INFO - Sending publication with company = ExxonMobil, value = 315080.79, drop = 267311.46, variation = 0.94, date = 05.10.2019, 
+09:38:31.183 - INFO - log_send_publication:2627;1654843111.18315;
+09:38:31.397 - INFO - Sending publication with company = Amazon, value = 468885.79, drop = 262806.4, variation = 0.27, date = 31.05.2021, 
+09:38:31.397 - INFO - log_send_publication:2637;1654843111.397853;
+09:38:31.614 - INFO - Sending publication with company = Aplhabet, value = 380597.94, drop = 306233.33, variation = 0.18, date = 29.10.2017, 
+09:38:31.813 - INFO - log_send_publication:2647;1654843111.813353;
+09:38:31.814 - INFO - Sending publication with company = Walmart, value = 275837.29, drop = 281327.61, variation = 0.56, date = 11.08.2019, 
+09:38:31.814 - INFO - log_send_publication:2657;1654843111.814298;
+09:38:32.029 - INFO - Sending publication with company = Microsoft, value = 216571.14, drop = 329577.87, variation = 0.06, date = 30.08.2021, 
+09:38:32.029 - INFO - log_send_publication:2667;1654843112.029096;
+09:38:32.243 - INFO - Sending publication with company = Apple, value = 374625.62, drop = 136492.6, variation = 0.94, date = 31.03.2019, 
+09:38:32.244 - INFO - log_send_publication:2677;1654843112.244467;
+09:38:32.457 - INFO - Sending publication with company = Walmart, value = 87988.92, drop = 222925.52, variation = 0.21, date = 26.08.2018, 
+09:38:32.458 - INFO - log_send_publication:2687;1654843112.458344;
+09:38:32.658 - INFO - Sending publication with company = Microsoft, value = 259825.59, drop = 301924.52, variation = 0.48, date = 30.11.2018, 
+09:38:32.856 - INFO - log_send_publication:2697;1654843112.856641;
+09:38:32.856 - INFO - Sending publication with company = Microsoft, value = 143563.48, drop = 230561.61, variation = 0.97, date = 10.11.2021, 
+09:38:32.857 - INFO - log_send_publication:2707;1654843112.857641;
+09:38:33.058 - INFO - Sending publication with company = Apple, value = 319332.0, drop = 465019.95, variation = 0.29, date = 15.02.2022, 
+09:38:33.058 - INFO - log_send_publication:2717;1654843113.058397;
+09:38:33.271 - INFO - Sending publication with company = Walmart, value = 332729.36, drop = 302460.67, variation = 0.2, date = 15.04.2021, 
+09:38:33.271 - INFO - log_send_publication:2727;1654843113.271556;
+09:38:33.485 - INFO - Sending publication with company = Netflix, value = 305872.77, drop = 380850.03, variation = 0.91, date = 07.01.2019, 
+09:38:33.485 - INFO - log_send_publication:2737;1654843113.485506;
+09:38:33.700 - INFO - Sending publication with company = Walmart, value = 471180.02, drop = 167511.65, variation = 0.71, date = 28.10.2017, 
+09:38:33.884 - INFO - log_send_publication:2747;1654843113.884185;
+09:38:33.902 - INFO - Sending publication with company = Apple, value = 124474.71, drop = 219843.89, variation = 0.25, date = 07.08.2019, 
+09:38:33.904 - INFO - log_send_publication:2757;1654843113.904464;
+09:38:34.116 - INFO - Sending publication with company = Walmart, value = 125052.86, drop = 235908.07, variation = 0.85, date = 23.06.2017, 
+09:38:34.116 - INFO - log_send_publication:2767;1654843114.116179;
+09:38:34.314 - INFO - Sending publication with company = Amazon, value = 473818.92, drop = 405496.91, variation = 0.49, date = 27.05.2018, 
+09:38:34.314 - INFO - log_send_publication:2777;1654843114.314026;
+09:38:34.527 - INFO - Sending publication with company = Bitdefender, value = 407338.0, drop = 361178.71, variation = 0.73, date = 11.06.2019, 
+09:38:34.527 - INFO - log_send_publication:2787;1654843114.527009;
+09:38:34.741 - INFO - Sending publication with company = Aplhabet, value = 254384.67, drop = 49081.98, variation = 0.26, date = 09.10.2017, 
+09:38:34.940 - INFO - log_send_publication:2797;1654843114.940475;
+09:38:34.940 - INFO - Sending publication with company = Chevron, value = 126557.97, drop = 47262.3, variation = 0.04, date = 22.06.2017, 
+09:38:34.941 - INFO - log_send_publication:2807;1654843114.941477;
+09:38:35.145 - INFO - Sending publication with company = Aplhabet, value = 171646.39, drop = 67079.65, variation = 0.9, date = 15.05.2022, 
+09:38:35.145 - INFO - log_send_publication:2817;1654843115.14533;
+09:38:35.359 - INFO - Sending publication with company = Walmart, value = 126160.73, drop = 207225.29, variation = 0.35, date = 19.09.2018, 
+09:38:35.359 - INFO - log_send_publication:2827;1654843115.359209;
+09:38:35.572 - INFO - Sending publication with company = Aplhabet, value = 330817.57, drop = 186449.59, variation = 0.35, date = 23.06.2017, 
+09:38:35.572 - INFO - log_send_publication:2837;1654843115.572222;
+09:38:35.787 - INFO - Sending publication with company = Microsoft, value = 166720.4, drop = 44796.9, variation = 0.51, date = 05.03.2019, 
+09:38:35.982 - INFO - log_send_publication:2847;1654843115.982572;
+09:38:35.983 - INFO - Sending publication with company = Bitdefender, value = 212898.15, drop = 353046.82, variation = 0.41, date = 08.12.2021, 
+09:38:35.983 - INFO - log_send_publication:2857;1654843115.983569;
+09:38:36.199 - INFO - Sending publication with company = ExxonMobil, value = 298550.64, drop = 156978.65, variation = 0.02, date = 02.07.2018, 
+09:38:36.199 - INFO - log_send_publication:2867;1654843116.199411;
+09:38:36.414 - INFO - Sending publication with company = Aplhabet, value = 21883.75, drop = 12256.88, variation = 0.61, date = 13.02.2019, 
+09:38:36.415 - INFO - log_send_publication:2877;1654843116.415909;
+09:38:36.616 - INFO - Sending publication with company = Amazon, value = 79341.05, drop = 113458.79, variation = 0.76, date = 20.03.2021, 
+09:38:36.616 - INFO - log_send_publication:2887;1654843116.616331;
+09:38:36.831 - INFO - Sending publication with company = Aplhabet, value = 12838.14, drop = 307990.62, variation = 0.15, date = 22.06.2020, 
+09:38:36.831 - INFO - log_send_publication:2897;1654843116.831295;
+09:38:37.044 - INFO - Sending publication with company = Netflix, value = 148148.52, drop = 281087.16, variation = 0.76, date = 11.10.2019, 
+09:38:37.044 - INFO - log_send_publication:2907;1654843117.044121;
+09:38:37.257 - INFO - Sending publication with company = Apple, value = 121399.82, drop = 479810.6, variation = 0.72, date = 02.08.2018, 
+09:38:37.257 - INFO - log_send_publication:2917;1654843117.257033;
+09:38:37.471 - INFO - Sending publication with company = McKesson, value = 94871.1, drop = 322589.99, variation = 0.81, date = 10.11.2020, 
+09:38:37.471 - INFO - log_send_publication:2927;1654843117.471389;
+09:38:37.685 - INFO - Sending publication with company = Netflix, value = 107448.08, drop = 127117.14, variation = 0.29, date = 23.01.2021, 
+09:38:37.686 - INFO - log_send_publication:2937;1654843117.68656;
+09:38:37.900 - INFO - Sending publication with company = Chevron, value = 161306.71, drop = 139859.65, variation = 0.48, date = 10.02.2022, 
+09:38:38.100 - INFO - log_send_publication:2947;1654843118.100795;
+09:38:38.100 - INFO - Sending publication with company = ExxonMobil, value = 113489.11, drop = 359081.32, variation = 0.4, date = 12.03.2021, 
+09:38:38.101 - INFO - log_send_publication:2957;1654843118.101858;
+09:38:38.302 - INFO - Sending publication with company = Bitdefender, value = 489662.87, drop = 394991.66, variation = 0.43, date = 25.05.2021, 
+09:38:38.302 - INFO - log_send_publication:2967;1654843118.302823;
+09:38:38.516 - INFO - Sending publication with company = Bitdefender, value = 67046.78, drop = 671.11, variation = 0.15, date = 20.07.2020, 
+09:38:38.516 - INFO - log_send_publication:2977;1654843118.516047;
+09:38:38.729 - INFO - Sending publication with company = Amazon, value = 296065.7, drop = 84596.57, variation = 0.38, date = 25.07.2021, 
+09:38:38.729 - INFO - log_send_publication:2987;1654843118.729107;
+09:38:38.942 - INFO - Sending publication with company = Bitdefender, value = 191012.57, drop = 496840.49, variation = 0.67, date = 26.03.2018, 
+09:38:38.942 - INFO - log_send_publication:2997;1654843118.942079;
+09:38:39.154 - INFO - Sending publication with company = Bitdefender, value = 357814.56, drop = 314376.14, variation = 0.37, date = 25.04.2019, 
+09:38:39.154 - INFO - log_send_publication:3007;1654843119.154826;
+09:38:39.368 - INFO - Sending publication with company = Bitdefender, value = 76966.36, drop = 61561.0, variation = 0.44, date = 13.01.2020, 
+09:38:39.368 - INFO - log_send_publication:3017;1654843119.368689;
+09:38:39.582 - INFO - Sending publication with company = McKesson, value = 200086.99, drop = 15111.51, variation = 0.99, date = 06.12.2021, 
+09:38:39.582 - INFO - log_send_publication:3027;1654843119.582577;
+09:38:39.785 - INFO - Sending publication with company = Microsoft, value = 250789.52, drop = 467644.39, variation = 0.41, date = 22.06.2019, 
+09:38:39.785 - INFO - log_send_publication:3037;1654843119.785125;
+09:38:39.999 - INFO - Sending publication with company = ExxonMobil, value = 2574.14, drop = 104198.1, variation = 0.47, date = 13.01.2022, 
+09:38:39.999 - INFO - log_send_publication:3047;1654843119.999039;
+09:38:40.213 - INFO - Sending publication with company = Chevron, value = 242817.19, drop = 428984.22, variation = 0.45, date = 20.03.2020, 
+09:38:40.213 - INFO - log_send_publication:3057;1654843120.213814;
+09:38:40.427 - INFO - Sending publication with company = Microsoft, value = 300810.47, drop = 34977.6, variation = 0.02, date = 27.05.2022, 
+09:38:40.427 - INFO - log_send_publication:3067;1654843120.427876;
+09:38:40.708 - INFO - Sending publication with company = Aplhabet, value = 333471.91, drop = 102502.45, variation = 0.07, date = 17.05.2021, 
+09:38:40.708 - INFO - log_send_publication:3077;1654843120.708374;
+09:38:40.919 - INFO - Sending publication with company = ExxonMobil, value = 83565.29, drop = 424694.43, variation = 0.7, date = 20.07.2021, 
+09:38:40.919 - INFO - log_send_publication:3087;1654843120.919346;
+09:38:41.132 - INFO - Sending publication with company = Microsoft, value = 476236.8, drop = 52962.8, variation = 0.85, date = 28.12.2018, 
+09:38:41.132 - INFO - log_send_publication:3097;1654843121.132437;
+09:38:41.347 - INFO - Sending publication with company = McKesson, value = 165540.72, drop = 301626.99, variation = 0.89, date = 03.01.2022, 
+09:38:41.347 - INFO - log_send_publication:3107;1654843121.347163;
+09:38:41.547 - INFO - Sending publication with company = McKesson, value = 349672.01, drop = 180719.58, variation = 0.41, date = 30.03.2018, 
+09:38:41.745 - INFO - log_send_publication:3117;1654843121.745093;
+09:38:41.746 - INFO - Sending publication with company = Bitdefender, value = 392881.07, drop = 21036.62, variation = 0.48, date = 29.07.2018, 
+09:38:41.746 - INFO - log_send_publication:3127;1654843121.746089;
+09:38:41.950 - INFO - Sending publication with company = Aplhabet, value = 357465.86, drop = 231847.73, variation = 0.88, date = 18.08.2021, 
+09:38:41.950 - INFO - log_send_publication:3137;1654843121.950197;
+09:38:42.154 - INFO - Sending publication with company = Walmart, value = 455170.08, drop = 42533.95, variation = 0.41, date = 31.10.2018, 
+09:38:42.154 - INFO - log_send_publication:3147;1654843122.154133;
+09:38:42.370 - INFO - Sending publication with company = Amazon, value = 421402.47, drop = 226918.0, variation = 0.14, date = 25.11.2017, 
+09:38:42.371 - INFO - log_send_publication:3157;1654843122.371252;
+09:38:42.584 - INFO - Sending publication with company = Bitdefender, value = 290375.35, drop = 227581.94, variation = 0.05, date = 04.11.2020, 
+09:38:42.584 - INFO - log_send_publication:3167;1654843122.584185;
+09:38:42.797 - INFO - Sending publication with company = Aplhabet, value = 231105.03, drop = 30530.61, variation = 0.61, date = 14.08.2021, 
+09:38:42.797 - INFO - log_send_publication:3177;1654843122.797824;
+09:38:43.011 - INFO - Sending publication with company = Aplhabet, value = 300712.61, drop = 24500.91, variation = 0.81, date = 03.03.2022, 
+09:38:43.011 - INFO - log_send_publication:3187;1654843123.01192;
+09:38:43.225 - INFO - Sending publication with company = Walmart, value = 58469.18, drop = 272958.36, variation = 0.96, date = 21.11.2020, 
+09:38:43.226 - INFO - log_send_publication:3197;1654843123.226336;
+09:38:43.441 - INFO - Sending publication with company = Walmart, value = 395729.51, drop = 488589.65, variation = 0.37, date = 26.06.2017, 
+09:38:43.441 - INFO - log_send_publication:3207;1654843123.441022;
+09:38:43.654 - INFO - Sending publication with company = Walmart, value = 427618.32, drop = 177537.64, variation = 0.18, date = 10.09.2019, 
+09:38:43.837 - INFO - log_send_publication:3217;1654843123.837191;
+09:38:43.855 - INFO - Sending publication with company = Chevron, value = 58050.07, drop = 73876.92, variation = 0.46, date = 11.09.2021, 
+09:38:43.856 - INFO - log_send_publication:3227;1654843123.856542;
+09:38:44.058 - INFO - Sending publication with company = Netflix, value = 342502.09, drop = 342424.46, variation = 0.04, date = 18.10.2020, 
+09:38:44.058 - INFO - log_send_publication:3237;1654843124.058417;
+09:38:44.274 - INFO - Sending publication with company = McKesson, value = 201332.47, drop = 360844.82, variation = 0.65, date = 08.09.2020, 
+09:38:44.274 - INFO - log_send_publication:3247;1654843124.274556;
+09:38:44.490 - INFO - Sending publication with company = Walmart, value = 386999.39, drop = 82682.64, variation = 0.15, date = 21.03.2022, 
+09:38:44.491 - INFO - log_send_publication:3257;1654843124.491405;
+09:38:44.691 - INFO - Sending publication with company = ExxonMobil, value = 166404.22, drop = 300807.12, variation = 0.79, date = 11.10.2021, 
+09:38:44.889 - INFO - log_send_publication:3267;1654843124.889543;
+09:38:44.889 - INFO - Sending publication with company = Apple, value = 184329.78, drop = 144764.51, variation = 0.73, date = 15.05.2021, 
+09:38:44.889 - INFO - log_send_publication:3277;1654843124.889543;
+09:38:45.092 - INFO - Sending publication with company = Microsoft, value = 28961.64, drop = 48074.95, variation = 0.31, date = 15.10.2017, 
+09:38:45.093 - INFO - log_send_publication:3287;1654843125.093042;
+09:38:45.306 - INFO - Sending publication with company = Microsoft, value = 375218.15, drop = 68639.99, variation = 0.68, date = 25.12.2018, 
+09:38:45.307 - INFO - log_send_publication:3297;1654843125.30758;
+09:38:45.514 - INFO - Sending publication with company = Aplhabet, value = 367670.11, drop = 335287.07, variation = 0.61, date = 22.12.2021, 
+09:38:45.514 - INFO - log_send_publication:3307;1654843125.514255;
+09:38:45.717 - INFO - Sending publication with company = Bitdefender, value = 4230.17, drop = 268677.93, variation = 0.7, date = 13.09.2018, 
+09:38:45.717 - INFO - log_send_publication:3317;1654843125.717637;
+09:38:45.957 - INFO - Sending publication with company = McKesson, value = 30455.16, drop = 228003.77, variation = 0.07, date = 16.05.2019, 
+09:38:45.957 - INFO - log_send_publication:3327;1654843125.957098;
+09:38:46.166 - INFO - Sending publication with company = Microsoft, value = 107560.18, drop = 110269.1, variation = 0.48, date = 25.01.2022, 
+09:38:46.166 - INFO - log_send_publication:3337;1654843126.166444;
+09:38:46.381 - INFO - Sending publication with company = Aplhabet, value = 262096.47, drop = 286623.02, variation = 0.04, date = 03.04.2020, 
+09:38:46.381 - INFO - log_send_publication:3347;1654843126.381261;
+09:38:46.596 - INFO - Sending publication with company = ExxonMobil, value = 207429.57, drop = 387378.46, variation = 0.04, date = 16.01.2020, 
+09:38:46.596 - INFO - log_send_publication:3357;1654843126.596319;
+09:38:46.993 - INFO - Sending publication with company = Chevron, value = 414384.19, drop = 204933.93, variation = 0.07, date = 15.07.2017, 
+09:38:46.995 - INFO - log_send_publication:3367;1654843126.995931;
+09:38:47.199 - INFO - Sending publication with company = Walmart, value = 100428.39, drop = 309179.58, variation = 0.08, date = 13.09.2020, 
+09:38:47.199 - INFO - log_send_publication:3377;1654843127.199361;
+09:38:47.400 - INFO - Sending publication with company = Walmart, value = 495448.32, drop = 390729.54, variation = 0.66, date = 05.11.2019, 
+09:38:47.400 - INFO - log_send_publication:3387;1654843127.400576;
+09:38:47.600 - INFO - Sending publication with company = Apple, value = 94117.66, drop = 31740.8, variation = 0.91, date = 18.07.2018, 
+09:38:47.600 - INFO - log_send_publication:3397;1654843127.600854;
+09:38:47.815 - INFO - Sending publication with company = Amazon, value = 298413.86, drop = 349501.24, variation = 0.05, date = 25.01.2021, 
+09:38:47.815 - INFO - log_send_publication:3407;1654843127.815517;
+09:38:48.030 - INFO - Sending publication with company = Apple, value = 28561.95, drop = 362475.81, variation = 0.1, date = 18.05.2019, 
+09:38:48.030 - INFO - log_send_publication:3417;1654843128.03018;
+09:38:48.244 - INFO - Sending publication with company = Microsoft, value = 417640.39, drop = 120279.88, variation = 0.51, date = 20.09.2017, 
+09:38:48.244 - INFO - log_send_publication:3427;1654843128.244109;
+09:38:48.459 - INFO - Sending publication with company = ExxonMobil, value = 188320.41, drop = 215272.37, variation = 0.98, date = 17.01.2018, 
+09:38:48.459 - INFO - log_send_publication:3437;1654843128.459787;
+09:38:48.672 - INFO - Sending publication with company = Aplhabet, value = 284830.76, drop = 418350.95, variation = 0.91, date = 30.04.2020, 
+09:38:48.672 - INFO - log_send_publication:3447;1654843128.672544;
+09:38:48.886 - INFO - Sending publication with company = McKesson, value = 99870.17, drop = 451625.1, variation = 0.16, date = 10.03.2020, 
+09:38:49.087 - INFO - log_send_publication:3457;1654843129.087174;
+09:38:49.087 - INFO - Sending publication with company = Chevron, value = 217175.15, drop = 214202.79, variation = 0.1, date = 21.11.2020, 
+09:38:49.087 - INFO - log_send_publication:3467;1654843129.087174;
+09:38:49.291 - INFO - Sending publication with company = Bitdefender, value = 146593.66, drop = 353629.74, variation = 0.44, date = 11.01.2022, 
+09:38:49.291 - INFO - log_send_publication:3477;1654843129.291343;
+09:38:49.494 - INFO - Sending publication with company = ExxonMobil, value = 153992.62, drop = 81528.15, variation = 0.81, date = 26.02.2018, 
+09:38:49.494 - INFO - log_send_publication:3487;1654843129.494888;
+09:38:49.710 - INFO - Sending publication with company = Netflix, value = 133831.36, drop = 198150.86, variation = 0.11, date = 28.11.2020, 
+09:38:49.710 - INFO - log_send_publication:3497;1654843129.710056;
+09:38:49.914 - INFO - Sending publication with company = Chevron, value = 187716.26, drop = 378048.24, variation = 0.32, date = 04.11.2019, 
+09:38:49.914 - INFO - log_send_publication:3507;1654843129.914619;
+09:38:50.118 - INFO - Sending publication with company = Walmart, value = 162993.56, drop = 307983.77, variation = 0.29, date = 05.04.2018, 
+09:38:50.118 - INFO - log_send_publication:3517;1654843130.118126;
+09:38:50.321 - INFO - Sending publication with company = Chevron, value = 369550.64, drop = 69240.27, variation = 0.34, date = 07.11.2019, 
+09:38:50.321 - INFO - log_send_publication:3527;1654843130.321835;
+09:38:50.523 - INFO - Sending publication with company = Amazon, value = 466799.62, drop = 339357.99, variation = 0.45, date = 27.12.2020, 
+09:38:50.523 - INFO - log_send_publication:3537;1654843130.523491;
+09:38:50.725 - INFO - Sending publication with company = Apple, value = 113634.7, drop = 294412.48, variation = 0.42, date = 04.04.2019, 
+09:38:50.725 - INFO - log_send_publication:3547;1654843130.725368;
+09:38:50.928 - INFO - Sending publication with company = Walmart, value = 126818.39, drop = 290999.39, variation = 0.92, date = 26.01.2022, 
+09:38:50.928 - INFO - log_send_publication:3557;1654843130.928727;
+09:38:51.130 - INFO - Sending publication with company = Netflix, value = 498202.63, drop = 124639.35, variation = 0.78, date = 10.01.2020, 
+09:38:51.130 - INFO - log_send_publication:3567;1654843131.130374;
+09:38:51.331 - INFO - Sending publication with company = Walmart, value = 380618.29, drop = 115250.93, variation = 0.27, date = 26.10.2021, 
+09:38:51.331 - INFO - log_send_publication:3577;1654843131.331186;
+09:38:51.532 - INFO - Sending publication with company = ExxonMobil, value = 260434.66, drop = 145089.81, variation = 0.98, date = 16.02.2022, 
+09:38:51.532 - INFO - log_send_publication:3587;1654843131.532861;
+09:38:51.734 - INFO - Sending publication with company = Chevron, value = 227932.82, drop = 264569.15, variation = 0.44, date = 22.09.2018, 
+09:38:51.734 - INFO - log_send_publication:3597;1654843131.734472;
+09:38:51.950 - INFO - Sending publication with company = Amazon, value = 415077.89, drop = 380681.02, variation = 0.84, date = 27.05.2020, 
+09:38:51.951 - INFO - log_send_publication:3607;1654843131.951662;
+09:38:52.152 - INFO - Sending publication with company = Apple, value = 149127.06, drop = 24238.68, variation = 0.92, date = 09.03.2020, 
+09:38:52.152 - INFO - log_send_publication:3617;1654843132.152272;
+09:38:52.366 - INFO - Sending publication with company = Chevron, value = 392107.31, drop = 6956.81, variation = 0.88, date = 28.03.2021, 
+09:38:52.366 - INFO - log_send_publication:3627;1654843132.366278;
+09:38:52.569 - INFO - Sending publication with company = McKesson, value = 304249.3, drop = 304301.15, variation = 0.55, date = 14.11.2019, 
+09:38:52.569 - INFO - log_send_publication:3637;1654843132.569583;
+09:38:52.770 - INFO - Sending publication with company = Bitdefender, value = 479647.09, drop = 473404.11, variation = 0.69, date = 04.09.2017, 
+09:38:52.770 - INFO - log_send_publication:3647;1654843132.770516;
+09:38:52.985 - INFO - Sending publication with company = McKesson, value = 285016.26, drop = 355912.54, variation = 0.81, date = 17.01.2022, 
+09:38:52.985 - INFO - log_send_publication:3657;1654843132.985311;
+09:38:53.187 - INFO - Sending publication with company = Amazon, value = 106218.24, drop = 224664.88, variation = 0.63, date = 10.10.2019, 
+09:38:53.187 - INFO - log_send_publication:3667;1654843133.187245;
+09:38:53.388 - INFO - Sending publication with company = Apple, value = 475855.15, drop = 355472.03, variation = 0.54, date = 01.09.2018, 
+09:38:53.388 - INFO - log_send_publication:3677;1654843133.388359;
+09:38:53.590 - INFO - Sending publication with company = Aplhabet, value = 363034.66, drop = 278019.14, variation = 0.88, date = 25.04.2021, 
+09:38:53.590 - INFO - log_send_publication:3687;1654843133.590784;
+09:38:53.795 - INFO - Sending publication with company = Microsoft, value = 127427.76, drop = 388199.79, variation = 0.63, date = 18.08.2019, 
+09:38:53.795 - INFO - log_send_publication:3697;1654843133.795117;
+09:38:54.008 - INFO - Sending publication with company = ExxonMobil, value = 468393.29, drop = 381162.85, variation = 0.62, date = 28.01.2018, 
+09:38:54.008 - INFO - log_send_publication:3707;1654843134.008407;
+09:38:54.223 - INFO - Sending publication with company = Bitdefender, value = 181235.19, drop = 301168.28, variation = 0.19, date = 17.05.2018, 
+09:38:54.223 - INFO - log_send_publication:3717;1654843134.223196;
+09:38:54.438 - INFO - Sending publication with company = ExxonMobil, value = 55093.41, drop = 470341.69, variation = 0.54, date = 03.12.2021, 
+09:38:54.438 - INFO - log_send_publication:3727;1654843134.438538;
+09:38:54.652 - INFO - Sending publication with company = Bitdefender, value = 373939.13, drop = 283647.13, variation = 0.42, date = 11.06.2017, 
+09:38:54.652 - INFO - log_send_publication:3737;1654843134.652966;
+09:38:54.861 - INFO - Sending publication with company = Chevron, value = 307721.86, drop = 281221.03, variation = 0.8, date = 05.05.2019, 
+09:38:54.861 - INFO - log_send_publication:3747;1654843134.861121;
+09:38:55.063 - INFO - Sending publication with company = McKesson, value = 7754.74, drop = 139866.16, variation = 0.14, date = 19.04.2019, 
+09:38:55.290 - INFO - log_send_publication:3757;1654843135.290352;
+09:38:55.290 - INFO - Sending publication with company = Apple, value = 291755.87, drop = 10999.69, variation = 0.7, date = 14.03.2021, 
+09:38:55.291 - INFO - log_send_publication:3767;1654843135.291353;
+09:38:55.500 - INFO - Sending publication with company = Microsoft, value = 37978.75, drop = 357884.77, variation = 0.56, date = 16.10.2018, 
+09:38:55.500 - INFO - log_send_publication:3777;1654843135.500928;
+09:38:55.704 - INFO - Sending publication with company = Apple, value = 421284.83, drop = 216047.82, variation = 0.07, date = 02.10.2020, 
+09:38:55.704 - INFO - log_send_publication:3787;1654843135.70419;
+09:38:55.905 - INFO - Sending publication with company = ExxonMobil, value = 437045.98, drop = 290412.0, variation = 0.64, date = 25.08.2019, 
+09:38:55.905 - INFO - log_send_publication:3797;1654843135.905707;
+09:38:56.110 - INFO - Sending publication with company = Chevron, value = 273946.22, drop = 317266.62, variation = 0.01, date = 12.06.2019, 
+09:38:56.110 - INFO - log_send_publication:3807;1654843136.110174;
+09:38:56.316 - INFO - Sending publication with company = McKesson, value = 191557.12, drop = 98033.34, variation = 0.37, date = 09.03.2020, 
+09:38:56.316 - INFO - log_send_publication:3817;1654843136.316156;
+09:38:56.518 - INFO - Sending publication with company = Aplhabet, value = 243396.6, drop = 132209.81, variation = 0.53, date = 09.05.2021, 
+09:38:56.518 - INFO - log_send_publication:3827;1654843136.518954;
+09:38:56.721 - INFO - Sending publication with company = ExxonMobil, value = 344072.27, drop = 179535.69, variation = 0.46, date = 10.04.2019, 
+09:38:56.721 - INFO - log_send_publication:3837;1654843136.721651;
+09:38:56.925 - INFO - Sending publication with company = Netflix, value = 329000.32, drop = 115781.77, variation = 0.4, date = 20.05.2019, 
+09:38:56.925 - INFO - log_send_publication:3847;1654843136.925767;
+09:38:57.141 - INFO - Sending publication with company = Apple, value = 133747.07, drop = 3367.97, variation = 0.55, date = 08.10.2020, 
+09:38:57.141 - INFO - log_send_publication:3857;1654843137.141635;
+09:38:57.343 - INFO - Sending publication with company = Aplhabet, value = 90324.01, drop = 392764.38, variation = 0.72, date = 12.12.2019, 
+09:38:57.343 - INFO - log_send_publication:3867;1654843137.343213;
+09:38:57.545 - INFO - Sending publication with company = Netflix, value = 105106.31, drop = 337832.35, variation = 0.18, date = 29.03.2021, 
+09:38:57.545 - INFO - log_send_publication:3877;1654843137.545869;
+09:38:57.751 - INFO - Sending publication with company = Bitdefender, value = 300918.28, drop = 164252.92, variation = 0.42, date = 29.05.2018, 
+09:38:57.751 - INFO - log_send_publication:3887;1654843137.751284;
+09:38:57.955 - INFO - Sending publication with company = Chevron, value = 415561.42, drop = 144524.99, variation = 0.1, date = 29.06.2020, 
+09:38:57.955 - INFO - log_send_publication:3897;1654843137.955595;
+09:38:58.160 - INFO - Sending publication with company = Apple, value = 484387.65, drop = 314733.82, variation = 0.63, date = 20.11.2021, 
+09:38:58.160 - INFO - log_send_publication:3907;1654843138.160869;
+09:38:58.365 - INFO - Sending publication with company = Aplhabet, value = 275316.71, drop = 461582.07, variation = 0.28, date = 15.07.2019, 
+09:38:58.365 - INFO - log_send_publication:3917;1654843138.365593;
+09:38:58.569 - INFO - Sending publication with company = Chevron, value = 163424.67, drop = 262351.8, variation = 0.31, date = 15.09.2019, 
+09:38:58.569 - INFO - log_send_publication:3927;1654843138.569965;
+09:38:58.784 - INFO - Sending publication with company = Aplhabet, value = 275865.74, drop = 302993.24, variation = 0.71, date = 20.06.2017, 
+09:38:58.784 - INFO - log_send_publication:3937;1654843138.784778;
+09:38:58.998 - INFO - Sending publication with company = Amazon, value = 288325.46, drop = 376654.45, variation = 0.87, date = 23.07.2020, 
+09:38:58.999 - INFO - log_send_publication:3947;1654843138.999333;
+09:38:59.212 - INFO - Sending publication with company = Amazon, value = 80096.46, drop = 72489.73, variation = 0.66, date = 23.09.2019, 
+09:38:59.212 - INFO - log_send_publication:3957;1654843139.212077;
+09:38:59.426 - INFO - Sending publication with company = ExxonMobil, value = 322128.91, drop = 211295.57, variation = 0.43, date = 03.06.2018, 
+09:38:59.426 - INFO - log_send_publication:3967;1654843139.426313;
+09:38:59.640 - INFO - Sending publication with company = McKesson, value = 435044.31, drop = 185633.2, variation = 0.89, date = 02.06.2019, 
+09:38:59.640 - INFO - log_send_publication:3977;1654843139.640426;
+09:38:59.854 - INFO - Sending publication with company = Walmart, value = 321116.74, drop = 237316.06, variation = 0.16, date = 15.11.2018, 
+09:38:59.854 - INFO - log_send_publication:3987;1654843139.854371;
+09:39:00.068 - INFO - Sending publication with company = Walmart, value = 339465.17, drop = 27711.96, variation = 0.39, date = 31.08.2019, 
+09:39:00.068 - INFO - log_send_publication:3997;1654843140.068586;
+09:39:00.282 - INFO - Sending publication with company = Microsoft, value = 170468.52, drop = 418126.89, variation = 0.41, date = 21.03.2018, 
+09:39:00.497 - INFO - log_send_publication:4007;1654843140.497027;
+09:39:00.498 - INFO - Sending publication with company = Apple, value = 386446.7, drop = 217497.03, variation = 0.32, date = 20.08.2018, 
+09:39:00.498 - INFO - log_send_publication:4017;1654843140.498021;
+09:39:00.699 - INFO - Sending publication with company = ExxonMobil, value = 490770.39, drop = 260766.91, variation = 0.58, date = 08.03.2022, 
+09:39:00.699 - INFO - log_send_publication:4027;1654843140.699967;
+09:39:00.913 - INFO - Sending publication with company = Walmart, value = 24258.27, drop = 469839.42, variation = 0.09, date = 24.01.2019, 
+09:39:00.913 - INFO - log_send_publication:4037;1654843140.913672;
+09:39:01.113 - INFO - Sending publication with company = Aplhabet, value = 224722.07, drop = 427603.29, variation = 0.4, date = 20.03.2018, 
+09:39:01.113 - INFO - log_send_publication:4047;1654843141.113824;
+09:39:01.327 - INFO - Sending publication with company = Apple, value = 362906.45, drop = 219782.91, variation = 0.83, date = 14.11.2020, 
+09:39:01.527 - INFO - log_send_publication:4057;1654843141.527727;
+09:39:01.528 - INFO - Sending publication with company = Amazon, value = 349854.98, drop = 430279.58, variation = 0.95, date = 11.10.2019, 
+09:39:01.528 - INFO - log_send_publication:4067;1654843141.528678;
+09:39:01.742 - INFO - Sending publication with company = Microsoft, value = 211468.37, drop = 245137.14, variation = 0.3, date = 27.02.2019, 
+09:39:01.742 - INFO - log_send_publication:4077;1654843141.742667;
+09:39:01.955 - INFO - Sending publication with company = Chevron, value = 483654.26, drop = 49935.8, variation = 0.94, date = 06.12.2020, 
+09:39:01.955 - INFO - log_send_publication:4087;1654843141.955681;
+09:39:02.170 - INFO - Sending publication with company = Netflix, value = 32231.5, drop = 4365.02, variation = 0.39, date = 14.02.2018, 
+09:39:02.170 - INFO - log_send_publication:4097;1654843142.170692;
+09:39:02.385 - INFO - Sending publication with company = Bitdefender, value = 235737.37, drop = 121484.42, variation = 0.62, date = 28.02.2021, 
+09:39:02.585 - INFO - log_send_publication:4107;1654843142.585168;
+09:39:02.586 - INFO - Sending publication with company = Netflix, value = 270818.18, drop = 114874.9, variation = 0.57, date = 22.04.2022, 
+09:39:02.587 - INFO - log_send_publication:4117;1654843142.587105;
+09:39:02.803 - INFO - Sending publication with company = Apple, value = 214687.45, drop = 117009.99, variation = 0.43, date = 27.04.2021, 
+09:39:02.803 - INFO - log_send_publication:4127;1654843142.803134;
+09:39:03.018 - INFO - Sending publication with company = Walmart, value = 233052.22, drop = 411655.67, variation = 0.59, date = 30.12.2021, 
+09:39:03.018 - INFO - log_send_publication:4137;1654843143.018506;
+09:39:03.234 - INFO - Sending publication with company = Aplhabet, value = 377400.5, drop = 415188.68, variation = 0.98, date = 21.09.2018, 
+09:39:03.234 - INFO - log_send_publication:4147;1654843143.234015;
+09:39:03.449 - INFO - Sending publication with company = McKesson, value = 109387.54, drop = 434957.94, variation = 0.49, date = 19.05.2020, 
+09:39:03.647 - INFO - log_send_publication:4157;1654843143.647411;
+09:39:03.647 - INFO - Sending publication with company = Microsoft, value = 46040.75, drop = 98010.76, variation = 0.47, date = 02.11.2017, 
+09:39:03.647 - INFO - log_send_publication:4167;1654843143.647411;
+09:39:03.851 - INFO - Sending publication with company = Netflix, value = 317086.74, drop = 380504.82, variation = 0.74, date = 01.02.2020, 
+09:39:03.851 - INFO - log_send_publication:4177;1654843143.85151;
+09:39:04.066 - INFO - Sending publication with company = ExxonMobil, value = 201169.93, drop = 202440.73, variation = 0.3, date = 13.02.2018, 
+09:39:04.066 - INFO - log_send_publication:4187;1654843144.066323;
+09:39:04.280 - INFO - Sending publication with company = ExxonMobil, value = 63661.81, drop = 490919.25, variation = 0.64, date = 10.08.2019, 
+09:39:04.280 - INFO - log_send_publication:4197;1654843144.280297;
+09:39:04.495 - INFO - Sending publication with company = Walmart, value = 37019.29, drop = 106723.46, variation = 0.68, date = 24.03.2019, 
+09:39:04.694 - INFO - log_send_publication:4207;1654843144.694465;
+09:39:04.694 - INFO - Sending publication with company = Amazon, value = 484660.8, drop = 414165.55, variation = 0.06, date = 27.07.2018, 
+09:39:04.695 - INFO - log_send_publication:4217;1654843144.695458;
+09:39:04.897 - INFO - Sending publication with company = Apple, value = 479142.95, drop = 241180.4, variation = 0.61, date = 18.06.2019, 
+09:39:04.897 - INFO - log_send_publication:4227;1654843144.897297;
+09:39:05.111 - INFO - Sending publication with company = McKesson, value = 255772.7, drop = 499590.48, variation = 0.32, date = 07.05.2018, 
+09:39:05.111 - INFO - log_send_publication:4237;1654843145.111462;
+09:39:05.325 - INFO - Sending publication with company = Aplhabet, value = 111600.0, drop = 394924.76, variation = 0.99, date = 08.09.2018, 
+09:39:05.325 - INFO - log_send_publication:4247;1654843145.325479;
+09:39:05.539 - INFO - Sending publication with company = Amazon, value = 300584.22, drop = 115581.12, variation = 0.51, date = 30.05.2020, 
+09:39:05.539 - INFO - log_send_publication:4257;1654843145.539641;
+09:39:05.754 - INFO - Sending publication with company = Netflix, value = 208650.58, drop = 230963.8, variation = 0.36, date = 11.01.2022, 
+09:39:05.755 - INFO - log_send_publication:4267;1654843145.755175;
+09:39:05.955 - INFO - Sending publication with company = ExxonMobil, value = 182426.48, drop = 451251.41, variation = 0.61, date = 27.03.2018, 
+09:39:05.955 - INFO - log_send_publication:4277;1654843145.955871;
+09:39:06.161 - INFO - Sending publication with company = Amazon, value = 415243.68, drop = 18258.93, variation = 0.81, date = 31.03.2022, 
+09:39:06.161 - INFO - log_send_publication:4287;1654843146.161229;
+09:39:06.365 - INFO - Sending publication with company = Chevron, value = 204758.49, drop = 103202.15, variation = 0.99, date = 07.01.2020, 
+09:39:06.365 - INFO - log_send_publication:4297;1654843146.365734;
+09:39:06.570 - INFO - Sending publication with company = Apple, value = 311909.08, drop = 453881.07, variation = 0.42, date = 07.07.2019, 
+09:39:06.783 - INFO - log_send_publication:4307;1654843146.78385;
+09:39:06.784 - INFO - Sending publication with company = Bitdefender, value = 239413.76, drop = 3284.14, variation = 0.48, date = 19.10.2018, 
+09:39:06.784 - INFO - log_send_publication:4317;1654843146.784845;
+09:39:06.990 - INFO - Sending publication with company = Chevron, value = 479114.74, drop = 147779.58, variation = 0.75, date = 22.04.2019, 
+09:39:06.990 - INFO - log_send_publication:4327;1654843146.990659;
+09:39:07.191 - INFO - Sending publication with company = Chevron, value = 114115.96, drop = 392079.71, variation = 0.49, date = 03.08.2020, 
+09:39:07.191 - INFO - log_send_publication:4337;1654843147.191218;
+09:39:07.395 - INFO - Sending publication with company = Aplhabet, value = 475713.5, drop = 147393.3, variation = 0.92, date = 13.04.2022, 
+09:39:07.395 - INFO - log_send_publication:4347;1654843147.395695;
+09:39:07.597 - INFO - Sending publication with company = Aplhabet, value = 140869.85, drop = 98961.9, variation = 0.07, date = 29.05.2020, 
+09:39:07.597 - INFO - log_send_publication:4357;1654843147.597769;
+09:39:07.800 - INFO - Sending publication with company = Walmart, value = 125782.53, drop = 203228.96, variation = 0.37, date = 14.03.2020, 
+09:39:07.800 - INFO - log_send_publication:4367;1654843147.800233;
+09:39:08.004 - INFO - Sending publication with company = McKesson, value = 336669.35, drop = 337259.35, variation = 0.54, date = 15.08.2017, 
+09:39:08.004 - INFO - log_send_publication:4377;1654843148.004549;
+09:39:08.206 - INFO - Sending publication with company = Apple, value = 192647.28, drop = 92866.27, variation = 0.87, date = 11.01.2020, 
+09:39:08.206 - INFO - log_send_publication:4387;1654843148.206068;
+09:39:08.408 - INFO - Sending publication with company = Walmart, value = 267990.47, drop = 314310.92, variation = 0.11, date = 19.11.2019, 
+09:39:08.408 - INFO - log_send_publication:4397;1654843148.408528;
+09:39:08.609 - INFO - Sending publication with company = Apple, value = 297559.11, drop = 300375.76, variation = 0.07, date = 06.07.2019, 
+09:39:08.895 - INFO - log_send_publication:4407;1654843148.89574;
+09:39:08.896 - INFO - Sending publication with company = McKesson, value = 272011.15, drop = 301039.64, variation = 0.3, date = 03.12.2020, 
+09:39:08.896 - INFO - log_send_publication:4417;1654843148.89673;
+09:39:09.111 - INFO - Sending publication with company = Microsoft, value = 439592.32, drop = 100945.73, variation = 0.26, date = 14.03.2020, 
+09:39:09.111 - INFO - log_send_publication:4427;1654843149.111092;
+09:39:09.316 - INFO - Sending publication with company = Netflix, value = 106471.04, drop = 420106.33, variation = 0.46, date = 14.04.2018, 
+09:39:09.317 - INFO - log_send_publication:4437;1654843149.317341;
+09:39:09.517 - INFO - Sending publication with company = Amazon, value = 374523.4, drop = 418613.87, variation = 0.35, date = 20.10.2018, 
+09:39:09.517 - INFO - log_send_publication:4447;1654843149.517934;
+09:39:09.720 - INFO - Sending publication with company = Bitdefender, value = 297030.61, drop = 47894.85, variation = 0.22, date = 08.05.2018, 
+09:39:09.948 - INFO - log_send_publication:4457;1654843149.948892;
+09:39:09.949 - INFO - Sending publication with company = Amazon, value = 425845.39, drop = 63461.04, variation = 0.03, date = 14.02.2022, 
+09:39:09.949 - INFO - log_send_publication:4467;1654843149.949887;
+09:39:10.167 - INFO - Sending publication with company = Microsoft, value = 366825.29, drop = 80368.82, variation = 0.84, date = 31.03.2019, 
+09:39:10.167 - INFO - log_send_publication:4477;1654843150.167006;
+09:39:10.382 - INFO - Sending publication with company = McKesson, value = 319840.48, drop = 77735.65, variation = 0.35, date = 25.01.2021, 
+09:39:10.382 - INFO - log_send_publication:4487;1654843150.382158;
+09:39:10.598 - INFO - Sending publication with company = Chevron, value = 411020.95, drop = 41582.44, variation = 0.07, date = 29.10.2018, 
+09:39:10.598 - INFO - log_send_publication:4497;1654843150.5982;
+09:39:10.813 - INFO - Sending publication with company = Amazon, value = 46375.63, drop = 412463.33, variation = 0.07, date = 24.02.2022, 
+09:39:10.998 - INFO - log_send_publication:4507;1654843150.998103;
+09:39:10.999 - INFO - Sending publication with company = Microsoft, value = 351424.14, drop = 216861.38, variation = 0.79, date = 10.02.2019, 
+09:39:10.999 - INFO - log_send_publication:4517;1654843150.999101;
+09:39:11.202 - INFO - Sending publication with company = Walmart, value = 289111.07, drop = 229037.07, variation = 0.73, date = 04.02.2020, 
+09:39:11.202 - INFO - log_send_publication:4527;1654843151.202193;
+09:39:11.416 - INFO - Sending publication with company = Microsoft, value = 413721.22, drop = 62703.52, variation = 0.52, date = 20.07.2020, 
+09:39:11.416 - INFO - log_send_publication:4537;1654843151.416355;
+09:39:11.630 - INFO - Sending publication with company = Amazon, value = 423477.79, drop = 23267.61, variation = 0.67, date = 18.06.2017, 
+09:39:11.630 - INFO - log_send_publication:4547;1654843151.630355;
+09:39:11.832 - INFO - Sending publication with company = McKesson, value = 219091.38, drop = 3680.21, variation = 0.44, date = 23.08.2019, 
+09:39:12.031 - INFO - log_send_publication:4557;1654843152.03173;
+09:39:12.032 - INFO - Sending publication with company = ExxonMobil, value = 158188.5, drop = 354816.05, variation = 0.25, date = 09.07.2017, 
+09:39:12.032 - INFO - log_send_publication:4567;1654843152.032772;
+09:39:12.232 - INFO - Sending publication with company = Microsoft, value = 145843.15, drop = 40312.53, variation = 0.68, date = 30.01.2018, 
+09:39:12.232 - INFO - log_send_publication:4577;1654843152.232263;
+09:39:12.433 - INFO - Sending publication with company = Apple, value = 59769.64, drop = 150929.82, variation = 0.58, date = 01.10.2019, 
+09:39:12.433 - INFO - log_send_publication:4587;1654843152.433653;
+09:39:12.646 - INFO - Sending publication with company = Bitdefender, value = 253754.91, drop = 167580.15, variation = 0.64, date = 04.10.2019, 
+09:39:12.646 - INFO - log_send_publication:4597;1654843152.64664;
+09:39:12.860 - INFO - Sending publication with company = McKesson, value = 78995.73, drop = 67494.51, variation = 0.27, date = 07.07.2017, 
+09:39:12.860 - INFO - log_send_publication:4607;1654843152.86079;
+09:39:13.075 - INFO - Sending publication with company = Netflix, value = 30271.47, drop = 101908.87, variation = 0.45, date = 18.02.2020, 
+09:39:13.075 - INFO - log_send_publication:4617;1654843153.075343;
+09:39:13.288 - INFO - Sending publication with company = Aplhabet, value = 233309.75, drop = 138428.67, variation = 0.82, date = 10.12.2019, 
+09:39:13.288 - INFO - log_send_publication:4627;1654843153.288675;
+09:39:13.503 - INFO - Sending publication with company = Amazon, value = 322887.96, drop = 227506.0, variation = 0.22, date = 31.12.2020, 
+09:39:13.503 - INFO - log_send_publication:4637;1654843153.503837;
+09:39:13.716 - INFO - Sending publication with company = Apple, value = 188852.23, drop = 355209.77, variation = 0.41, date = 16.08.2018, 
+09:39:13.716 - INFO - log_send_publication:4647;1654843153.716759;
+09:39:13.930 - INFO - Sending publication with company = Apple, value = 47703.66, drop = 172316.27, variation = 0.45, date = 17.12.2020, 
+09:39:13.930 - INFO - log_send_publication:4657;1654843153.93075;
+09:39:14.145 - INFO - Sending publication with company = Bitdefender, value = 487575.2, drop = 142032.78, variation = 0.5, date = 05.06.2020, 
+09:39:14.145 - INFO - log_send_publication:4667;1654843154.145434;
+09:39:14.360 - INFO - Sending publication with company = Aplhabet, value = 287474.3, drop = 443682.79, variation = 0.65, date = 06.11.2019, 
+09:39:14.600 - INFO - log_send_publication:4677;1654843154.600902;
+09:39:14.600 - INFO - Sending publication with company = Aplhabet, value = 417485.03, drop = 207682.0, variation = 0.84, date = 17.06.2018, 
+09:39:14.602 - INFO - log_send_publication:4687;1654843154.602916;
+09:39:14.806 - INFO - Sending publication with company = Bitdefender, value = 348674.62, drop = 335658.69, variation = 0.15, date = 16.10.2020, 
+09:39:14.806 - INFO - log_send_publication:4697;1654843154.806598;
+09:39:15.021 - INFO - Sending publication with company = Bitdefender, value = 122373.7, drop = 31600.04, variation = 0.91, date = 17.12.2020, 
+09:39:15.021 - INFO - log_send_publication:4707;1654843155.021605;
+09:39:15.236 - INFO - Sending publication with company = Apple, value = 354853.58, drop = 202983.59, variation = 0.68, date = 26.07.2018, 
+09:39:15.237 - INFO - log_send_publication:4717;1654843155.237033;
+09:39:15.449 - INFO - Sending publication with company = Amazon, value = 323547.31, drop = 37919.13, variation = 0.64, date = 01.03.2019, 
+09:39:15.648 - INFO - log_send_publication:4727;1654843155.648635;
+09:39:15.649 - INFO - Sending publication with company = Bitdefender, value = 309315.4, drop = 496008.29, variation = 0.86, date = 23.06.2021, 
+09:39:15.649 - INFO - log_send_publication:4737;1654843155.649638;
+09:39:15.854 - INFO - Sending publication with company = Amazon, value = 148059.56, drop = 236400.85, variation = 0.24, date = 28.02.2018, 
+09:39:15.854 - INFO - log_send_publication:4747;1654843155.854112;
+09:39:16.057 - INFO - Sending publication with company = Walmart, value = 453235.7, drop = 84833.74, variation = 0.89, date = 13.01.2022, 
+09:39:16.058 - INFO - log_send_publication:4757;1654843156.058521;
+09:39:16.272 - INFO - Sending publication with company = McKesson, value = 155729.64, drop = 414118.95, variation = 0.08, date = 09.08.2021, 
+09:39:16.272 - INFO - log_send_publication:4767;1654843156.272106;
+09:39:16.486 - INFO - Sending publication with company = ExxonMobil, value = 226345.46, drop = 360030.48, variation = 0.78, date = 26.10.2019, 
+09:39:16.486 - INFO - log_send_publication:4777;1654843156.486868;
+09:39:16.700 - INFO - Sending publication with company = Walmart, value = 480050.63, drop = 253369.61, variation = 0.19, date = 14.06.2017, 
+09:39:16.700 - INFO - log_send_publication:4787;1654843156.70089;
+09:39:16.914 - INFO - Sending publication with company = Microsoft, value = 51204.58, drop = 28656.47, variation = 0.05, date = 20.02.2022, 
+09:39:16.915 - INFO - log_send_publication:4797;1654843156.91559;
+09:39:17.129 - INFO - Sending publication with company = Apple, value = 5752.7, drop = 371168.67, variation = 0.64, date = 02.01.2020, 
+09:39:17.129 - INFO - log_send_publication:4807;1654843157.129356;
+09:39:17.343 - INFO - Sending publication with company = ExxonMobil, value = 167157.52, drop = 85535.53, variation = 0.79, date = 11.06.2020, 
+09:39:17.344 - INFO - log_send_publication:4817;1654843157.344689;
+09:39:17.544 - INFO - Sending publication with company = Netflix, value = 475188.44, drop = 101399.12, variation = 0.22, date = 30.05.2022, 
+09:39:17.544 - INFO - log_send_publication:4827;1654843157.544685;
+09:39:17.747 - INFO - Sending publication with company = Netflix, value = 206895.36, drop = 393782.83, variation = 0.9, date = 08.05.2020, 
+09:39:17.747 - INFO - log_send_publication:4837;1654843157.74752;
+09:39:17.960 - INFO - Sending publication with company = Apple, value = 160973.1, drop = 204667.87, variation = 0.34, date = 09.12.2017, 
+09:39:17.960 - INFO - log_send_publication:4847;1654843157.960489;
+09:39:18.173 - INFO - Sending publication with company = McKesson, value = 466327.35, drop = 53626.69, variation = 0.28, date = 12.10.2017, 
+09:39:18.173 - INFO - log_send_publication:4857;1654843158.173702;
+09:39:18.386 - INFO - Sending publication with company = Apple, value = 343409.02, drop = 229197.09, variation = 0.27, date = 30.03.2022, 
+09:39:18.386 - INFO - log_send_publication:4867;1654843158.386882;
+09:39:18.599 - INFO - Sending publication with company = McKesson, value = 134844.25, drop = 66646.44, variation = 0.91, date = 15.04.2022, 
+09:39:18.599 - INFO - log_send_publication:4877;1654843158.59976;
+09:39:18.812 - INFO - Sending publication with company = Microsoft, value = 288692.59, drop = 136174.12, variation = 0.34, date = 02.04.2022, 
+09:39:18.813 - INFO - log_send_publication:4887;1654843158.813234;
+09:39:19.014 - INFO - Sending publication with company = Apple, value = 332121.41, drop = 369259.25, variation = 0.39, date = 04.01.2018, 
+09:39:19.289 - INFO - log_send_publication:4897;1654843159.289278;
+09:39:19.290 - INFO - Sending publication with company = Netflix, value = 296571.0, drop = 493417.83, variation = 0.52, date = 08.07.2018, 
+09:39:19.290 - INFO - log_send_publication:4907;1654843159.290231;
+09:39:19.493 - INFO - Sending publication with company = Microsoft, value = 111419.67, drop = 153798.73, variation = 0.77, date = 10.05.2018, 
+09:39:19.493 - INFO - log_send_publication:4917;1654843159.493015;
+09:39:19.706 - INFO - Sending publication with company = Microsoft, value = 391839.73, drop = 452320.63, variation = 0.41, date = 20.03.2022, 
+09:39:19.706 - INFO - log_send_publication:4927;1654843159.706917;
+09:39:19.922 - INFO - Sending publication with company = Walmart, value = 413777.48, drop = 466672.35, variation = 0.79, date = 18.12.2021, 
+09:39:19.923 - INFO - log_send_publication:4937;1654843159.923281;
+09:39:20.136 - INFO - Sending publication with company = Bitdefender, value = 168053.91, drop = 418391.62, variation = 0.01, date = 06.11.2018, 
+09:39:20.136 - INFO - log_send_publication:4947;1654843160.136203;
+09:39:20.351 - INFO - Sending publication with company = Walmart, value = 499778.56, drop = 84810.37, variation = 0.78, date = 25.10.2020, 
+09:39:20.352 - INFO - log_send_publication:4957;1654843160.352531;
+09:39:20.566 - INFO - Sending publication with company = Aplhabet, value = 61276.59, drop = 309714.06, variation = 0.73, date = 10.10.2019, 
+09:39:20.566 - INFO - log_send_publication:4967;1654843160.566203;
+09:39:20.779 - INFO - Sending publication with company = ExxonMobil, value = 267262.2, drop = 472045.57, variation = 0.91, date = 26.01.2020, 
+09:39:20.779 - INFO - log_send_publication:4977;1654843160.779964;
+09:39:20.980 - INFO - Sending publication with company = Microsoft, value = 299238.1, drop = 313268.82, variation = 0.94, date = 13.03.2018, 
+09:39:20.980 - INFO - log_send_publication:4987;1654843160.980447;
+09:39:21.194 - INFO - Sending publication with company = Netflix, value = 411737.07, drop = 364528.72, variation = 0.44, date = 07.01.2018, 
+09:39:21.194 - INFO - log_send_publication:4997;1654843161.194311;
+09:39:21.399 - INFO - Sending publication with company = ExxonMobil, value = 84802.66, drop = 152926.18, variation = 0.22, date = 20.09.2017, 
+09:39:21.399 - INFO - log_send_publication:5007;1654843161.3993;
+09:39:21.613 - INFO - Sending publication with company = Aplhabet, value = 320587.92, drop = 120744.28, variation = 0.32, date = 03.06.2022, 
+09:39:21.872 - INFO - log_send_publication:5017;1654843161.872116;
+09:39:21.873 - INFO - Sending publication with company = Netflix, value = 463288.17, drop = 255070.99, variation = 0.98, date = 02.11.2018, 
+09:39:21.874 - INFO - log_send_publication:5027;1654843161.873127;
+09:39:22.076 - INFO - Sending publication with company = Walmart, value = 169391.46, drop = 255286.01, variation = 0.05, date = 03.03.2022, 
+09:39:22.076 - INFO - log_send_publication:5037;1654843162.076152;
+09:39:22.291 - INFO - Sending publication with company = Microsoft, value = 195718.28, drop = 230339.15, variation = 0.45, date = 12.12.2019, 
+09:39:22.291 - INFO - log_send_publication:5047;1654843162.291171;
+09:39:22.504 - INFO - Sending publication with company = Walmart, value = 452858.47, drop = 446407.51, variation = 0.01, date = 01.06.2021, 
+09:39:22.504 - INFO - log_send_publication:5057;1654843162.504074;
+09:39:22.718 - INFO - Sending publication with company = Bitdefender, value = 348536.63, drop = 57405.49, variation = 0.15, date = 13.04.2018, 
+09:39:22.902 - INFO - log_send_publication:5067;1654843162.901516;
+09:39:22.921 - INFO - Sending publication with company = Aplhabet, value = 456062.06, drop = 479019.84, variation = 0.97, date = 14.07.2019, 
+09:39:22.922 - INFO - log_send_publication:5077;1654843162.922644;
+09:39:23.125 - INFO - Sending publication with company = Apple, value = 397091.63, drop = 146247.48, variation = 0.32, date = 23.08.2018, 
+09:39:23.125 - INFO - log_send_publication:5087;1654843163.125296;
+09:39:23.326 - INFO - Sending publication with company = Bitdefender, value = 213994.83, drop = 349487.13, variation = 0.05, date = 01.02.2021, 
+09:39:23.326 - INFO - log_send_publication:5097;1654843163.326398;
+09:39:23.541 - INFO - Sending publication with company = Aplhabet, value = 2026.12, drop = 31887.19, variation = 0.89, date = 10.01.2019, 
+09:39:23.541 - INFO - log_send_publication:5107;1654843163.541256;
+09:39:23.743 - INFO - Sending publication with company = Aplhabet, value = 112579.44, drop = 14044.64, variation = 0.51, date = 10.06.2017, 
+09:39:23.966 - INFO - log_send_publication:5117;1654843163.966984;
+09:39:23.968 - INFO - Sending publication with company = Aplhabet, value = 492025.18, drop = 190311.33, variation = 0.8, date = 21.01.2019, 
+09:39:23.968 - INFO - log_send_publication:5127;1654843163.968973;
+09:39:24.169 - INFO - Sending publication with company = Bitdefender, value = 187474.59, drop = 42688.71, variation = 0.55, date = 26.07.2019, 
+09:39:24.169 - INFO - log_send_publication:5137;1654843164.169599;
+09:39:24.383 - INFO - Sending publication with company = Walmart, value = 316644.28, drop = 47500.59, variation = 0.03, date = 04.11.2017, 
+09:39:24.384 - INFO - log_send_publication:5147;1654843164.384391;
+09:39:24.584 - INFO - Sending publication with company = Bitdefender, value = 338332.15, drop = 89594.17, variation = 0.06, date = 08.05.2021, 
+09:39:24.584 - INFO - log_send_publication:5157;1654843164.584836;
+09:39:24.800 - INFO - Sending publication with company = Netflix, value = 426763.8, drop = 132183.98, variation = 0.73, date = 25.10.2020, 
+09:39:25.001 - INFO - log_send_publication:5167;1654843165.001449;
+09:39:25.001 - INFO - Sending publication with company = Aplhabet, value = 16485.31, drop = 382768.79, variation = 0.31, date = 03.11.2019, 
+09:39:25.002 - INFO - log_send_publication:5177;1654843165.001449;
+09:39:25.206 - INFO - Sending publication with company = Microsoft, value = 122162.9, drop = 133114.69, variation = 0.2, date = 10.10.2020, 
+09:39:25.206 - INFO - log_send_publication:5187;1654843165.206007;
+09:39:25.421 - INFO - Sending publication with company = Walmart, value = 63956.42, drop = 323297.72, variation = 0.21, date = 26.08.2019, 
+09:39:25.421 - INFO - log_send_publication:5197;1654843165.421268;
+09:39:25.634 - INFO - Sending publication with company = McKesson, value = 186689.6, drop = 445479.99, variation = 0.53, date = 06.03.2019, 
+09:39:25.634 - INFO - log_send_publication:5207;1654843165.634309;
+09:39:25.850 - INFO - Sending publication with company = Netflix, value = 119751.51, drop = 436847.63, variation = 0.63, date = 25.04.2020, 
+09:39:26.049 - INFO - log_send_publication:5217;1654843166.049515;
+09:39:26.050 - INFO - Sending publication with company = Walmart, value = 380576.8, drop = 418999.8, variation = 0.27, date = 07.02.2022, 
+09:39:26.051 - INFO - log_send_publication:5227;1654843166.051605;
+09:39:26.264 - INFO - Sending publication with company = Aplhabet, value = 484113.93, drop = 110063.59, variation = 0.48, date = 07.06.2020, 
+09:39:26.264 - INFO - log_send_publication:5237;1654843166.264709;
+09:39:26.479 - INFO - Sending publication with company = McKesson, value = 398663.26, drop = 354057.44, variation = 0.38, date = 03.11.2021, 
+09:39:26.479 - INFO - log_send_publication:5247;1654843166.479743;
+09:39:26.692 - INFO - Sending publication with company = Aplhabet, value = 126653.37, drop = 176036.96, variation = 0.28, date = 12.03.2020, 
+09:39:26.692 - INFO - log_send_publication:5257;1654843166.692623;
+09:39:26.906 - INFO - Sending publication with company = Apple, value = 103497.23, drop = 479532.07, variation = 0.83, date = 26.11.2019, 
+09:39:26.907 - INFO - log_send_publication:5267;1654843166.907888;
+09:39:27.121 - INFO - Sending publication with company = ExxonMobil, value = 274445.72, drop = 443055.73, variation = 0.63, date = 08.08.2017, 
+09:39:27.121 - INFO - log_send_publication:5277;1654843167.12151;
+09:39:27.336 - INFO - Sending publication with company = Apple, value = 59223.69, drop = 462423.98, variation = 0.38, date = 07.08.2019, 
+09:39:27.336 - INFO - log_send_publication:5287;1654843167.336466;
+09:39:27.537 - INFO - Sending publication with company = Netflix, value = 102009.38, drop = 109930.17, variation = 0.94, date = 21.06.2020, 
+09:39:27.537 - INFO - log_send_publication:5297;1654843167.537643;
+09:39:27.750 - INFO - Sending publication with company = Apple, value = 68466.67, drop = 7717.88, variation = 0.77, date = 01.11.2018, 
+09:39:27.750 - INFO - log_send_publication:5307;1654843167.750996;
+09:39:27.963 - INFO - Sending publication with company = Microsoft, value = 435667.92, drop = 285983.77, variation = 0.09, date = 13.08.2021, 
+09:39:27.963 - INFO - log_send_publication:5317;1654843167.963936;
+09:39:28.177 - INFO - Sending publication with company = Bitdefender, value = 285198.86, drop = 414491.79, variation = 0.98, date = 15.11.2018, 
+09:39:28.177 - INFO - log_send_publication:5327;1654843168.177678;
+09:39:28.393 - INFO - Sending publication with company = Amazon, value = 360106.13, drop = 102870.32, variation = 0.36, date = 06.06.2021, 
+09:39:28.636 - INFO - log_send_publication:5337;1654843168.636796;
+09:39:28.636 - INFO - Sending publication with company = Aplhabet, value = 87124.51, drop = 178142.89, variation = 0.47, date = 30.10.2021, 
+09:39:28.637 - INFO - log_send_publication:5347;1654843168.637798;
+09:39:28.844 - INFO - Sending publication with company = Microsoft, value = 213746.14, drop = 50329.18, variation = 0.16, date = 14.09.2018, 
+09:39:28.844 - INFO - log_send_publication:5357;1654843168.844314;
+09:39:29.060 - INFO - Sending publication with company = Aplhabet, value = 25770.2, drop = 471949.38, variation = 0.05, date = 08.03.2018, 
+09:39:29.061 - INFO - log_send_publication:5367;1654843169.061488;
+09:39:29.261 - INFO - Sending publication with company = Chevron, value = 419898.97, drop = 391213.13, variation = 0.33, date = 28.06.2021, 
+09:39:29.261 - INFO - log_send_publication:5377;1654843169.261154;
+09:39:29.476 - INFO - Sending publication with company = Amazon, value = 459142.39, drop = 461002.13, variation = 0.47, date = 26.04.2022, 
+09:39:29.690 - INFO - log_send_publication:5387;1654843169.690703;
+09:39:29.691 - INFO - Sending publication with company = Aplhabet, value = 297373.27, drop = 385518.88, variation = 0.97, date = 28.02.2021, 
+09:39:29.692 - INFO - log_send_publication:5397;1654843169.692712;
+09:39:29.899 - INFO - Sending publication with company = Microsoft, value = 110491.29, drop = 247292.76, variation = 0.69, date = 23.07.2020, 
+09:39:29.899 - INFO - log_send_publication:5407;1654843169.899587;
+09:39:30.101 - INFO - Sending publication with company = Apple, value = 321751.87, drop = 10376.83, variation = 0.26, date = 30.03.2018, 
+09:39:30.102 - INFO - log_send_publication:5417;1654843170.102782;
+09:39:30.312 - INFO - Sending publication with company = Chevron, value = 105589.32, drop = 105079.07, variation = 0.67, date = 08.04.2021, 
+09:39:30.312 - INFO - log_send_publication:5427;1654843170.312173;
+09:39:30.515 - INFO - Sending publication with company = McKesson, value = 215374.57, drop = 70759.54, variation = 0.85, date = 28.04.2021, 
+09:39:30.747 - INFO - log_send_publication:5437;1654843170.747176;
+09:39:30.748 - INFO - Sending publication with company = Microsoft, value = 166865.94, drop = 623.41, variation = 0.13, date = 23.01.2022, 
+09:39:30.749 - INFO - log_send_publication:5447;1654843170.749123;
+09:39:30.962 - INFO - Sending publication with company = Microsoft, value = 81648.38, drop = 398129.1, variation = 0.73, date = 29.11.2021, 
+09:39:30.962 - INFO - log_send_publication:5457;1654843170.962448;
+09:39:31.177 - INFO - Sending publication with company = Chevron, value = 422139.87, drop = 491657.3, variation = 0.75, date = 17.02.2018, 
+09:39:31.177 - INFO - log_send_publication:5467;1654843171.177281;
+09:39:31.390 - INFO - Sending publication with company = Chevron, value = 269361.77, drop = 383169.87, variation = 0.83, date = 11.03.2020, 
+09:39:31.390 - INFO - log_send_publication:5477;1654843171.390396;
+09:39:31.605 - INFO - Sending publication with company = Walmart, value = 160683.51, drop = 321950.55, variation = 0.79, date = 13.10.2020, 
+09:39:31.809 - INFO - log_send_publication:5487;1654843171.809575;
+09:39:31.810 - INFO - Sending publication with company = Chevron, value = 54590.8, drop = 319200.78, variation = 0.94, date = 25.02.2018, 
+09:39:31.810 - INFO - log_send_publication:5497;1654843171.810945;
+09:39:32.028 - INFO - Sending publication with company = ExxonMobil, value = 89522.73, drop = 297234.65, variation = 0.42, date = 05.03.2019, 
+09:39:32.028 - INFO - log_send_publication:5507;1654843172.028283;
+09:39:32.242 - INFO - Sending publication with company = ExxonMobil, value = 422172.56, drop = 289276.92, variation = 0.01, date = 18.12.2018, 
+09:39:32.242 - INFO - log_send_publication:5517;1654843172.242751;
+09:39:32.456 - INFO - Sending publication with company = Amazon, value = 392449.03, drop = 116255.41, variation = 0.64, date = 23.10.2021, 
+09:39:32.456 - INFO - log_send_publication:5527;1654843172.456262;
+09:39:32.657 - INFO - Sending publication with company = Bitdefender, value = 434923.61, drop = 400764.81, variation = 0.69, date = 27.08.2020, 
+09:39:32.854 - INFO - log_send_publication:5537;1654843172.854614;
+09:39:32.855 - INFO - Sending publication with company = Microsoft, value = 436662.69, drop = 274042.45, variation = 0.72, date = 16.09.2019, 
+09:39:32.856 - INFO - log_send_publication:5547;1654843172.856625;
+09:39:33.060 - INFO - Sending publication with company = Aplhabet, value = 159498.35, drop = 45310.51, variation = 0.75, date = 31.05.2020, 
+09:39:33.061 - INFO - log_send_publication:5557;1654843173.061385;
+09:39:33.274 - INFO - Sending publication with company = Aplhabet, value = 493409.21, drop = 158700.01, variation = 0.12, date = 04.07.2017, 
+09:39:33.274 - INFO - log_send_publication:5567;1654843173.274234;
+09:39:33.488 - INFO - Sending publication with company = Amazon, value = 149152.37, drop = 58700.37, variation = 0.36, date = 30.05.2018, 
+09:39:33.488 - INFO - log_send_publication:5577;1654843173.488602;
+09:39:33.702 - INFO - Sending publication with company = McKesson, value = 141510.85, drop = 313098.33, variation = 0.76, date = 06.07.2018, 
+09:39:33.887 - INFO - log_send_publication:5587;1654843173.887777;
+09:39:33.888 - INFO - Sending publication with company = ExxonMobil, value = 279196.77, drop = 429014.3, variation = 0.78, date = 26.02.2020, 
+09:39:33.889 - INFO - log_send_publication:5597;1654843173.889759;
+09:39:34.103 - INFO - Sending publication with company = Microsoft, value = 99045.67, drop = 376003.42, variation = 0.79, date = 10.09.2019, 
+09:39:34.103 - INFO - log_send_publication:5607;1654843174.103921;
+09:39:34.318 - INFO - Sending publication with company = Microsoft, value = 150779.94, drop = 78998.94, variation = 0.59, date = 19.08.2021, 
+09:39:34.319 - INFO - log_send_publication:5617;1654843174.31992;
+09:39:34.533 - INFO - Sending publication with company = Netflix, value = 494055.02, drop = 47933.13, variation = 0.82, date = 16.03.2018, 
+09:39:34.534 - INFO - log_send_publication:5627;1654843174.534694;
+09:39:34.747 - INFO - Sending publication with company = ExxonMobil, value = 350896.03, drop = 236722.63, variation = 0.76, date = 14.02.2019, 
+09:39:34.748 - INFO - log_send_publication:5637;1654843174.74835;
+09:39:34.962 - INFO - Sending publication with company = Apple, value = 7681.77, drop = 243745.05, variation = 0.35, date = 03.01.2019, 
+09:39:34.962 - INFO - log_send_publication:5647;1654843174.962933;
+09:39:35.164 - INFO - Sending publication with company = Microsoft, value = 19818.77, drop = 110457.55, variation = 0.22, date = 04.11.2017, 
+09:39:35.440 - INFO - log_send_publication:5657;1654843175.440438;
+09:39:35.440 - INFO - Sending publication with company = Netflix, value = 304427.28, drop = 221078.21, variation = 0.2, date = 04.04.2021, 
+09:39:35.441 - INFO - log_send_publication:5667;1654843175.441517;
+09:39:35.643 - INFO - Sending publication with company = McKesson, value = 412788.65, drop = 252870.66, variation = 0.63, date = 14.12.2020, 
+09:39:35.643 - INFO - log_send_publication:5677;1654843175.643422;
+09:39:35.856 - INFO - Sending publication with company = ExxonMobil, value = 499854.06, drop = 68183.36, variation = 0.85, date = 23.10.2018, 
+09:39:35.856 - INFO - log_send_publication:5687;1654843175.856597;
+09:39:36.061 - INFO - Sending publication with company = Amazon, value = 168033.07, drop = 381342.5, variation = 0.82, date = 01.11.2019, 
+09:39:36.061 - INFO - log_send_publication:5697;1654843176.061038;
+09:39:36.274 - INFO - Sending publication with company = Netflix, value = 118574.11, drop = 278337.45, variation = 0.78, date = 05.08.2019, 
+09:39:36.489 - INFO - log_send_publication:5707;1654843176.489681;
+09:39:36.490 - INFO - Sending publication with company = Bitdefender, value = 434823.01, drop = 306358.22, variation = 0.32, date = 21.04.2021, 
+09:39:36.493 - INFO - log_send_publication:5717;1654843176.493095;
+09:39:36.692 - INFO - Sending publication with company = Aplhabet, value = 446065.78, drop = 311545.46, variation = 0.81, date = 21.03.2022, 
+09:39:36.693 - INFO - log_send_publication:5727;1654843176.693231;
+09:39:36.906 - INFO - Sending publication with company = Walmart, value = 352591.24, drop = 107585.91, variation = 0.28, date = 05.09.2018, 
+09:39:36.906 - INFO - log_send_publication:5737;1654843176.9062;
+09:39:37.121 - INFO - Sending publication with company = Amazon, value = 230813.42, drop = 115527.55, variation = 0.38, date = 06.12.2020, 
+09:39:37.121 - INFO - log_send_publication:5747;1654843177.121172;
+09:39:37.336 - INFO - Sending publication with company = Walmart, value = 47986.46, drop = 496964.48, variation = 0.45, date = 26.07.2017, 
+09:39:37.535 - INFO - log_send_publication:5757;1654843177.535825;
+09:39:37.535 - INFO - Sending publication with company = McKesson, value = 394293.19, drop = 421647.95, variation = 0.11, date = 22.10.2017, 
+09:39:37.536 - INFO - log_send_publication:5767;1654843177.536818;
+09:39:37.740 - INFO - Sending publication with company = McKesson, value = 458717.19, drop = 25463.93, variation = 0.85, date = 02.07.2020, 
+09:39:37.740 - INFO - log_send_publication:5777;1654843177.740486;
+09:39:37.943 - INFO - Sending publication with company = McKesson, value = 104078.1, drop = 305220.53, variation = 0.63, date = 11.02.2019, 
+09:39:37.943 - INFO - log_send_publication:5787;1654843177.943859;
+09:39:38.146 - INFO - Sending publication with company = Aplhabet, value = 311541.56, drop = 183432.68, variation = 0.95, date = 28.08.2017, 
+09:39:38.146 - INFO - log_send_publication:5797;1654843178.146458;
+09:39:38.362 - INFO - Sending publication with company = Bitdefender, value = 434451.49, drop = 441582.02, variation = 0.78, date = 18.12.2020, 
+09:39:38.362 - INFO - log_send_publication:5807;1654843178.362042;
+09:39:38.564 - INFO - Sending publication with company = Apple, value = 221612.03, drop = 383847.97, variation = 0.19, date = 16.06.2020, 
+09:39:38.564 - INFO - log_send_publication:5817;1654843178.564785;
+09:39:38.770 - INFO - Sending publication with company = Apple, value = 32920.81, drop = 453143.22, variation = 0.59, date = 15.04.2018, 
+09:39:38.770 - INFO - log_send_publication:5827;1654843178.770505;
+09:39:38.974 - INFO - Sending publication with company = ExxonMobil, value = 16555.23, drop = 242806.34, variation = 0.28, date = 20.12.2018, 
+09:39:38.974 - INFO - log_send_publication:5837;1654843178.974059;
+09:39:39.175 - INFO - Sending publication with company = Aplhabet, value = 348561.9, drop = 166288.8, variation = 0.33, date = 01.01.2022, 
+09:39:39.175 - INFO - log_send_publication:5847;1654843179.175399;
+09:39:39.377 - INFO - Sending publication with company = ExxonMobil, value = 410639.73, drop = 122606.13, variation = 0.44, date = 03.02.2019, 
+09:39:39.377 - INFO - log_send_publication:5857;1654843179.377222;
+09:39:39.592 - INFO - Sending publication with company = Apple, value = 20383.97, drop = 206159.48, variation = 0.02, date = 01.03.2019, 
+09:39:39.592 - INFO - log_send_publication:5867;1654843179.592494;
+09:39:39.798 - INFO - Sending publication with company = Amazon, value = 328403.51, drop = 240548.24, variation = 0.36, date = 05.12.2017, 
+09:39:39.798 - INFO - log_send_publication:5877;1654843179.798177;
+09:39:40.012 - INFO - Sending publication with company = Netflix, value = 447662.27, drop = 445132.15, variation = 0.4, date = 28.02.2020, 
+09:39:40.012 - INFO - log_send_publication:5887;1654843180.012304;
+09:39:40.212 - INFO - Sending publication with company = Netflix, value = 492352.85, drop = 39262.43, variation = 0.18, date = 06.08.2018, 
+09:39:40.212 - INFO - log_send_publication:5897;1654843180.21253;
+09:39:40.423 - INFO - Sending publication with company = Netflix, value = 140026.98, drop = 82082.42, variation = 0.26, date = 08.01.2019, 
+09:39:40.423 - INFO - log_send_publication:5907;1654843180.423985;
+09:39:40.636 - INFO - Sending publication with company = Apple, value = 173675.76, drop = 464074.64, variation = 0.04, date = 02.01.2018, 
+09:39:40.637 - INFO - log_send_publication:5917;1654843180.637471;
+09:39:40.852 - INFO - Sending publication with company = Netflix, value = 274779.19, drop = 499955.35, variation = 0.93, date = 18.07.2017, 
+09:39:40.852 - INFO - log_send_publication:5927;1654843180.852053;
+09:39:41.065 - INFO - Sending publication with company = Walmart, value = 408617.15, drop = 255367.13, variation = 0.37, date = 24.05.2022, 
+09:39:41.065 - INFO - log_send_publication:5937;1654843181.065601;
+09:39:41.279 - INFO - Sending publication with company = Apple, value = 173499.71, drop = 262240.67, variation = 0.45, date = 04.04.2021, 
+09:39:41.279 - INFO - log_send_publication:5947;1654843181.279485;
+09:39:41.494 - INFO - Sending publication with company = Apple, value = 108183.2, drop = 111723.92, variation = 0.12, date = 16.07.2017, 
+09:39:41.691 - INFO - log_send_publication:5957;1654843181.691045;
+09:39:41.692 - INFO - Sending publication with company = Amazon, value = 226861.71, drop = 455176.97, variation = 0.76, date = 14.08.2019, 
+09:39:41.692 - INFO - log_send_publication:5967;1654843181.692046;
+09:39:41.894 - INFO - Sending publication with company = Chevron, value = 120268.26, drop = 233447.41, variation = 0.61, date = 12.10.2018, 
+09:39:41.894 - INFO - log_send_publication:5977;1654843181.89491;
+09:39:42.111 - INFO - Sending publication with company = Apple, value = 110895.53, drop = 273903.31, variation = 0.01, date = 18.03.2022, 
+09:39:42.111 - INFO - log_send_publication:5987;1654843182.111033;
+09:39:42.326 - INFO - Sending publication with company = Amazon, value = 398916.24, drop = 456597.27, variation = 0.6, date = 28.11.2021, 
+09:39:42.327 - INFO - log_send_publication:5997;1654843182.327071;
+09:39:42.530 - INFO - Sending publication with company = Aplhabet, value = 246038.52, drop = 383780.02, variation = 0.75, date = 29.03.2021, 
+09:39:42.743 - INFO - log_send_publication:6007;1654843182.743412;
+09:39:42.743 - INFO - Sending publication with company = Netflix, value = 13532.71, drop = 194370.58, variation = 0.49, date = 17.03.2018, 
+09:39:42.744 - INFO - log_send_publication:6017;1654843182.744412;
+09:39:42.944 - INFO - Sending publication with company = Walmart, value = 437515.61, drop = 224746.82, variation = 0.51, date = 26.08.2021, 
+09:39:42.944 - INFO - log_send_publication:6027;1654843182.944872;
+09:39:43.150 - INFO - Sending publication with company = Walmart, value = 61870.88, drop = 475059.17, variation = 0.64, date = 07.07.2020, 
+09:39:43.150 - INFO - log_send_publication:6037;1654843183.150703;
+09:39:43.356 - INFO - Sending publication with company = Amazon, value = 160245.64, drop = 322731.24, variation = 0.23, date = 30.06.2020, 
+09:39:43.356 - INFO - log_send_publication:6047;1654843183.356131;
+09:39:43.560 - INFO - Sending publication with company = Apple, value = 143349.29, drop = 84086.26, variation = 0.89, date = 13.11.2021, 
+09:39:43.560 - INFO - log_send_publication:6057;1654843183.560906;
+09:39:43.776 - INFO - Sending publication with company = Aplhabet, value = 163190.52, drop = 438207.49, variation = 0.47, date = 08.12.2021, 
+09:39:43.776 - INFO - log_send_publication:6067;1654843183.776537;
+09:39:43.992 - INFO - Sending publication with company = ExxonMobil, value = 439148.53, drop = 166992.99, variation = 1.0, date = 14.11.2019, 
+09:39:43.992 - INFO - log_send_publication:6077;1654843183.992076;
+09:39:44.207 - INFO - Sending publication with company = Walmart, value = 397895.75, drop = 317657.06, variation = 0.79, date = 26.04.2022, 
+09:39:44.207 - INFO - log_send_publication:6087;1654843184.207075;
+09:39:44.421 - INFO - Sending publication with company = Walmart, value = 417851.86, drop = 264390.45, variation = 0.81, date = 08.10.2017, 
+09:39:44.421 - INFO - log_send_publication:6097;1654843184.421148;
+09:39:44.634 - INFO - Sending publication with company = McKesson, value = 44996.42, drop = 137726.01, variation = 0.46, date = 13.03.2022, 
+09:39:44.635 - INFO - log_send_publication:6107;1654843184.635609;
+09:39:44.836 - INFO - Sending publication with company = ExxonMobil, value = 63120.71, drop = 493655.29, variation = 0.31, date = 23.04.2020, 
+09:39:44.836 - INFO - log_send_publication:6117;1654843184.836289;
+09:39:45.037 - INFO - Sending publication with company = Apple, value = 21846.73, drop = 394273.64, variation = 0.02, date = 17.09.2021, 
+09:39:45.037 - INFO - log_send_publication:6127;1654843185.03717;
+09:39:45.253 - INFO - Sending publication with company = ExxonMobil, value = 450714.77, drop = 320544.76, variation = 0.01, date = 18.04.2021, 
+09:39:45.254 - INFO - log_send_publication:6137;1654843185.254158;
+09:39:45.460 - INFO - Sending publication with company = Bitdefender, value = 188279.08, drop = 276600.41, variation = 0.08, date = 03.09.2017, 
+09:39:45.460 - INFO - log_send_publication:6147;1654843185.460539;
+09:39:45.665 - INFO - Sending publication with company = Netflix, value = 235257.5, drop = 82469.53, variation = 0.53, date = 25.05.2021, 
+09:39:45.877 - INFO - log_send_publication:6157;1654843185.877194;
+09:39:45.878 - INFO - Sending publication with company = ExxonMobil, value = 147908.62, drop = 202790.98, variation = 0.37, date = 26.10.2019, 
+09:39:45.879 - INFO - log_send_publication:6167;1654843185.879246;
+09:39:46.083 - INFO - Sending publication with company = Microsoft, value = 376170.47, drop = 84580.81, variation = 0.1, date = 28.09.2019, 
+09:39:46.083 - INFO - log_send_publication:6177;1654843186.083812;
+09:39:46.299 - INFO - Sending publication with company = Bitdefender, value = 251410.61, drop = 443236.72, variation = 0.4, date = 26.01.2021, 
+09:39:46.300 - INFO - log_send_publication:6187;1654843186.300043;
+09:39:46.513 - INFO - Sending publication with company = McKesson, value = 355272.7, drop = 105.1, variation = 0.79, date = 22.11.2021, 
+09:39:46.513 - INFO - log_send_publication:6197;1654843186.513212;
+09:39:46.726 - INFO - Sending publication with company = Chevron, value = 192464.33, drop = 322615.15, variation = 0.69, date = 06.07.2021, 
+09:39:46.927 - INFO - log_send_publication:6207;1654843186.927152;
+09:39:46.928 - INFO - Sending publication with company = McKesson, value = 109359.86, drop = 376587.35, variation = 0.64, date = 04.04.2021, 
+09:39:46.929 - INFO - log_send_publication:6217;1654843186.92915;
+09:39:47.132 - INFO - Sending publication with company = Apple, value = 342213.89, drop = 50805.63, variation = 0.77, date = 10.03.2021, 
+09:39:47.133 - INFO - log_send_publication:6227;1654843187.133743;
+09:39:47.334 - INFO - Sending publication with company = Netflix, value = 378343.21, drop = 498045.12, variation = 0.42, date = 20.03.2020, 
+09:39:47.334 - INFO - log_send_publication:6237;1654843187.334106;
+09:39:47.550 - INFO - Sending publication with company = Netflix, value = 141316.0, drop = 72693.46, variation = 0.98, date = 07.01.2018, 
+09:39:47.550 - INFO - log_send_publication:6247;1654843187.550566;
+09:39:47.753 - INFO - Sending publication with company = Amazon, value = 343973.55, drop = 232487.7, variation = 0.76, date = 25.10.2017, 
+09:39:47.753 - INFO - log_send_publication:6257;1654843187.753214;
+09:39:47.968 - INFO - Sending publication with company = Aplhabet, value = 181582.1, drop = 263637.88, variation = 0.66, date = 11.10.2020, 
+09:39:47.968 - INFO - log_send_publication:6267;1654843187.96834;
+09:39:48.172 - INFO - Sending publication with company = Netflix, value = 383720.18, drop = 265584.13, variation = 0.19, date = 09.03.2018, 
+09:39:48.172 - INFO - log_send_publication:6277;1654843188.172582;
+09:39:48.377 - INFO - Sending publication with company = Walmart, value = 253938.84, drop = 278633.16, variation = 0.24, date = 17.11.2020, 
+09:39:48.377 - INFO - log_send_publication:6287;1654843188.377826;
+09:39:48.580 - INFO - Sending publication with company = Netflix, value = 463138.65, drop = 175686.69, variation = 0.35, date = 28.11.2019, 
+09:39:48.581 - INFO - log_send_publication:6297;1654843188.581792;
+09:39:48.784 - INFO - Sending publication with company = Amazon, value = 225195.57, drop = 233657.27, variation = 0.35, date = 04.04.2018, 
+09:39:48.999 - INFO - log_send_publication:6307;1654843188.998676;
+09:39:48.999 - INFO - Sending publication with company = Netflix, value = 461252.0, drop = 71952.71, variation = 0.64, date = 28.04.2018, 
+09:39:49.001 - INFO - log_send_publication:6317;1654843189.001881;
+09:39:49.202 - INFO - Sending publication with company = McKesson, value = 482551.02, drop = 85011.49, variation = 0.81, date = 06.07.2018, 
+09:39:49.202 - INFO - log_send_publication:6327;1654843189.202483;
+09:39:49.408 - INFO - Sending publication with company = Bitdefender, value = 346540.47, drop = 302783.68, variation = 0.71, date = 01.01.2020, 
+09:39:49.408 - INFO - log_send_publication:6337;1654843189.408257;
+09:39:49.623 - INFO - Sending publication with company = Chevron, value = 103708.32, drop = 130974.72, variation = 0.92, date = 25.10.2020, 
+09:39:49.623 - INFO - log_send_publication:6347;1654843189.623103;
+09:39:49.837 - INFO - Sending publication with company = Bitdefender, value = 25908.61, drop = 84647.61, variation = 0.91, date = 06.08.2019, 
+09:39:49.837 - INFO - log_send_publication:6357;1654843189.837266;
+09:39:50.050 - INFO - Sending publication with company = McKesson, value = 342882.89, drop = 94966.94, variation = 0.95, date = 23.10.2019, 
+09:39:50.050 - INFO - log_send_publication:6367;1654843190.050249;
+09:39:50.264 - INFO - Sending publication with company = Netflix, value = 72543.89, drop = 416952.41, variation = 0.65, date = 14.08.2017, 
+09:39:50.264 - INFO - log_send_publication:6377;1654843190.264463;
+09:39:50.469 - INFO - Sending publication with company = ExxonMobil, value = 277679.56, drop = 380980.29, variation = 0.81, date = 11.05.2019, 
+09:39:50.476 - INFO - log_send_publication:6387;1654843190.476584;
+09:39:50.682 - INFO - Sending publication with company = Microsoft, value = 350572.6, drop = 338214.26, variation = 0.65, date = 10.11.2017, 
+09:39:50.682 - INFO - log_send_publication:6397;1654843190.682399;
+09:39:50.896 - INFO - Sending publication with company = McKesson, value = 385291.98, drop = 426588.43, variation = 0.0, date = 04.06.2019, 
+09:39:50.896 - INFO - log_send_publication:6407;1654843190.89629;
+09:39:51.110 - INFO - Sending publication with company = Netflix, value = 67797.25, drop = 400778.55, variation = 0.83, date = 16.10.2021, 
+09:39:51.110 - INFO - log_send_publication:6417;1654843191.110034;
+09:39:51.323 - INFO - Sending publication with company = Netflix, value = 256502.8, drop = 420109.83, variation = 0.8, date = 23.02.2020, 
+09:39:51.585 - INFO - log_send_publication:6427;1654843191.585156;
+09:39:51.586 - INFO - Sending publication with company = Aplhabet, value = 255492.84, drop = 127050.3, variation = 0.08, date = 16.05.2021, 
+09:39:51.587 - INFO - log_send_publication:6437;1654843191.587096;
+09:39:51.789 - INFO - Sending publication with company = McKesson, value = 301729.96, drop = 77399.87, variation = 0.83, date = 31.07.2018, 
+09:39:51.790 - INFO - log_send_publication:6447;1654843191.790989;
+09:39:52.005 - INFO - Sending publication with company = McKesson, value = 39714.52, drop = 197165.64, variation = 0.63, date = 05.07.2019, 
+09:39:52.006 - INFO - log_send_publication:6457;1654843192.006277;
+09:39:52.221 - INFO - Sending publication with company = Microsoft, value = 463990.5, drop = 398179.2, variation = 0.78, date = 14.03.2021, 
+09:39:52.221 - INFO - log_send_publication:6467;1654843192.22104;
+09:39:52.436 - INFO - Sending publication with company = Chevron, value = 7288.45, drop = 241832.01, variation = 0.23, date = 15.03.2018, 
+09:39:52.635 - INFO - log_send_publication:6477;1654843192.635068;
+09:39:52.636 - INFO - Sending publication with company = Microsoft, value = 288154.54, drop = 52803.17, variation = 0.35, date = 05.08.2020, 
+09:39:52.636 - INFO - log_send_publication:6487;1654843192.636061;
+09:39:52.838 - INFO - Sending publication with company = Aplhabet, value = 412834.07, drop = 173180.34, variation = 0.24, date = 17.03.2018, 
+09:39:52.838 - INFO - log_send_publication:6497;1654843192.838096;
+09:39:53.051 - INFO - Sending publication with company = Bitdefender, value = 353956.18, drop = 138783.07, variation = 0.57, date = 14.08.2021, 
+09:39:53.051 - INFO - log_send_publication:6507;1654843193.051697;
+09:39:53.267 - INFO - Sending publication with company = Apple, value = 243118.56, drop = 303396.74, variation = 0.25, date = 22.12.2017, 
+09:39:53.267 - INFO - log_send_publication:6517;1654843193.267105;
+09:39:53.482 - INFO - Sending publication with company = McKesson, value = 115926.28, drop = 2385.96, variation = 0.81, date = 05.08.2017, 
+09:39:53.681 - INFO - log_send_publication:6527;1654843193.681029;
+09:39:53.682 - INFO - Sending publication with company = McKesson, value = 180541.43, drop = 281807.41, variation = 0.7, date = 02.05.2018, 
+09:39:53.683 - INFO - log_send_publication:6537;1654843193.683089;
+09:39:53.883 - INFO - Sending publication with company = Amazon, value = 323840.51, drop = 373214.27, variation = 0.69, date = 23.10.2018, 
+09:39:53.883 - INFO - log_send_publication:6547;1654843193.883708;
+09:39:54.098 - INFO - Sending publication with company = Aplhabet, value = 415374.98, drop = 31129.65, variation = 0.3, date = 11.03.2020, 
+09:39:54.098 - INFO - log_send_publication:6557;1654843194.098495;
+09:39:54.311 - INFO - Sending publication with company = Microsoft, value = 130.14, drop = 110973.77, variation = 0.22, date = 05.03.2020, 
+09:39:54.311 - INFO - log_send_publication:6567;1654843194.311509;
+09:39:54.516 - INFO - Sending publication with company = Netflix, value = 166761.85, drop = 122068.98, variation = 0.38, date = 08.09.2021, 
+09:39:54.729 - INFO - log_send_publication:6577;1654843194.729245;
+09:39:54.729 - INFO - Sending publication with company = Aplhabet, value = 205267.16, drop = 384605.4, variation = 0.51, date = 27.04.2020, 
+09:39:54.730 - INFO - log_send_publication:6587;1654843194.730234;
+09:39:54.933 - INFO - Sending publication with company = ExxonMobil, value = 337350.46, drop = 356396.72, variation = 0.26, date = 01.04.2022, 
+09:39:54.933 - INFO - log_send_publication:6597;1654843194.933544;
+09:39:55.148 - INFO - Sending publication with company = Netflix, value = 369234.08, drop = 406505.68, variation = 0.78, date = 20.07.2020, 
+09:39:55.149 - INFO - log_send_publication:6607;1654843195.149949;
+09:39:55.363 - INFO - Sending publication with company = McKesson, value = 97015.65, drop = 18989.35, variation = 0.37, date = 19.01.2019, 
+09:39:55.363 - INFO - log_send_publication:6617;1654843195.363642;
+09:39:55.578 - INFO - Sending publication with company = McKesson, value = 493182.58, drop = 370673.57, variation = 0.13, date = 24.03.2018, 
+09:39:55.762 - INFO - log_send_publication:6627;1654843195.76228;
+09:39:55.781 - INFO - Sending publication with company = ExxonMobil, value = 143368.24, drop = 440913.9, variation = 0.23, date = 11.04.2018, 
+09:39:55.782 - INFO - log_send_publication:6637;1654843195.782528;
+09:39:55.984 - INFO - Sending publication with company = Bitdefender, value = 467698.2, drop = 217693.29, variation = 0.46, date = 22.01.2022, 
+09:39:55.984 - INFO - log_send_publication:6647;1654843195.984982;
+09:39:56.189 - INFO - Sending publication with company = Microsoft, value = 208504.61, drop = 275607.94, variation = 0.36, date = 30.06.2019, 
+09:39:56.189 - INFO - log_send_publication:6657;1654843196.189529;
+09:39:56.392 - INFO - Sending publication with company = Apple, value = 166604.29, drop = 330515.76, variation = 0.41, date = 16.05.2021, 
+09:39:56.392 - INFO - log_send_publication:6667;1654843196.39259;
+09:39:56.596 - INFO - Sending publication with company = Chevron, value = 162314.7, drop = 481646.48, variation = 0.29, date = 06.05.2019, 
+09:39:56.596 - INFO - log_send_publication:6677;1654843196.596038;
+09:39:56.801 - INFO - Sending publication with company = Netflix, value = 275946.65, drop = 203472.5, variation = 0.44, date = 08.10.2018, 
+09:39:56.801 - INFO - log_send_publication:6687;1654843196.801595;
+09:39:57.003 - INFO - Sending publication with company = Aplhabet, value = 330742.7, drop = 384001.43, variation = 0.04, date = 23.10.2017, 
+09:39:57.003 - INFO - log_send_publication:6697;1654843197.003233;
+09:39:57.205 - INFO - Sending publication with company = Apple, value = 141403.77, drop = 343927.43, variation = 0.61, date = 30.11.2020, 
+09:39:57.205 - INFO - log_send_publication:6707;1654843197.205875;
+09:39:57.410 - INFO - Sending publication with company = Bitdefender, value = 181032.79, drop = 80386.85, variation = 0.88, date = 23.02.2018, 
+09:39:57.410 - INFO - log_send_publication:6717;1654843197.410197;
+09:39:57.611 - INFO - Sending publication with company = Apple, value = 249437.6, drop = 82568.01, variation = 0.56, date = 26.05.2022, 
+09:39:57.611 - INFO - log_send_publication:6727;1654843197.61147;
+09:39:57.814 - INFO - Sending publication with company = Walmart, value = 268676.14, drop = 67757.16, variation = 0.42, date = 14.02.2018, 
+09:39:57.814 - INFO - log_send_publication:6737;1654843197.814038;
+09:39:58.017 - INFO - Sending publication with company = McKesson, value = 35279.0, drop = 132018.65, variation = 0.06, date = 08.07.2021, 
+09:39:58.017 - INFO - log_send_publication:6747;1654843198.017842;
+09:39:58.219 - INFO - Sending publication with company = McKesson, value = 329354.14, drop = 34875.57, variation = 0.44, date = 06.11.2018, 
+09:39:58.219 - INFO - log_send_publication:6757;1654843198.219205;
+09:39:58.420 - INFO - Sending publication with company = Netflix, value = 461969.48, drop = 439886.36, variation = 0.24, date = 26.09.2020, 
+09:39:58.420 - INFO - log_send_publication:6767;1654843198.420942;
+09:39:58.635 - INFO - Sending publication with company = Microsoft, value = 402940.61, drop = 162311.36, variation = 0.41, date = 26.02.2019, 
+09:39:58.635 - INFO - log_send_publication:6777;1654843198.635705;
+09:39:58.916 - INFO - Sending publication with company = Bitdefender, value = 388288.27, drop = 51707.03, variation = 0.4, date = 27.11.2018, 
+09:39:58.916 - INFO - log_send_publication:6787;1654843198.916181;
+09:39:59.128 - INFO - Sending publication with company = Netflix, value = 234407.12, drop = 367688.76, variation = 0.63, date = 28.08.2017, 
+09:39:59.129 - INFO - log_send_publication:6797;1654843199.129641;
+09:39:59.342 - INFO - Sending publication with company = ExxonMobil, value = 382250.35, drop = 93125.19, variation = 0.09, date = 01.01.2019, 
+09:39:59.342 - INFO - log_send_publication:6807;1654843199.342666;
+09:39:59.557 - INFO - Sending publication with company = Chevron, value = 305507.41, drop = 409104.05, variation = 0.15, date = 24.02.2021, 
+09:39:59.557 - INFO - log_send_publication:6817;1654843199.557345;
+09:39:59.969 - INFO - Sending publication with company = Bitdefender, value = 336221.91, drop = 332339.33, variation = 0.92, date = 05.09.2020, 
+09:39:59.969 - INFO - log_send_publication:6827;1654843199.969302;
+09:40:00.176 - INFO - Sending publication with company = Walmart, value = 66141.12, drop = 90223.88, variation = 0.4, date = 01.06.2021, 
+09:40:00.176 - INFO - log_send_publication:6837;1654843200.176175;
+09:40:00.390 - INFO - Sending publication with company = ExxonMobil, value = 409632.62, drop = 75157.08, variation = 0.68, date = 27.10.2017, 
+09:40:00.390 - INFO - log_send_publication:6847;1654843200.390064;
+09:40:00.603 - INFO - Sending publication with company = Chevron, value = 320340.93, drop = 335811.66, variation = 0.68, date = 17.07.2019, 
+09:40:00.603 - INFO - log_send_publication:6857;1654843200.603922;
+09:40:00.818 - INFO - Sending publication with company = Amazon, value = 450570.02, drop = 415786.69, variation = 0.12, date = 30.06.2020, 
+09:40:01.032 - INFO - log_send_publication:6867;1654843201.032545;
+09:40:01.037 - INFO - Sending publication with company = ExxonMobil, value = 244830.29, drop = 432771.26, variation = 0.14, date = 19.09.2021, 
+09:40:01.037 - INFO - log_send_publication:6877;1654843201.037541;
+09:40:01.248 - INFO - Sending publication with company = ExxonMobil, value = 392021.03, drop = 63345.31, variation = 0.2, date = 05.04.2022, 
+09:40:01.248 - INFO - log_send_publication:6887;1654843201.248618;
+09:40:01.462 - INFO - Sending publication with company = Netflix, value = 155934.96, drop = 435839.21, variation = 0.07, date = 18.04.2022, 
+09:40:01.463 - INFO - log_send_publication:6897;1654843201.463412;
+09:40:01.677 - INFO - Sending publication with company = Chevron, value = 185848.41, drop = 396302.74, variation = 0.26, date = 08.09.2021, 
+09:40:01.678 - INFO - log_send_publication:6907;1654843201.67818;
+09:40:01.892 - INFO - Sending publication with company = ExxonMobil, value = 195599.28, drop = 155339.77, variation = 0.17, date = 17.07.2018, 
+09:40:02.075 - INFO - log_send_publication:6917;1654843202.075167;
+09:40:02.093 - INFO - Sending publication with company = Apple, value = 352463.8, drop = 45947.29, variation = 0.89, date = 31.03.2018, 
+09:40:02.095 - INFO - log_send_publication:6927;1654843202.09542;
+09:40:02.296 - INFO - Sending publication with company = Bitdefender, value = 156016.12, drop = 456037.92, variation = 0.02, date = 13.09.2021, 
+09:40:02.296 - INFO - log_send_publication:6937;1654843202.296493;
+09:40:02.499 - INFO - Sending publication with company = Walmart, value = 76908.55, drop = 95851.98, variation = 0.46, date = 09.06.2019, 
+09:40:02.499 - INFO - log_send_publication:6947;1654843202.499998;
+09:40:02.701 - INFO - Sending publication with company = Microsoft, value = 170096.6, drop = 255508.0, variation = 0.72, date = 09.11.2018, 
+09:40:02.701 - INFO - log_send_publication:6957;1654843202.701623;
+09:40:02.918 - INFO - Sending publication with company = McKesson, value = 112581.29, drop = 5243.52, variation = 0.67, date = 10.07.2021, 
+09:40:03.129 - INFO - log_send_publication:6967;1654843203.129814;
+09:40:03.130 - INFO - Sending publication with company = Chevron, value = 226374.92, drop = 345141.38, variation = 0.38, date = 23.05.2021, 
+09:40:03.130 - INFO - log_send_publication:6977;1654843203.130994;
+09:40:03.334 - INFO - Sending publication with company = Microsoft, value = 403250.35, drop = 268733.95, variation = 0.26, date = 06.07.2019, 
+09:40:03.334 - INFO - log_send_publication:6987;1654843203.334805;
+09:40:03.549 - INFO - Sending publication with company = Microsoft, value = 288065.08, drop = 5663.97, variation = 0.37, date = 14.08.2017, 
+09:40:03.549 - INFO - log_send_publication:6997;1654843203.549798;
+09:40:03.762 - INFO - Sending publication with company = Chevron, value = 317062.9, drop = 427397.41, variation = 0.97, date = 09.05.2018, 
+09:40:03.762 - INFO - log_send_publication:7007;1654843203.762839;
+09:40:03.977 - INFO - Sending publication with company = McKesson, value = 181712.05, drop = 338178.54, variation = 0.13, date = 13.12.2019, 
+09:40:04.178 - INFO - log_send_publication:7017;1654843204.178036;
+09:40:04.179 - INFO - Sending publication with company = McKesson, value = 336103.32, drop = 76429.69, variation = 0.01, date = 30.11.2021, 
+09:40:04.181 - INFO - log_send_publication:7027;1654843204.181138;
+09:40:04.381 - INFO - Sending publication with company = ExxonMobil, value = 104944.25, drop = 7486.04, variation = 0.3, date = 12.08.2018, 
+09:40:04.381 - INFO - log_send_publication:7037;1654843204.3811;
+09:40:04.594 - INFO - Sending publication with company = Bitdefender, value = 390279.0, drop = 329757.94, variation = 0.6, date = 09.05.2019, 
+09:40:04.594 - INFO - log_send_publication:7047;1654843204.5943;
+09:40:04.799 - INFO - Sending publication with company = Bitdefender, value = 49223.62, drop = 454564.65, variation = 0.56, date = 20.05.2019, 
+09:40:04.799 - INFO - log_send_publication:7057;1654843204.799524;
+09:40:05.002 - INFO - Sending publication with company = Walmart, value = 59412.68, drop = 324254.95, variation = 0.15, date = 06.07.2019, 
+09:40:05.231 - INFO - log_send_publication:7067;1654843205.231617;
+09:40:05.232 - INFO - Sending publication with company = Netflix, value = 121256.98, drop = 238443.37, variation = 0.73, date = 11.07.2021, 
+09:40:05.232 - INFO - log_send_publication:7077;1654843205.232638;
+09:40:05.435 - INFO - Sending publication with company = McKesson, value = 374052.71, drop = 26942.57, variation = 0.68, date = 09.04.2019, 
+09:40:05.436 - INFO - log_send_publication:7087;1654843205.436899;
+09:40:05.652 - INFO - Sending publication with company = Bitdefender, value = 271244.79, drop = 3243.12, variation = 0.33, date = 08.10.2018, 
+09:40:05.652 - INFO - log_send_publication:7097;1654843205.652036;
+09:40:05.864 - INFO - Sending publication with company = Netflix, value = 89947.99, drop = 387210.39, variation = 0.6, date = 25.03.2019, 
+09:40:05.864 - INFO - log_send_publication:7107;1654843205.864974;
+09:40:06.080 - INFO - Sending publication with company = Netflix, value = 260950.06, drop = 106844.95, variation = 0.59, date = 27.10.2018, 
+09:40:06.265 - INFO - log_send_publication:7117;1654843206.265489;
+09:40:06.266 - INFO - Sending publication with company = Chevron, value = 150819.17, drop = 101139.49, variation = 0.58, date = 06.08.2018, 
+09:40:06.268 - INFO - log_send_publication:7127;1654843206.26849;
+09:40:06.471 - INFO - Sending publication with company = Bitdefender, value = 111673.53, drop = 164052.83, variation = 0.12, date = 27.02.2018, 
+09:40:06.471 - INFO - log_send_publication:7137;1654843206.47111;
+09:40:06.672 - INFO - Sending publication with company = Netflix, value = 175019.05, drop = 90028.92, variation = 0.57, date = 15.06.2021, 
+09:40:06.672 - INFO - log_send_publication:7147;1654843206.672119;
+09:40:06.873 - INFO - Sending publication with company = Walmart, value = 427222.02, drop = 438258.4, variation = 0.97, date = 09.04.2021, 
+09:40:06.873 - INFO - log_send_publication:7157;1654843206.873472;
+09:40:07.076 - INFO - Sending publication with company = ExxonMobil, value = 152967.9, drop = 57552.47, variation = 0.48, date = 18.02.2018, 
+09:40:07.076 - INFO - log_send_publication:7167;1654843207.076545;
+09:40:07.282 - INFO - Sending publication with company = Walmart, value = 444416.26, drop = 94450.35, variation = 0.09, date = 06.09.2020, 
+09:40:07.282 - INFO - log_send_publication:7177;1654843207.282822;
+09:40:07.484 - INFO - Sending publication with company = Bitdefender, value = 196070.16, drop = 230386.18, variation = 0.07, date = 28.12.2018, 
+09:40:07.484 - INFO - log_send_publication:7187;1654843207.484227;
+09:40:07.699 - INFO - Sending publication with company = McKesson, value = 375825.43, drop = 221643.93, variation = 0.13, date = 25.06.2018, 
+09:40:07.699 - INFO - log_send_publication:7197;1654843207.699997;
+09:40:07.914 - INFO - Sending publication with company = Apple, value = 32856.35, drop = 331491.31, variation = 0.19, date = 12.03.2019, 
+09:40:07.915 - INFO - log_send_publication:7207;1654843207.915297;
+09:40:08.128 - INFO - Sending publication with company = Apple, value = 127425.83, drop = 261858.67, variation = 0.79, date = 09.01.2018, 
+09:40:08.128 - INFO - log_send_publication:7217;1654843208.128401;
+09:40:08.341 - INFO - Sending publication with company = Aplhabet, value = 170301.41, drop = 153400.04, variation = 0.12, date = 27.07.2020, 
+09:40:08.341 - INFO - log_send_publication:7227;1654843208.341544;
+09:40:08.555 - INFO - Sending publication with company = Microsoft, value = 289304.78, drop = 465034.2, variation = 0.33, date = 28.09.2018, 
+09:40:08.555 - INFO - log_send_publication:7237;1654843208.555416;
+09:40:08.769 - INFO - Sending publication with company = Aplhabet, value = 173394.11, drop = 366548.42, variation = 0.63, date = 26.08.2018, 
+09:40:08.769 - INFO - log_send_publication:7247;1654843208.769189;
+09:40:08.981 - INFO - Sending publication with company = Apple, value = 146364.45, drop = 408823.96, variation = 0.67, date = 06.03.2022, 
+09:40:08.981 - INFO - log_send_publication:7257;1654843208.981959;
+09:40:09.199 - INFO - Sending publication with company = Apple, value = 231515.68, drop = 157346.27, variation = 0.86, date = 05.04.2018, 
+09:40:09.397 - INFO - log_send_publication:7267;1654843209.397084;
+09:40:09.398 - INFO - Sending publication with company = Chevron, value = 489446.36, drop = 19604.82, variation = 0.69, date = 21.03.2018, 
+09:40:09.398 - INFO - log_send_publication:7277;1654843209.39818;
+09:40:09.605 - INFO - Sending publication with company = Chevron, value = 389435.12, drop = 463863.66, variation = 0.62, date = 18.11.2021, 
+09:40:09.605 - INFO - log_send_publication:7287;1654843209.605492;
+09:40:09.818 - INFO - Sending publication with company = Netflix, value = 105630.31, drop = 309861.3, variation = 0.61, date = 13.09.2018, 
+09:40:09.818 - INFO - log_send_publication:7297;1654843209.818914;
+09:40:10.034 - INFO - Sending publication with company = Netflix, value = 435855.01, drop = 360403.62, variation = 0.65, date = 02.07.2018, 
+09:40:10.034 - INFO - log_send_publication:7307;1654843210.034607;
+09:40:10.249 - INFO - Sending publication with company = Apple, value = 66849.88, drop = 215784.86, variation = 0.29, date = 27.01.2022, 
+09:40:10.447 - INFO - log_send_publication:7317;1654843210.447435;
+09:40:10.448 - INFO - Sending publication with company = Netflix, value = 298559.51, drop = 89816.69, variation = 0.67, date = 22.05.2021, 
+09:40:10.448 - INFO - log_send_publication:7327;1654843210.448435;
+09:40:10.653 - INFO - Sending publication with company = Bitdefender, value = 440480.34, drop = 463564.73, variation = 0.03, date = 13.02.2018, 
+09:40:10.653 - INFO - log_send_publication:7337;1654843210.653286;
+09:40:10.854 - INFO - Sending publication with company = Walmart, value = 426632.98, drop = 95864.53, variation = 0.96, date = 29.01.2019, 
+09:40:10.854 - INFO - log_send_publication:7347;1654843210.854741;
+09:40:11.069 - INFO - Sending publication with company = Walmart, value = 244035.24, drop = 72761.29, variation = 1.0, date = 10.08.2021, 
+09:40:11.069 - INFO - log_send_publication:7357;1654843211.069386;
+09:40:11.283 - INFO - Sending publication with company = Microsoft, value = 44400.1, drop = 99154.34, variation = 0.77, date = 15.11.2018, 
+09:40:11.283 - INFO - log_send_publication:7367;1654843211.283719;
+09:40:11.496 - INFO - Sending publication with company = Amazon, value = 461446.06, drop = 259238.81, variation = 0.3, date = 12.04.2019, 
+09:40:11.496 - INFO - log_send_publication:7377;1654843211.496952;
+09:40:11.709 - INFO - Sending publication with company = Apple, value = 426297.15, drop = 92302.3, variation = 0.51, date = 09.04.2018, 
+09:40:11.709 - INFO - log_send_publication:7387;1654843211.70976;
+09:40:11.922 - INFO - Sending publication with company = Microsoft, value = 309489.59, drop = 396472.98, variation = 0.1, date = 28.06.2019, 
+09:40:11.922 - INFO - log_send_publication:7397;1654843211.922806;
+09:40:12.136 - INFO - Sending publication with company = Chevron, value = 96106.12, drop = 208950.88, variation = 0.96, date = 07.05.2018, 
+09:40:12.136 - INFO - log_send_publication:7407;1654843212.136568;
+09:40:12.337 - INFO - Sending publication with company = Apple, value = 743.59, drop = 396033.27, variation = 0.65, date = 24.01.2022, 
+09:40:12.337 - INFO - log_send_publication:7417;1654843212.337806;
+09:40:12.553 - INFO - Sending publication with company = Netflix, value = 147033.36, drop = 459903.41, variation = 0.98, date = 23.10.2018, 
+09:40:12.553 - INFO - log_send_publication:7427;1654843212.553324;
+09:40:12.767 - INFO - Sending publication with company = Bitdefender, value = 229038.8, drop = 335900.81, variation = 0.12, date = 26.05.2022, 
+09:40:13.012 - INFO - log_send_publication:7437;1654843213.012024;
+09:40:13.013 - INFO - Sending publication with company = Chevron, value = 118470.53, drop = 217791.15, variation = 0.03, date = 11.09.2020, 
+09:40:13.014 - INFO - log_send_publication:7447;1654843213.014028;
+09:40:13.228 - INFO - Sending publication with company = ExxonMobil, value = 256933.05, drop = 334554.87, variation = 0.73, date = 10.08.2021, 
+09:40:13.228 - INFO - log_send_publication:7457;1654843213.228997;
+09:40:13.429 - INFO - Sending publication with company = Netflix, value = 187563.94, drop = 368430.9, variation = 0.32, date = 21.04.2021, 
+09:40:13.429 - INFO - log_send_publication:7467;1654843213.429147;
+09:40:13.643 - INFO - Sending publication with company = Apple, value = 408191.41, drop = 399508.26, variation = 0.36, date = 10.07.2019, 
+09:40:13.644 - INFO - log_send_publication:7477;1654843213.644259;
+09:40:13.844 - INFO - Sending publication with company = Apple, value = 242583.82, drop = 238890.54, variation = 0.39, date = 24.03.2018, 
+09:40:14.040 - INFO - log_send_publication:7487;1654843214.040809;
+09:40:14.040 - INFO - Sending publication with company = McKesson, value = 209596.93, drop = 263048.78, variation = 0.98, date = 24.06.2017, 
+09:40:14.041 - INFO - log_send_publication:7497;1654843214.041925;
+09:40:14.250 - INFO - Sending publication with company = Microsoft, value = 257765.9, drop = 77547.25, variation = 0.61, date = 14.12.2021, 
+09:40:14.250 - INFO - log_send_publication:7507;1654843214.25031;
+09:40:14.455 - INFO - Sending publication with company = Aplhabet, value = 343271.01, drop = 343988.4, variation = 0.18, date = 23.05.2018, 
+09:40:14.455 - INFO - log_send_publication:7517;1654843214.455569;
+09:40:14.656 - INFO - Sending publication with company = Aplhabet, value = 126152.69, drop = 434832.54, variation = 0.5, date = 31.12.2017, 
+09:40:14.656 - INFO - log_send_publication:7527;1654843214.656762;
+09:40:14.858 - INFO - Sending publication with company = Apple, value = 259637.82, drop = 169909.58, variation = 0.4, date = 12.07.2019, 
+09:40:15.088 - INFO - log_send_publication:7537;1654843215.088478;
+09:40:15.088 - INFO - Sending publication with company = McKesson, value = 175717.64, drop = 411453.26, variation = 0.74, date = 02.04.2019, 
+09:40:15.089 - INFO - log_send_publication:7547;1654843215.089483;
+09:40:15.289 - INFO - Sending publication with company = Netflix, value = 37270.9, drop = 52770.82, variation = 0.74, date = 31.12.2019, 
+09:40:15.289 - INFO - log_send_publication:7557;1654843215.28942;
+09:40:15.503 - INFO - Sending publication with company = McKesson, value = 477145.64, drop = 367214.34, variation = 0.79, date = 12.10.2018, 
+09:40:15.503 - INFO - log_send_publication:7567;1654843215.503541;
+09:40:15.716 - INFO - Sending publication with company = Netflix, value = 324984.6, drop = 329969.14, variation = 0.0, date = 17.01.2020, 
+09:40:15.716 - INFO - log_send_publication:7577;1654843215.716364;
+09:40:15.916 - INFO - Sending publication with company = Microsoft, value = 339987.4, drop = 32771.37, variation = 0.72, date = 06.01.2020, 
+09:40:16.129 - INFO - log_send_publication:7587;1654843216.129915;
+09:40:16.131 - INFO - Sending publication with company = Walmart, value = 77955.86, drop = 435834.51, variation = 0.19, date = 28.05.2021, 
+09:40:16.131 - INFO - log_send_publication:7597;1654843216.131081;
+09:40:16.347 - INFO - Sending publication with company = Apple, value = 181728.0, drop = 259622.55, variation = 0.18, date = 15.07.2017, 
+09:40:16.347 - INFO - log_send_publication:7607;1654843216.347152;
+09:40:16.563 - INFO - Sending publication with company = Bitdefender, value = 2172.98, drop = 102487.53, variation = 0.77, date = 10.10.2019, 
+09:40:16.564 - INFO - log_send_publication:7617;1654843216.564483;
+09:40:16.776 - INFO - Sending publication with company = Chevron, value = 261531.15, drop = 396328.27, variation = 0.88, date = 11.04.2021, 
+09:40:16.776 - INFO - log_send_publication:7627;1654843216.776893;
+09:40:16.992 - INFO - Sending publication with company = ExxonMobil, value = 283405.93, drop = 449161.92, variation = 0.34, date = 06.12.2017, 
+09:40:17.192 - INFO - log_send_publication:7637;1654843217.192843;
+09:40:17.192 - INFO - Sending publication with company = Amazon, value = 327735.85, drop = 263588.86, variation = 0.77, date = 30.07.2018, 
+09:40:17.193 - INFO - log_send_publication:7647;1654843217.193834;
+09:40:17.397 - INFO - Sending publication with company = Chevron, value = 278194.04, drop = 170334.03, variation = 0.92, date = 07.03.2020, 
+09:40:17.397 - INFO - log_send_publication:7657;1654843217.39739;
+09:40:17.599 - INFO - Sending publication with company = Amazon, value = 23545.92, drop = 397389.97, variation = 0.84, date = 27.02.2018, 
+09:40:17.599 - INFO - log_send_publication:7667;1654843217.599988;
+09:40:17.801 - INFO - Sending publication with company = Chevron, value = 317239.45, drop = 346506.62, variation = 0.66, date = 30.10.2021, 
+09:40:17.801 - INFO - log_send_publication:7677;1654843217.801638;
+09:40:18.004 - INFO - Sending publication with company = ExxonMobil, value = 270529.66, drop = 405464.57, variation = 0.48, date = 24.08.2018, 
+09:40:18.004 - INFO - log_send_publication:7687;1654843218.004522;
+09:40:18.209 - INFO - Sending publication with company = Microsoft, value = 493668.77, drop = 254944.04, variation = 0.35, date = 31.03.2022, 
+09:40:18.209 - INFO - log_send_publication:7697;1654843218.209023;
+09:40:18.412 - INFO - Sending publication with company = Microsoft, value = 196506.37, drop = 439789.21, variation = 0.75, date = 17.05.2021, 
+09:40:18.412 - INFO - log_send_publication:7707;1654843218.412597;
+09:40:18.628 - INFO - Sending publication with company = Microsoft, value = 479593.25, drop = 104651.58, variation = 0.12, date = 01.09.2021, 
+09:40:18.628 - INFO - log_send_publication:7717;1654843218.628772;
+09:40:18.843 - INFO - Sending publication with company = Amazon, value = 419934.46, drop = 105900.07, variation = 0.87, date = 08.09.2020, 
+09:40:18.843 - INFO - log_send_publication:7727;1654843218.843503;
+09:40:19.058 - INFO - Sending publication with company = McKesson, value = 18143.88, drop = 388323.67, variation = 0.57, date = 30.05.2021, 
+09:40:19.058 - INFO - log_send_publication:7737;1654843219.058065;
+09:40:19.273 - INFO - Sending publication with company = Amazon, value = 283701.62, drop = 481512.18, variation = 0.31, date = 11.08.2018, 
+09:40:19.273 - INFO - log_send_publication:7747;1654843219.273104;
+09:40:19.485 - INFO - Sending publication with company = Amazon, value = 457748.49, drop = 170791.12, variation = 0.65, date = 26.08.2020, 
+09:40:19.485 - INFO - log_send_publication:7757;1654843219.48597;
+09:40:19.686 - INFO - Sending publication with company = Bitdefender, value = 291989.3, drop = 128435.19, variation = 0.47, date = 28.10.2018, 
+09:40:19.686 - INFO - log_send_publication:7767;1654843219.686662;
+09:40:19.899 - INFO - Sending publication with company = Microsoft, value = 480534.25, drop = 16050.19, variation = 0.24, date = 17.02.2019, 
+09:40:19.899 - INFO - log_send_publication:7777;1654843219.899882;
+09:40:20.098 - INFO - Sending publication with company = Bitdefender, value = 349677.69, drop = 240743.2, variation = 0.42, date = 19.02.2018, 
+09:40:20.313 - INFO - log_send_publication:7787;1654843220.313804;
+09:40:20.314 - INFO - Sending publication with company = Aplhabet, value = 399352.2, drop = 138633.05, variation = 0.35, date = 18.11.2021, 
+09:40:20.315 - INFO - log_send_publication:7797;1654843220.315731;
+09:40:20.516 - INFO - Sending publication with company = Apple, value = 431323.04, drop = 126019.97, variation = 0.78, date = 05.12.2017, 
+09:40:20.516 - INFO - log_send_publication:7807;1654843220.516375;
+09:40:20.730 - INFO - Sending publication with company = Apple, value = 261395.47, drop = 368540.93, variation = 0.01, date = 30.10.2020, 
+09:40:20.731 - INFO - log_send_publication:7817;1654843220.731177;
+09:40:20.934 - INFO - Sending publication with company = Chevron, value = 350577.73, drop = 253352.33, variation = 0.95, date = 20.06.2018, 
+09:40:20.934 - INFO - log_send_publication:7827;1654843220.934509;
+09:40:21.150 - INFO - Sending publication with company = Netflix, value = 169020.99, drop = 426455.53, variation = 0.49, date = 09.06.2020, 
+09:40:21.362 - INFO - log_send_publication:7837;1654843221.362016;
+09:40:21.363 - INFO - Sending publication with company = Apple, value = 286630.0, drop = 379725.22, variation = 0.77, date = 30.11.2018, 
+09:40:21.364 - INFO - log_send_publication:7847;1654843221.364016;
+09:40:21.568 - INFO - Sending publication with company = Amazon, value = 161429.4, drop = 458302.41, variation = 0.83, date = 03.05.2019, 
+09:40:21.568 - INFO - log_send_publication:7857;1654843221.568022;
+09:40:21.770 - INFO - Sending publication with company = McKesson, value = 116178.46, drop = 224251.78, variation = 0.37, date = 13.10.2019, 
+09:40:21.770 - INFO - log_send_publication:7867;1654843221.77052;
+09:40:21.973 - INFO - Sending publication with company = Walmart, value = 408043.96, drop = 280795.73, variation = 0.4, date = 25.08.2020, 
+09:40:21.973 - INFO - log_send_publication:7877;1654843221.973512;
+09:40:22.178 - INFO - Sending publication with company = Bitdefender, value = 478660.79, drop = 430606.74, variation = 0.0, date = 07.08.2017, 
+09:40:22.178 - INFO - log_send_publication:7887;1654843222.178707;
+09:40:22.381 - INFO - Sending publication with company = Netflix, value = 451380.16, drop = 47075.79, variation = 0.17, date = 09.07.2017, 
+09:40:22.381 - INFO - log_send_publication:7897;1654843222.381279;
+09:40:22.585 - INFO - Sending publication with company = Bitdefender, value = 288484.98, drop = 5440.94, variation = 0.7, date = 10.03.2020, 
+09:40:22.585 - INFO - log_send_publication:7907;1654843222.585057;
+09:40:22.791 - INFO - Sending publication with company = Amazon, value = 162507.05, drop = 277713.89, variation = 0.42, date = 15.01.2019, 
+09:40:22.791 - INFO - log_send_publication:7917;1654843222.791383;
+09:40:22.993 - INFO - Sending publication with company = Amazon, value = 235988.73, drop = 259713.03, variation = 0.12, date = 17.10.2019, 
+09:40:22.993 - INFO - log_send_publication:7927;1654843222.993105;
+09:40:23.198 - INFO - Sending publication with company = Apple, value = 404468.41, drop = 108509.92, variation = 0.26, date = 20.11.2018, 
+09:40:23.198 - INFO - log_send_publication:7937;1654843223.198599;
+09:40:23.403 - INFO - Sending publication with company = Bitdefender, value = 123906.31, drop = 354097.35, variation = 0.75, date = 24.07.2019, 
+09:40:23.403 - INFO - log_send_publication:7947;1654843223.403932;
+09:40:23.605 - INFO - Sending publication with company = Walmart, value = 163230.0, drop = 427668.86, variation = 0.97, date = 12.10.2019, 
+09:40:23.605 - INFO - log_send_publication:7957;1654843223.605232;
+09:40:23.807 - INFO - Sending publication with company = Amazon, value = 476235.82, drop = 53141.46, variation = 0.56, date = 20.07.2019, 
+09:40:23.807 - INFO - log_send_publication:7967;1654843223.807029;
+09:40:24.022 - INFO - Sending publication with company = Bitdefender, value = 115603.52, drop = 418411.28, variation = 0.64, date = 02.10.2019, 
+09:40:24.022 - INFO - log_send_publication:7977;1654843224.022964;
+09:40:24.227 - INFO - Sending publication with company = Aplhabet, value = 283024.9, drop = 287141.71, variation = 0.17, date = 19.05.2021, 
+09:40:24.227 - INFO - log_send_publication:7987;1654843224.22792;
+09:40:24.431 - INFO - Sending publication with company = Apple, value = 189753.22, drop = 268357.22, variation = 0.26, date = 20.07.2019, 
+09:40:24.431 - INFO - log_send_publication:7997;1654843224.431565;
+09:40:24.633 - INFO - Sending publication with company = Netflix, value = 498885.62, drop = 454548.88, variation = 0.47, date = 20.05.2021, 
+09:40:24.633 - INFO - log_send_publication:8007;1654843224.633023;
+09:40:24.836 - INFO - Sending publication with company = McKesson, value = 28851.06, drop = 66859.03, variation = 0.62, date = 23.08.2021, 
+09:40:24.836 - INFO - log_send_publication:8017;1654843224.836468;
+09:40:25.039 - INFO - Sending publication with company = McKesson, value = 305390.01, drop = 391570.4, variation = 0.59, date = 28.04.2021, 
+09:40:25.040 - INFO - log_send_publication:8027;1654843225.040269;
+09:40:25.241 - INFO - Sending publication with company = Apple, value = 81304.21, drop = 37663.45, variation = 0.17, date = 20.11.2019, 
+09:40:25.241 - INFO - log_send_publication:8037;1654843225.241462;
+09:40:25.444 - INFO - Sending publication with company = Microsoft, value = 191632.04, drop = 475483.7, variation = 0.09, date = 25.02.2022, 
+09:40:25.444 - INFO - log_send_publication:8047;1654843225.444695;
+09:40:25.649 - INFO - Sending publication with company = Microsoft, value = 409432.77, drop = 93483.53, variation = 0.31, date = 11.02.2019, 
+09:40:25.649 - INFO - log_send_publication:8057;1654843225.649767;
+09:40:25.850 - INFO - Sending publication with company = Amazon, value = 176107.12, drop = 224580.11, variation = 0.99, date = 02.03.2019, 
+09:40:25.850 - INFO - log_send_publication:8067;1654843225.850641;
+09:40:26.051 - INFO - Sending publication with company = Aplhabet, value = 155272.04, drop = 312614.47, variation = 0.05, date = 04.01.2019, 
+09:40:26.051 - INFO - log_send_publication:8077;1654843226.051566;
+09:40:26.256 - INFO - Sending publication with company = Apple, value = 139723.95, drop = 126559.27, variation = 0.45, date = 09.09.2018, 
+09:40:26.256 - INFO - log_send_publication:8087;1654843226.256062;
+09:40:26.457 - INFO - Sending publication with company = Walmart, value = 270033.35, drop = 111012.32, variation = 0.56, date = 17.10.2021, 
+09:40:26.457 - INFO - log_send_publication:8097;1654843226.457639;
+09:40:26.662 - INFO - Sending publication with company = Bitdefender, value = 336596.25, drop = 464670.23, variation = 0.58, date = 02.02.2020, 
+09:40:26.662 - INFO - log_send_publication:8107;1654843226.662155;
+09:40:26.863 - INFO - Sending publication with company = Aplhabet, value = 498781.97, drop = 441025.34, variation = 0.65, date = 22.11.2017, 
+09:40:27.079 - INFO - log_send_publication:8117;1654843227.079497;
+09:40:27.080 - INFO - Sending publication with company = Microsoft, value = 223129.15, drop = 258133.6, variation = 0.05, date = 23.11.2020, 
+09:40:27.080 - INFO - log_send_publication:8127;1654843227.080426;
+09:40:27.280 - INFO - Sending publication with company = Chevron, value = 458807.83, drop = 436302.39, variation = 0.39, date = 21.12.2021, 
+09:40:27.280 - INFO - log_send_publication:8137;1654843227.280689;
+09:40:27.493 - INFO - Sending publication with company = Netflix, value = 123933.71, drop = 447579.22, variation = 0.43, date = 04.08.2019, 
+09:40:27.493 - INFO - log_send_publication:8147;1654843227.493745;
+09:40:27.707 - INFO - Sending publication with company = Apple, value = 337559.0, drop = 110596.5, variation = 0.47, date = 30.01.2021, 
+09:40:27.707 - INFO - log_send_publication:8157;1654843227.70794;
+09:40:27.922 - INFO - Sending publication with company = Microsoft, value = 420531.5, drop = 371688.42, variation = 0.03, date = 14.09.2020, 
+09:40:28.107 - INFO - log_send_publication:8167;1654843228.10729;
+09:40:28.108 - INFO - Sending publication with company = Bitdefender, value = 117100.23, drop = 122851.02, variation = 0.11, date = 10.03.2020, 
+09:40:28.109 - INFO - log_send_publication:8177;1654843228.109229;
+09:40:28.309 - INFO - Sending publication with company = Walmart, value = 98511.67, drop = 249511.89, variation = 0.72, date = 29.12.2019, 
+09:40:28.309 - INFO - log_send_publication:8187;1654843228.309807;
+09:40:28.522 - INFO - Sending publication with company = Walmart, value = 34696.05, drop = 167426.62, variation = 0.65, date = 06.07.2021, 
+09:40:28.523 - INFO - log_send_publication:8197;1654843228.523676;
+09:40:28.737 - INFO - Sending publication with company = Chevron, value = 468970.26, drop = 490025.79, variation = 0.47, date = 17.02.2022, 
+09:40:28.737 - INFO - log_send_publication:8207;1654843228.737591;
+09:40:28.952 - INFO - Sending publication with company = McKesson, value = 329642.57, drop = 374778.74, variation = 0.16, date = 03.06.2019, 
+09:40:29.132 - INFO - log_send_publication:8217;1654843229.132997;
+09:40:29.153 - INFO - Sending publication with company = Aplhabet, value = 177234.17, drop = 458384.72, variation = 0.68, date = 21.02.2019, 
+09:40:29.155 - INFO - log_send_publication:8227;1654843229.155185;
+09:40:29.367 - INFO - Sending publication with company = Walmart, value = 483888.25, drop = 434522.1, variation = 0.85, date = 15.11.2020, 
+09:40:29.367 - INFO - log_send_publication:8237;1654843229.367199;
+09:40:29.580 - INFO - Sending publication with company = Amazon, value = 457950.7, drop = 142109.93, variation = 0.69, date = 04.01.2022, 
+09:40:29.581 - INFO - log_send_publication:8247;1654843229.581684;
+09:40:29.794 - INFO - Sending publication with company = ExxonMobil, value = 307929.95, drop = 329376.26, variation = 0.72, date = 27.10.2020, 
+09:40:29.794 - INFO - log_send_publication:8257;1654843229.794839;
+09:40:30.008 - INFO - Sending publication with company = Bitdefender, value = 344993.03, drop = 371548.44, variation = 0.98, date = 01.05.2021, 
+09:40:30.008 - INFO - log_send_publication:8267;1654843230.008765;
+09:40:30.223 - INFO - Sending publication with company = McKesson, value = 258639.16, drop = 396602.99, variation = 0.32, date = 11.11.2020, 
+09:40:30.223 - INFO - log_send_publication:8277;1654843230.223038;
+09:40:30.437 - INFO - Sending publication with company = Amazon, value = 193476.49, drop = 446708.51, variation = 0.91, date = 21.07.2021, 
+09:40:30.682 - INFO - log_send_publication:8287;1654843230.682195;
+09:40:30.682 - INFO - Sending publication with company = Chevron, value = 112026.75, drop = 7172.94, variation = 0.29, date = 11.12.2021, 
+09:40:30.682 - INFO - log_send_publication:8297;1654843230.682195;
+09:40:30.889 - INFO - Sending publication with company = Walmart, value = 163584.69, drop = 183851.68, variation = 0.67, date = 31.05.2021, 
+09:40:30.889 - INFO - log_send_publication:8307;1654843230.889773;
+09:40:31.104 - INFO - Sending publication with company = Chevron, value = 395598.1, drop = 138064.95, variation = 0.82, date = 30.10.2020, 
+09:40:31.105 - INFO - log_send_publication:8317;1654843231.105094;
+09:40:31.317 - INFO - Sending publication with company = Bitdefender, value = 242413.78, drop = 286796.0, variation = 0.53, date = 27.02.2019, 
+09:40:31.317 - INFO - log_send_publication:8327;1654843231.317277;
+09:40:31.533 - INFO - Sending publication with company = Chevron, value = 475516.65, drop = 63814.58, variation = 0.33, date = 07.02.2019, 
+09:40:31.715 - INFO - log_send_publication:8337;1654843231.715672;
+09:40:31.736 - INFO - Sending publication with company = ExxonMobil, value = 298065.91, drop = 332199.02, variation = 0.74, date = 20.11.2021, 
+09:40:31.738 - INFO - log_send_publication:8347;1654843231.738131;
+09:40:31.936 - INFO - Sending publication with company = Amazon, value = 399131.94, drop = 456874.71, variation = 0.01, date = 09.11.2019, 
+09:40:31.936 - INFO - log_send_publication:8357;1654843231.936723;
+09:40:32.151 - INFO - Sending publication with company = Chevron, value = 284944.88, drop = 459713.36, variation = 0.02, date = 26.08.2017, 
+09:40:32.151 - INFO - log_send_publication:8367;1654843232.151289;
+09:40:32.354 - INFO - Sending publication with company = Amazon, value = 420438.7, drop = 290512.63, variation = 0.0, date = 25.03.2022, 
+09:40:32.354 - INFO - log_send_publication:8377;1654843232.354844;
+09:40:32.557 - INFO - Sending publication with company = Amazon, value = 201242.05, drop = 433573.08, variation = 0.16, date = 15.11.2020, 
+09:40:32.557 - INFO - log_send_publication:8387;1654843232.557456;
+09:40:32.759 - INFO - Sending publication with company = Netflix, value = 357971.6, drop = 72343.72, variation = 0.93, date = 13.04.2022, 
+09:40:32.759 - INFO - log_send_publication:8397;1654843232.759602;
+09:40:32.965 - INFO - Sending publication with company = ExxonMobil, value = 171512.73, drop = 85333.53, variation = 0.26, date = 03.09.2021, 
+09:40:32.965 - INFO - log_send_publication:8407;1654843232.965066;
+09:40:33.170 - INFO - Sending publication with company = ExxonMobil, value = 446426.64, drop = 327357.48, variation = 0.2, date = 14.07.2018, 
+09:40:33.170 - INFO - log_send_publication:8417;1654843233.170027;
+09:40:33.385 - INFO - Sending publication with company = Aplhabet, value = 8060.57, drop = 466734.77, variation = 0.6, date = 03.10.2017, 
+09:40:33.385 - INFO - log_send_publication:8427;1654843233.385028;
+09:40:33.597 - INFO - Sending publication with company = Apple, value = 220259.23, drop = 426245.45, variation = 0.71, date = 10.10.2019, 
+09:40:33.597 - INFO - log_send_publication:8437;1654843233.597962;
+09:40:33.812 - INFO - Sending publication with company = Chevron, value = 97839.31, drop = 228617.29, variation = 0.91, date = 11.12.2020, 
+09:40:33.813 - INFO - log_send_publication:8447;1654843233.813202;
+09:40:34.019 - INFO - Sending publication with company = Microsoft, value = 394159.41, drop = 112844.56, variation = 0.96, date = 08.07.2017, 
+09:40:34.019 - INFO - log_send_publication:8457;1654843234.019468;
+09:40:34.236 - INFO - Sending publication with company = Walmart, value = 320773.85, drop = 206049.96, variation = 0.73, date = 28.03.2018, 
+09:40:34.236 - INFO - log_send_publication:8467;1654843234.236084;
+09:40:34.438 - INFO - Sending publication with company = Apple, value = 376923.18, drop = 284442.14, variation = 0.94, date = 04.08.2017, 
+09:40:34.438 - INFO - log_send_publication:8477;1654843234.438749;
+09:40:34.652 - INFO - Sending publication with company = ExxonMobil, value = 46012.71, drop = 446406.7, variation = 0.17, date = 12.04.2022, 
+09:40:34.653 - INFO - log_send_publication:8487;1654843234.653295;
+09:40:34.854 - INFO - Sending publication with company = ExxonMobil, value = 291149.08, drop = 390660.69, variation = 0.15, date = 18.05.2019, 
+09:40:34.854 - INFO - log_send_publication:8497;1654843234.854351;
+09:40:35.057 - INFO - Sending publication with company = Bitdefender, value = 210295.34, drop = 334476.72, variation = 0.15, date = 24.03.2021, 
+09:40:35.347 - INFO - log_send_publication:8507;1654843235.347654;
+09:40:35.348 - INFO - Sending publication with company = Netflix, value = 130785.05, drop = 327977.27, variation = 0.19, date = 17.06.2017, 
+09:40:35.349 - INFO - log_send_publication:8517;1654843235.349698;
+09:40:35.552 - INFO - Sending publication with company = Microsoft, value = 142623.06, drop = 271616.98, variation = 0.87, date = 22.12.2017, 
+09:40:35.552 - INFO - log_send_publication:8527;1654843235.552602;
+09:40:35.754 - INFO - Sending publication with company = Aplhabet, value = 297378.45, drop = 419722.74, variation = 0.05, date = 14.12.2019, 
+09:40:35.755 - INFO - log_send_publication:8537;1654843235.754075;
+09:40:35.757 - INFO - Sending time window expired
+09:40:35.757 - INFO - Sent 852 publications
+09:40:35.757 - INFO - Exiting
