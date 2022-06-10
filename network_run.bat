@@ -11,8 +11,8 @@ timeout /t 2
 start "Broker#3" cmd /k py -3 src\broker.py --id 3 --host localhost --port 8083 --neighbours 1,localhost,8081
 timeout /t 2
 
-start "Subscriber#4" cmd /k py -3 src\subscriber.py --id 4 --subs_count 20
-timeout /t 1
+start "Subscriber#4" cmd /k py -3 src\subscriber.py --id 4 --subs_count 10000
+timeout /t 3
 
 @REM start "Subscriber#4" cmd /k py -3 src\subscriber.py --id 5 --subs_count 20
 @REM timeout /t 1
@@ -20,7 +20,7 @@ timeout /t 1
 @REM start "Subscriber#6" cmd /k py -3 src\subscriber.py --id 6 --subs_count 20
 @REM timeout /t 1
 
-start "Publisher#7" cmd /k py -3 src\publisher.py --id 7 --pubs 100
+@REM start "Publisher#7" cmd /k py -3 src\publisher.py --id 7 --time 3
 @REM start "Publisher#8" cmd /k py -3 src\publisher.py --id 8 --pubs 100
 @REM start "Publisher#9" cmd /k py -3 src\publisher.py --id 9 --pubs 100
 @REM start "Publisher#10" cmd /k py -3 src\publisher.py --id 10 --pubs 100

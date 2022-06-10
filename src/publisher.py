@@ -8,16 +8,18 @@ from connection import EBSConnection
 from globals import MANAGER_ENDPOINT
 from generator_publication import PublicationGenerator
 from logger import setup_logger
+import time
 import loop
 
 node_config = {
     'id': 1,
-    'pubs': 0
+    'pubs': 0,
+    'time': 0
 }
 
 
 class Publisher:
-    def __init__(self, node_id: int, pubs: int):
+    def __init__(self, node_id: int, pubs: int, time: int):
         self._managerConnection = None
         self._brokerConnection = None
         self._ID = node_id
@@ -25,6 +27,7 @@ class Publisher:
         self._current_pubs = pubs
         self._lock = asyncio.Lock()
         self._gen = PublicationGenerator()
+        self._time = time
 
     async def init(self):
         async with self._lock:
@@ -62,7 +65,11 @@ class Publisher:
             logging.info('Connected to broker.')
 
     async def run(self):
+        start = time.time()
+        count = 0
+        send_interval_seconds = 0.2
         while self._PUBS == 0 or self._current_pubs > 0:
+            start_pub = time.time()
             self._current_pubs -= 1
 
             publication = self._gen.get()
@@ -74,16 +81,22 @@ class Publisher:
                         f'variation = {publication.variation}, ' +
                         f'date = {publication.date}, ')
             await self._brokerConnection.write(publication)
+            count += 1
             logging.info(f'log_send_publication:{publication.publication_id};{datetime.datetime.now().timestamp()};')
-            await asyncio.sleep(0.2)
-        logging.info("All publications sent")
+            if self._time != 0 and time.time() - start > self._time * 60:
+                logging.info("Sending time window expired")
+                break
+            to_sleep = send_interval_seconds - (time.time() - start_pub)
+            if to_sleep > 0:
+                await asyncio.sleep(to_sleep)
+        logging.info(f"Sent {count} publications")
         logging.info("Exiting")
 
 
 async def app_publisher():
     global publisher
 
-    publisher = Publisher(node_config['id'], node_config['pubs'])
+    publisher = Publisher(node_config['id'], node_config['pubs'], node_config['time'])
 
     await publisher.init()
 
@@ -95,11 +108,13 @@ if __name__ == '__main__':
 
     arg_parser = argparse.ArgumentParser(description='Publisher node.')
     arg_parser.add_argument('--id', type=int, required=True)
-    arg_parser.add_argument('--pubs', type=int, required=True)
+    arg_parser.add_argument('--pubs', type=int, default=0)
+    arg_parser.add_argument('--time', type=int, default=0)
     args = arg_parser.parse_args()
 
     node_config['id'] = args.id
     node_config['pubs'] = args.pubs
+    node_config['time'] = args.time
 
     try:
         asyncio.run(app_publisher(), debug=False)
