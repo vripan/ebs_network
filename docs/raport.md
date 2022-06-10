@@ -12,5 +12,5 @@
 * `3` brokers 
 * `1` publisher
 * `1` subscriber
-#### Publication generation rate per second: `?`
+#### Publication generation rate per second: `5`
 #### Subscriptions count: 10000

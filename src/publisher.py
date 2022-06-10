@@ -75,7 +75,7 @@ class Publisher:
                         f'date = {publication.date}, ')
             await self._brokerConnection.write(publication)
             logging.info(f'log_send_publication:{publication.publication_id};{datetime.datetime.now().timestamp()};')
-            await asyncio.sleep(0.1)
+            await asyncio.sleep(0.2)
         logging.info("All publications sent")
         logging.info("Exiting")
 
