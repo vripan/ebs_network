@@ -49,9 +49,9 @@ class Publisher:
             receive_brk = await self._managerConnection.read()
 
             if receive_brk.status != ebs_msg_pb2.ReceiveBroker.Status.SUCCESS:
-                raise Exception(f'Could not recevie broker: {receive_brk}')
+                raise Exception(f'Could not receive broker: {receive_brk}')
 
-            logging.info('Got broker.')
+            logging.info('Received broker [id={}, host={}, port={}]'.format(receive_brk.id, receive_brk.host, receive_brk.port))
 
             self._brokerConnection = await EBSConnection.connect(
                 receive_brk.host,
@@ -79,7 +79,7 @@ class Publisher:
                         f'value = {publication.value}, ' +
                         f'drop = {publication.drop}, ' +
                         f'variation = {publication.variation}, ' +
-                        f'date = {publication.date}, ')
+                        f'date = {publication.date}')
             await self._brokerConnection.write(publication)
             count += 1
             logging.info(f'log_send_publication:{publication.publication_id};{datetime.datetime.now().timestamp()};')
