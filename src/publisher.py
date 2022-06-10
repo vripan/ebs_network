@@ -5,13 +5,7 @@ import logging
 from connection import EBSConnection, EBSConnectionError
 from globals import MANAGER_ENDPOINT
 from generator_publication import PublicationGenerator
-
-debug = True
-
-logging.basicConfig()
-
-logger = logging.getLogger("PublisherLog")
-logger.setLevel(logging.DEBUG)
+from logger import setup_logger
 
 node_config = {
     'id': 1,
@@ -40,7 +34,7 @@ class Publisher:
             message_connect.id = self._ID
             await self._managerConnection.write(message_connect)
 
-            logger.info('Connected to manager.')
+            logging.info('Connected to manager.')
 
             message_reqister = ebs_msg_pb2.RequestBroker()
             await self._managerConnection.write(message_reqister)
@@ -50,7 +44,7 @@ class Publisher:
             if receive_brk.status != ebs_msg_pb2.ReceiveBroker.Status.SUCCESS:
                 raise Exception(f'Could not recevie broker: {receive_brk}')
 
-            logger.info('Got broker.')
+            logging.info('Got broker.')
 
             self._brokerConnection = await EBSConnection.connect(
                 receive_brk.host,
@@ -61,7 +55,7 @@ class Publisher:
             message_connect.id = self._ID
             await self._brokerConnection.write(message_connect)
 
-            logger.info('Connected to broker.')
+            logging.info('Connected to broker.')
 
     async def run(self):
         while self._PUBS == 0 or self._current_pubs > 0:
@@ -69,12 +63,11 @@ class Publisher:
 
             publication = self._gen.get()
             publication.source_id = self._ID
-            if debug:
-                logger.info(f'Sending publication with company = {publication.company}, ' +
-                            f'value = {publication.value}, ' +
-                            f'drop = {publication.drop}, ' +
-                            f'variation = {publication.variation}, ' +
-                            f'date = {publication.date}, ')
+            logging.info(f'Sending publication with company = {publication.company}, ' +
+                        f'value = {publication.value}, ' +
+                        f'drop = {publication.drop}, ' +
+                        f'variation = {publication.variation}, ' +
+                        f'date = {publication.date}, ')
             await self._brokerConnection.write(publication)
             await asyncio.sleep(0.5)
 
@@ -90,6 +83,8 @@ async def app_publisher():
 
 
 if __name__ == '__main__':
+    setup_logger()
+
     arg_parser = argparse.ArgumentParser(description='Publisher node.')
     arg_parser.add_argument('--id', type=int, required=True)
     arg_parser.add_argument('--pubs', type=int, required=True)
@@ -100,6 +95,8 @@ if __name__ == '__main__':
 
     try:
         asyncio.run(app_publisher(), debug=False)
+    except KeyboardInterrupt:
+        logging.info("Exit signal triggered by user...")
     except Exception as e:
-        logger.error(e)
-        print("Exiting...")
+        logging.exception(e)
+        logging.fatal("Exception occured. Exiting...")

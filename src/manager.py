@@ -3,11 +3,7 @@ from globals import MANAGER_ENDPOINT
 import asyncio
 import ebs_msg_pb2
 import logging
-
-logging.basicConfig()
-
-logger = logging.getLogger("ManagerLog")
-logger.setLevel(logging.INFO)
+from logger import setup_logger
 
 
 class Manager:
@@ -32,13 +28,13 @@ class Manager:
             'host': msg.host,
             'port': msg.port
         }
-        logger.info('Broker registered! [id:{}, host:{}, port:{}]'.format(msg.id, msg.host, msg.port))
+        logging.info('Broker registered! [id:{}, host:{}, port:{}]'.format(msg.id, msg.host, msg.port))
 
     async def _handle_request_broker(self, ebs_connection: EBSConnection, msg: ebs_msg_pb2.RequestBroker):
-        logger.info('Received request broker message from id: {}'.format(msg.id))
+        logging.info('Received request broker message from id: {}'.format(msg.id))
         fw_msg = ebs_msg_pb2.ReceiveBroker()
         if len(self._brokers) == 0:
-            logger.info('No brokers available!')
+            logging.info('No brokers available!')
             fw_msg.status = ebs_msg_pb2.ReceiveBroker.Status.FAILED_NO_BROKER_AVAILABLE
         else:
             # get next broker
@@ -61,11 +57,11 @@ class Manager:
         elif isinstance(msg, ebs_msg_pb2.RequestBroker):
             await self._handle_request_broker(ebs_connection, msg)
         else:
-            logger.error('Received invalid message!')
+            logging.error('Received invalid message!')
             # assert False, 'Received invalid message!'
 
     async def _handle_connect(self, ebs_connection: EBSConnection, conn_msg: ebs_msg_pb2.Connect):
-        logger.info('Client connected with id: {}'.format(conn_msg.id))
+        logging.info('Client connected with id: {}'.format(conn_msg.id))
         if conn_msg.type == ebs_msg_pb2.Connect.SrcType.BROKER:
             self._brokers.add(conn_msg.id)
         if conn_msg.type == ebs_msg_pb2.Connect.SrcType.SUBSCRIBER:
@@ -80,14 +76,14 @@ class Manager:
                 if isinstance(data, ebs_msg_pb2.Connect):
                     await self._handle_connect(ebs_connection, data)
                 else:
-                    logger.error('Invalid first message!')
+                    logging.error('Invalid first message!')
                     return
             while True:
                 data = await ebs_connection.read()
                 async with self._lock:
                     await self._handle_message(ebs_connection, data)
         except Exception as e:
-            logger.info('Client disconnected.')
+            logging.info('Client disconnected.')
 
     @staticmethod
     async def handle_client_ext(reader, writer):
@@ -104,16 +100,20 @@ async def app_manager():
     await manager.init()
     app_server = await asyncio.start_server(
         client_connected_cb=Manager.handle_client_ext,
-        host="localhost",
+        host=MANAGER_ENDPOINT["host"],
         port=MANAGER_ENDPOINT['port']
     )
+    logging.info("Manager node started at %s:%u" % (MANAGER_ENDPOINT["host"], MANAGER_ENDPOINT["port"]))
     async with app_server:
         await app_server.serve_forever()
 
 
 if __name__ == '__main__':
+    setup_logger()
     try:
         asyncio.run(app_manager(), debug=False)
+    except KeyboardInterrupt:
+        logging.info("Exit signal triggered by user...")
     except Exception as e:
-        print(e)
-        print("Exiting...")
+        logging.exception(e)
+        logging.fatal("Exception occured. Exiting...")

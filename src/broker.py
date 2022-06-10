@@ -5,11 +5,7 @@ import asyncio
 import ebs_msg_pb2
 from globals import MANAGER_ENDPOINT
 import utils
-
-logging.basicConfig()
-
-logger = logging.getLogger("BrokerLog")
-logger.setLevel(logging.DEBUG)
+from logger import setup_logger
 
 node_config = {
     'id': 1,
@@ -48,7 +44,7 @@ class BrokerConnData(NetworkEndpoint):
                 await self._outgoing.write(connect_msg)
             await self._outgoing.write(msg)
         except EBSConnectionError as e:
-            logger.error('Connection to broker with id = {} failed!'.format(self._id))
+            logging.error('Connection to broker with id = {} failed!'.format(self._id))
 
 
 class Broker:
@@ -84,7 +80,7 @@ class Broker:
             message_connect.id = self._ID
             await self._managerConnection.write(message_connect)
 
-            logger.info('Connected to manager.')
+            logging.info('Connected to manager.')
 
             message_reqister = ebs_msg_pb2.BrokerRegister()
             message_reqister.id = self._ID
@@ -92,10 +88,10 @@ class Broker:
             message_reqister.port = self._PORT
             await self._managerConnection.write(message_reqister)
 
-            logger.info('Registered to manager.')
+            logging.info('Registered to manager.')
 
     async def handle_connect(self, connection: EBSConnection, msg_connect: ebs_msg_pb2.Connect):
-        logger.info('Client connected with id: {}'.format(msg_connect.id))
+        logging.info('Client connected with id: {}'.format(msg_connect.id))
 
         if msg_connect.type == ebs_msg_pb2.Connect.SrcType.BROKER:
             self._NBConnectionTable[msg_connect.id].set(incoming=connection)
@@ -132,7 +128,7 @@ class Broker:
             if cond.op == ebs_msg_pb2.Condition.Operator.LE:
                 return cond_value < pub_value
         except Exception as e:
-            logger.error('Failed comparing single cond!')
+            logging.error('Failed comparing single cond!')
             raise e
 
     @staticmethod
@@ -153,18 +149,18 @@ class Broker:
         return matching_nodes
 
     async def _handle_subscription(self, sub: ebs_msg_pb2.Subscription):
-        logger.info('Received subscription from id: {}'.format(sub.subscriber_id))
+        logging.info('Received subscription from id: {}'.format(sub.subscriber_id))
         self._SubscriptionTable.append((sub, sub.subscriber_id))
         fw_sub = ebs_msg_pb2.Subscription()
         fw_sub.CopyFrom(sub)
         fw_sub.subscriber_id = self._ID
         # tmp: send to all NB
         for broker_id in (self._NB - {sub.subscriber_id}):
-            logger.info('Forwarding subscription from id: {} to NB with id: {}'.format(sub.subscriber_id, broker_id))
+            logging.info('Forwarding subscription from id: {} to NB with id: {}'.format(sub.subscriber_id, broker_id))
             await self._NBConnectionTable[broker_id].send(self._ID, fw_sub)
 
     async def _handle_publication(self, pub: ebs_msg_pb2.Publication):
-        logger.info('Received publication from id: {}'.format(pub.source_id))
+        logging.info('Received publication from id: {}'.format(pub.source_id))
         # handle pub
         matching_nodes = self._match_pub(pub)
         fw_pub = ebs_msg_pb2.Publication()
@@ -174,17 +170,17 @@ class Broker:
         try:
             # send to NB
             for node in ((matching_nodes - {self._ID}) & self._NB):
-                logger.info('Sending publication [{}] to broker id: {}'.format(utils.get_str_publication(pub), node))
+                logging.info('Sending publication [{}] to broker id: {}'.format(utils.get_str_publication(pub), node))
                 await self._NBConnectionTable[node].send(self._ID, fw_pub)
             # send to LB
             for node in matching_nodes & self._LB:
-                logger.info('Sending publication [{}] to subscriber id: {}'.format(utils.get_str_publication(pub), node))
+                logging.info('Sending publication [{}] to subscriber id: {}'.format(utils.get_str_publication(pub), node))
                 if self._LBConnectionTable[node]['connection'] is not None:
                     await self._LBConnectionTable[node]['connection'].write(fw_pub)
                 else:
-                    logger.error('No connection from subscriber with id = {}!'.format(node))
+                    logging.error('No connection from subscriber with id = {}!'.format(node))
         except:
-            logger.error('Failed forwarding publication!')
+            logging.error('Failed forwarding publication!')
 
     async def _handle_unsubscribe(self, unsub: ebs_msg_pb2.Unsubscribe):
         # TODO
@@ -211,7 +207,7 @@ class Broker:
                     # process data
                     await self._handle_message(data)
         except:
-            logger.info('Client disconnected!')
+            logging.info(f'Client with id {data.id} disconnected!')
 
     @staticmethod
     async def handle_client_ext(reader, writer):
@@ -232,6 +228,8 @@ async def app_broker():
         port=node_config['port']
     )
 
+    logging.info(f"Broker with id {node_config['id']} started at {node_config['host']}:{node_config['port']}")
+
     async with app_server:
         await app_server.serve_forever()
 
@@ -245,6 +243,8 @@ def neighbours_type(s):
 
 
 if __name__ == '__main__':
+
+    setup_logger()
 
     arg_parser = argparse.ArgumentParser(description='Broker node.')
     arg_parser.add_argument('--id', type=int, required=True)
@@ -260,7 +260,8 @@ if __name__ == '__main__':
 
     try:
         asyncio.run(app_broker(), debug=False)
+    except KeyboardInterrupt:
+        logging.info("Exit signal triggered by user...")
     except Exception as e:
-        logger.error(e)
-        logger.info("Exiting...")
-
+        logging.exception(e)
+        logging.fatal("Exception occured. Exiting...")

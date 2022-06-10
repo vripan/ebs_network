@@ -1,4 +1,5 @@
 import datetime, os, logging
+from globals import LOG_CONFIG
 
 def get_auxiliary_dir(name):
     return os.path.normpath(os.path.abspath(os.path.join(
@@ -17,7 +18,10 @@ def get_auxiliary_file(extension: str):
 
     return filename, filepath
 
-def setup_logger(run_dir, level):
+def setup_logger():
+    run_dir = LOG_CONFIG["directory"]
+    level = LOG_CONFIG["level"]
+
     timestamp = int(datetime.datetime.now().timestamp())
     run_path = get_auxiliary_dir(run_dir)
 
@@ -32,9 +36,14 @@ def setup_logger(run_dir, level):
         level=level,
     )
 
+    # log_formatter = logging.Formatter(
+    #     fmt='%(asctime)s.%(msecs)03d - %(name)s - %(levelname)s - %(message)s',
+    #     datefmt='%Y-%m-%d %H:%M:%S'
+    # )
+
     log_formatter = logging.Formatter(
-        fmt='%(asctime)s.%(msecs)03d - %(name)s - %(levelname)s - %(message)s',
-        datefmt='%Y-%m-%d %H:%M:%S'
+        fmt='%(asctime)s.%(msecs)03d - %(levelname)s - %(message)s',
+        datefmt='%H:%M:%S'
     )
 
     log_file_handle = logging.FileHandler(
@@ -46,3 +55,5 @@ def setup_logger(run_dir, level):
     root_logger.handlers[0].addFilter(logging.Filter("root"))
 
     root_logger.addHandler(log_file_handle)
+
+    logging.info(f"Logging to {log_path}")

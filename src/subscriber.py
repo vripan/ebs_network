@@ -5,13 +5,8 @@ import asyncio
 import ebs_msg_pb2
 from globals import MANAGER_ENDPOINT
 from generator_subscription import SubscriptionGenerator, SubscriptionConfig
-from tqdm import tqdm
 import utils
-
-logging.basicConfig()
-
-logger = logging.getLogger("SubscriberLog")
-logger.setLevel(logging.DEBUG)
+from logger import setup_logger
 
 node_config = {
     'id': 1,
@@ -32,11 +27,11 @@ class Subscriber:
         pass
 
     async def _handle_pub(self, pub: ebs_msg_pb2.Publication):
-        logger.info('Publication received: [{}]'.format(utils.get_str_publication(pub)))
+        logging.info('Publication received: [{}]'.format(utils.get_str_publication(pub)))
 
     async def _connect_to_manager(self):
         try:
-            logger.info('Connecting to manager...')
+            logging.info('Connecting to manager...')
             self._managerConnection = await EBSConnection.connect(
                 MANAGER_ENDPOINT['host'],
                 MANAGER_ENDPOINT['port']
@@ -47,7 +42,7 @@ class Subscriber:
 
             await self._managerConnection.write(connect_msg)
 
-            logger.info('Connected to manager.')
+            logging.info('Connected to manager.')
 
             # get a broker
 
@@ -56,26 +51,26 @@ class Subscriber:
 
             await self._managerConnection.write(request_broker_msg)
 
-            logger.info('Requested broker from manager.')
+            logging.info('Requested broker from manager.')
 
             receive_broker = await self._managerConnection.read()
             assert isinstance(receive_broker, ebs_msg_pb2.ReceiveBroker)
 
             if receive_broker.status != ebs_msg_pb2.ReceiveBroker.Status.SUCCESS:
-                logger.error('Failed to get broker!')
+                logging.error('Failed to get broker!')
                 raise Exception('Failed to get broker!')
 
             self._brokerData['id'] = receive_broker.id
             self._brokerData['host'] = receive_broker.host
             self._brokerData['port'] = receive_broker.port
 
-            logger.info('Received broker [id={}, host={}, port={}]'.format(self._brokerData['id'], self._brokerData['host'], self._brokerData['port']))
+            logging.info('Received broker [id={}, host={}, port={}]'.format(self._brokerData['id'], self._brokerData['host'], self._brokerData['port']))
         except:
-            logger.error('Connection to manager failed!')
+            logging.error('Connection to manager failed!')
             raise
 
     async def _connect_to_broker(self):
-        logger.info('Connecting to broker...')
+        logging.info('Connecting to broker...')
         try:
             self._brokerConnection = await EBSConnection.connect(
                 self._brokerData['host'],
@@ -88,9 +83,9 @@ class Subscriber:
 
             await self._brokerConnection.write(connect_msg)
 
-            logger.info('Connected to broker.')
+            logging.info('Connected to broker.')
         except:
-            logger.error('Connection to broker failed!')
+            logging.error('Connection to broker failed!')
             raise
 
     async def _send_subscriptions(self):
@@ -107,13 +102,13 @@ class Subscriber:
         sub_generator = SubscriptionGenerator(config=sub_generator_config)
 
         try:
-            for idx in tqdm(range(sub_generator_config.count)):
+            for idx in range(sub_generator_config.count):
                 sub = sub_generator.get()
                 sub.subscriber_id = self._ID
                 await self._brokerConnection.write(sub)
-                logger.info('Sent Subscription: [{}]'.format(utils.get_str_subscription(sub)))
+                logging.info('Sent Subscription: [{}]'.format(utils.get_str_subscription(sub)))
         except:
-            logger.error('Failed sending subscriptions!')
+            logging.error('Failed sending subscriptions!')
             raise
 
     async def _wait_publications(self):
@@ -123,7 +118,7 @@ class Subscriber:
                 assert isinstance(pub, ebs_msg_pb2.Publication)
                 await self._handle_pub(pub)
         except:
-            logger.error('Connection with broker lost!')
+            logging.error('Connection with broker lost!')
             raise
 
     async def run(self):
@@ -143,6 +138,8 @@ async def app_subscriber():
 
 
 if __name__ == '__main__':
+    setup_logger()
+
     arg_parser = argparse.ArgumentParser(description='Subscriber node.')
     arg_parser.add_argument('--id', type=int, required=True)
     arg_parser.add_argument('--subs_count', type=int, default=1000)
@@ -153,5 +150,8 @@ if __name__ == '__main__':
 
     try:
         asyncio.run(app_subscriber())
-    except:
-        logger.info('Exiting...')
+    except KeyboardInterrupt:
+        logging.info("Exit signal triggered by user...")
+    except Exception as e:
+        logging.exception(e)
+        logging.fatal("Exception occured. Exiting...")
